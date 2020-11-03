@@ -6,11 +6,14 @@ $twig = init_twig();
 $dbh = getPDO();
 
 session_start();
-$role = NULL;
+
 if (isset($_SESSION['role'])) {
     $role = $_SESSION['role'];
 }
-$id = NULL;
+
+if (isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];
+}
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
@@ -76,25 +79,25 @@ switch ($page) {
         if (isset($_GET['cat'])) {
             $categorie = $_GET['cat'];
         }
-        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie,];
+        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user];
       break;
     case 'fullarticle' :
       $modele = $page;
-      $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id)];
+      $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
       break;
     case 'login' :
       $modele = $page;
-      $data = ['feedback' => $feedback];
+      $data = ['feedback' => $feedback, 'user' => $user];
       break;
 
     case 'register' :
       $modele = $page;
-      $data = ['feedback' => $return];
+      $data = ['feedback' => $return, 'user' => $user];
       break;  
     case 'admin' :
         if ($role == 3) {
             $modele = $page;
-            $data = ['feedback' => $feedback];
+            $data = ['feedback' => $feedback, 'user' => $user];
         }
         else {
             header('Location: index.php');
@@ -103,7 +106,7 @@ switch ($page) {
         case 'insertout' :
             if ($role == 3) {
                 $modele = $page;
-                $data = ['read' => article::readall($dbh)];
+                $data = ['read' => article::readall($dbh), 'user' => $user];
             }
             else {
                 header('Location: index.php');
@@ -112,7 +115,7 @@ switch ($page) {
          case 'del' :
              if ($role == 3) {
                  $modele = $page;
-                 $data = ['menu' => article::readTitre($dbh), 'tcomp' => compo::Allcomp($dbh)];
+                 $data = ['menu' => article::readTitre($dbh), 'tcomp' => compo::Allcomp($dbh), 'user' => $user];
              }
              else {
                  header('Location: index.php');
@@ -125,7 +128,7 @@ switch ($page) {
                        $categorie = $_POST['coole'];
                     }
                     
-                    $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh)];
+                    $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user];
 
                 }
                 else {
@@ -136,7 +139,7 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = [];
+      $data = ['user' => $user];
   }
 
   // Affichage du modèle choisi avec les données récupérées
