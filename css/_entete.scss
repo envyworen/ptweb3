@@ -1,0 +1,49 @@
+.entete
+{
+    display: flex;
+    margin: 75px 300px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.entete h1 
+{
+    font-size: 100px;
+    width: 500px;
+    margin : 0px;
+}
+
+
+.entete h2
+{
+    font-size : 40px;
+    line-height: 50px;
+    width: 1200px;
+    margin : 0px;
+    margin-left : 100px;
+    text-align: center;  
+}
+
+.home {
+    position: fixed;
+    display: flex;
+    color : white;
+    
+    width: 80px;
+    height: 80px;
+    right: 10px;
+    bottom: 10px;
+    background-color: lightgray;
+    margin: 0!important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    // opacity: 40%;
+    transition: 0.1s ease-in-out all;
+}
+
+.fa-home
+{
+    font-size: 40px;
+}

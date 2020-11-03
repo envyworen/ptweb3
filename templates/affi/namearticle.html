@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block main %}
+{% for type in list %}
+	
+	<h1>{{ type.h1_art }} </h1> 
+	<h2>{{ type.chap_art }}</h2> 
+<a href="detail-{{ cat }}-{{ type.id_art }}">lire la suite >>></a>
+{% endfor %}
+{% endblock %}

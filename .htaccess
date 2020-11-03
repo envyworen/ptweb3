@@ -1,0 +1,14 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ^profils$ ?page=namearticle&cat=profils
+RewriteRule ^inconcevable$ ?page=namearticle&cat=inconcevable 
+RewriteRule ^force$ ?page=namearticle&cat=force
+RewriteRule ^silence$ ?page=namearticle&cat=silence
+RewriteRule ^surveillance$ ?page=namearticle&cat=surveillance
+RewriteRule ^detail-([a-z]+)-([0-9]+)$ ?page=fullarticle&cat=$1&id=$2 [QSA,L]
+
+AuthName "User = prof"
+AuthType Basic
+AuthUserFile "/var/www/vhosts/caquelin.etu.mmi-unistra.fr/violence.caquelin.etu.mmi-unistra.fr/.htpasswd"
+Require valid-user

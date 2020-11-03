@@ -1,0 +1,191 @@
+header {
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  height: 60px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  margin: 10px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: lightgrey;
+}
+
+.accueil {
+  text-decoration: none;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 80px;
+  color: white;
+  background-color: grey;
+  border-radius: 5%;
+}
+
+body {
+  margin: 0;
+}
+
+.entete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 75px 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.entete h1 {
+  font-size: 100px;
+  width: 700px;
+  margin: 0px;
+}
+
+.entete h2 {
+  font-size: 40px;
+  line-height: 50px;
+  width: 1000px;
+  margin: 0px;
+  margin-left: 80px;
+  text-align: center;
+}
+
+.home {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  width: 80px;
+  height: 80px;
+  right: 10px;
+  bottom: 10px;
+  background-color: lightgray;
+  margin: 0 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 40px;
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+}
+
+.fa-home {
+  font-size: 40px;
+}
+
+.div_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img, video {
+  max-width: 1300px;
+  height: auto;
+}
+
+.desc_img {
+  max-width: 1300px;
+  height: auto;
+  margin: auto;
+  font-size: 30px;
+  text-align: justify;
+}
+
+.leg_img {
+  color: gray;
+  font-style: italic;
+}
+
+.div_compo {
+  max-width: 1300px;
+  margin: auto;
+  font-size: 30px;
+  margin-top: 100px;
+  text-align: justify;
+}
+
+.left h3 {
+  text-align: right;
+}
+
+.auteur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 1300px;
+  margin: auto;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 15px;
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */
