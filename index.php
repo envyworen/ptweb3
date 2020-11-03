@@ -17,6 +17,9 @@ if (isset($_SESSION['user'])) {
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
+if (isset($_POST['deco'])) {
+    deco();
+}
 update_art($dbh);
 update_comp($dbh);
 insert_art($dbh);

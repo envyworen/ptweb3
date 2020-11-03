@@ -36,3 +36,6 @@ function logi($dbh){
         return $feedback;
     }
 }
+function deco(){
+    session_destroy();
+}
