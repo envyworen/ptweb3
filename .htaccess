@@ -6,6 +6,12 @@ RewriteRule ^inconcevable$ ?page=namearticle&cat=inconcevable
 RewriteRule ^force$ ?page=namearticle&cat=force
 RewriteRule ^silence$ ?page=namearticle&cat=silence
 RewriteRule ^surveillance$ ?page=namearticle&cat=surveillance
+RewriteRule ^connexion$ ?page=login
+RewriteRule ^inscription$ ?page=register
+RewriteRule ^admin$ ?page=admin
+RewriteRule ^insert$ ?page=insertout
+RewriteRule ^delete$ ?page=del
+RewriteRule ^update$ ?page=mod
 RewriteRule ^detail-([a-z]+)-([0-9]+)$ ?page=fullarticle&cat=$1&id=$2 [QSA,L]
 
 AuthName "User = prof"
