@@ -66,6 +66,7 @@
         
     {% if user is not empty %}    
         <p>{{ user }}</p>
+        <p><form action="index.php" method="post"><input type="submit" name="deco">deconnexion</form></p>
     {% else %}
         <p><a href="connexion">connexion</a></p>
         <p><a href="inscription">inscription</a></p>    
