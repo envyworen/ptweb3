@@ -131,7 +131,7 @@ switch ($page) {
               $categorie = $_POST['coole'];
            }
             
-           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user]
+           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user];
        }
        else {
            header('Location: index.php');
