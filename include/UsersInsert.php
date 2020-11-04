@@ -1,4 +1,6 @@
 <?php
+
+// Inscription user
 function reg($dbh){
 if (isset($_POST['reg']) && isset($_POST['pseudo']) && isset($_POST['mdp']) && isset($_POST['cmdp']) && isset($_POST['mail'])) {
     $username = $_POST['pseudo'];
@@ -8,25 +10,21 @@ if (isset($_POST['reg']) && isset($_POST['pseudo']) && isset($_POST['mdp']) && i
     if ($password == $cmdp) {
         if (strlen($_POST['mdp']) >= 8) {
             $caq = new users();
-    
             $caq->modifierforeg($username, $password, $usermail);
-        
             $feedback = $caq->register($dbh);
-           
-            
         }
         else{
             $feedback = "Le mot de passe est trop court : il doit être composer d'au moins 8 caractères.";
-          }
+        }
     }
     else{
         $feedback = "Les mots de passe sont différents";
     }
   }
- 
   return $feedback;
- 
 }
+
+// Connexion user
 function logi($dbh){
   if (isset($_POST['log']) && isset($_POST['lpseudo']) && isset($_POST['lmdp'])) {
       $lusername = $_POST['lpseudo'];
@@ -36,15 +34,21 @@ function logi($dbh){
         return $feedback;
     }
 }
+
+// Deconnexion user
 function deco(){
     session_destroy();
 }
+
+// Supprimer un user
 function deleteuser($dbh){
     if (isset($_POST['supprimer_user'])) {
-         $users = $_POST['supprimer_user'];      
+        $users = $_POST['supprimer_user'];      
         users::deleteuser($dbh, $users);  
     }
 }
+
+// Changer le rôle d'un user
 function changerole($dbh){
     if (isset($_POST['lecteur_user'])) {
          $id = $_POST['lecteur_user'];
@@ -57,11 +61,10 @@ function changerole($dbh){
     elseif (isset($_POST['admin_user'])) {
         $id = $_POST['admin_user']; 
         $roles = 3;    
-    }       
-    $caq = new users();
-    
-    $caq->modifierfoup($id, $roles);
+    }  
 
+    $caq = new users();
+    $caq->modifierfoup($id, $roles);
     $caq->updateuser($dbh); 
      
 }

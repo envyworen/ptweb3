@@ -40,7 +40,8 @@ function register($dbh)
         $q->bindValue(':roles',$role,PDO::PARAM_STR);
         $q->execute();
         $feedback = "Votre compte a bien été créé";
-    } else {
+    } 
+    else {
         $feedback = "Ce pseudo existe déja";
     }
 
@@ -69,6 +70,7 @@ static function login($dbh, $username, $password)
     return $feedback;
 }
 
+// Envoyer le mail
 function lecteurmail($dbh){
     $mail = $dbh->prepare("SELECT mail_user FROM User WHERE role_user = 1");
     $mail->execute();
@@ -76,12 +78,16 @@ function lecteurmail($dbh){
     return $envoie;
   
 }
+
+// Afficher l'user
 function afficheuser($dbh){
     $query = $dbh->prepare("SELECT * FROM User");
     $query->execute();
     $user = $query->fetchAll(PDO::FETCH_CLASS,'users');
     return $user;
 }
+
+// Supprimer un user
 static function deleteunmec($dbh, $users){
 
         $sql = 'DELETE FROM User WHERE id_user = :id;';
@@ -90,6 +96,8 @@ static function deleteunmec($dbh, $users){
         $query->execute();
 
 }
+
+// Modifier un user
 function updateuser($dbh) {
     
     $sql = 'UPDATE User SET role_user = :roles WHERE id_user = :id;';

@@ -31,11 +31,8 @@ function insert_art($dbh)
                                            $repertoireDestination.$nomDestination)) {}}}
         $dossier = NULL;
         $caq = new article();
-    
         $caq->modifier($h1, $chap, $dossier, $para, $titre, $auteur);
-    
         $caq->createart($dbh);
-
         $mail = users::lecteurmail($dbh);
         var_dump($mail);
         foreach ($mail as $mails) {      
@@ -50,9 +47,6 @@ function insert_art($dbh)
           
             $retour = mail($mail, $sujet, $message, 'From : Mathilde@violence.caquelin.etu.mmi-unistra.fr');
         }
-       
-      
-    
     }
 }
 
@@ -89,13 +83,8 @@ function update_art($dbh)
                                            $repertoireDestination.$nomDestination)) {}}}
         $dossier = NULL;
         $caq = new article();
-    
         $caq->updatearticle($h1, $chap, $dossier, $para, $titre, $auteur, $id_art_up);
-    
-        $caq->updateart($dbh);
-
-
-       
+        $caq->updateart($dbh);   
     }
 }
 

@@ -137,17 +137,17 @@ switch ($page) {
            header('Location: index.php');
        }
        break;    
-  case 'user' :
-           if ($role == 3) {
-               $modele = $page;
-               deleteuser($dbh);
-               
-               $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
-           }
-           else {
-               header('Location: index.php');
-           }
-           break;
+    case 'user' :
+        if ($role == 3) {
+            $modele = $page;
+            deleteuser($dbh);
+            
+            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
+        }
+        else {
+            header('Location: index.php');
+        }
+    break;
 
 
     default :
