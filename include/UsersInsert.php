@@ -42,7 +42,7 @@ function deco(){
 function deleteuser($dbh){
     if (isset($_POST['supprimer_user'])) {
          $users = $_POST['supprimer_user'];      
-        users::deleteart($dbh, $users);  
+        users::deleteuser($dbh, $users);  
     }
 }
 function changerole($dbh){
