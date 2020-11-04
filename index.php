@@ -98,7 +98,7 @@ switch ($page) {
       $data = ['feedback' => $return, 'user' => $user];
       break;  
     case 'admin' :
-        if ($role < 1) {
+        if ($role > 1) {
             $modele = $page;
             $data = ['feedback' => $feedback, 'user' => $user];
         }
@@ -107,7 +107,7 @@ switch ($page) {
         }
         break;
     case 'insertout' :
-        if ($role <= 2) {
+        if ($role >= 2) {
             $modele = $page;
             $data = ['read' => article::readall($dbh), 'user' => $user];
         }
@@ -116,7 +116,7 @@ switch ($page) {
         }
         break;
      case 'del' :
-         if ($role <= 2) {
+         if ($role >= 2) {
              $modele = $page;
              $data = ['menu' => article::readTitre($dbh), 'tcomp' => compo::Allcomp($dbh), 'user' => $user];
          }
@@ -125,7 +125,7 @@ switch ($page) {
          }
          break;
     case 'mod' :
-       if ($role <= 2) {
+       if ($role >= 2) {
            $modele = $page;
            if (isset($_POST['coole'])) {
               $categorie = $_POST['coole'];
