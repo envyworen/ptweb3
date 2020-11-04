@@ -95,7 +95,7 @@ function updateuser($dbh) {
     $sql = 'UPDATE User SET role_user = :roles WHERE id_user = :id;';
 
     $query = $dbh->prepare($sql);
-    $query->bindValue(':id', $this->roles, PDO::PARAM_INT);
+    $query->bindValue(':roles', $this->roles, PDO::PARAM_INT);
     $query->bindValue(':id', $this->id, PDO::PARAM_INT);
     $query->execute();
 }}
