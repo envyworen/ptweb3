@@ -57,7 +57,8 @@ function changerole($dbh){
     elseif (isset($_POST['admin_user'])) {
         $id = $_POST['admin_user']; 
         $roles = 3;    
-    }       
+    }
+           
     $caq = new users();
     
     $caq->modifierfoup($id, $roles);
