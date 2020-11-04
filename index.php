@@ -98,7 +98,7 @@ switch ($page) {
       $data = ['feedback' => $return, 'user' => $user];
       break;  
     case 'admin' :
-        if ($role == 3) {
+        if ($role < 1) {
             $modele = $page;
             $data = ['feedback' => $feedback, 'user' => $user];
         }
@@ -106,38 +106,48 @@ switch ($page) {
             header('Location: index.php');
         }
         break;
-        case 'insertout' :
-            if ($role == 3) {
-                $modele = $page;
-                $data = ['read' => article::readall($dbh), 'user' => $user];
-            }
-            else {
-                header('Location: index.php');
-            }
-            break;
-         case 'del' :
-             if ($role == 3) {
-                 $modele = $page;
-                 $data = ['menu' => article::readTitre($dbh), 'tcomp' => compo::Allcomp($dbh), 'user' => $user];
-             }
-             else {
-                 header('Location: index.php');
-             }
-             break;
-             case 'mod' :
-                if ($role == 3) {
-                    $modele = $page;
-                    if (isset($_POST['coole'])) {
-                       $categorie = $_POST['coole'];
-                    }
-                    
-                    $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user];
-
-                }
-                else {
-                    header('Location: index.php');
-                }
-                break;
+    case 'insertout' :
+        if ($role <= 2) {
+            $modele = $page;
+            $data = ['read' => article::readall($dbh), 'user' => $user];
+        }
+        else {
+            header('Location: index.php');
+        }
+        break;
+     case 'del' :
+         if ($role <= 2) {
+             $modele = $page;
+             $data = ['menu' => article::readTitre($dbh), 'tcomp' => compo::Allcomp($dbh), 'user' => $user];
+         }
+         else {
+             header('Location: index.php');
+         }
+         break;
+    case 'mod' :
+       if ($role <= 2) {
+           $modele = $page;
+           if (isset($_POST['coole'])) {
+              $categorie = $_POST['coole'];
+           }
+            
+           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user]
+       }
+       else {
+           header('Location: index.php');
+       }
+       break;    
+  case 'user' :
+           if ($role == 3) {
+               $modele = $page;
+               deleteuser($dbh);
+               
+               $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
+           }
+           else {
+               header('Location: index.php');
+           }
+           break;
 
 
     default :

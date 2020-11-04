@@ -1,0 +1,15 @@
+{% extends 'baseAdmin.html' %}
+{% block admin %}
+
+{% for utili in utilisateur %}
+    <p>{{ utili.pseudo_user }}  {{ utili.role_user }}
+        <form action="?page=user" method="POST">
+        <button type="submit" name="supprimer_user" value="{{ utili.id_user }}">supprimer</button>
+        <button type="submit" name="lecteur_user" value="{{ utili.id_user }}">Passer lecteur</button>
+        <button type="submit" name="editeur_user" value="{{ utili.id_user }}">Passer Editeur</button>
+        <button type="submit" name="admin_user" value="{{ utili.id_user }}">Passer Admin</button>
+    </form>
+    </p>
+
+{% endfor %}
+{% endblock %}

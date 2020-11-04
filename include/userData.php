@@ -5,6 +5,8 @@ class users {
     public $username;
     public $password;
     public $usermail;
+    public $id;
+    public $roles;
 
 
     function modifierforeg($p, $n, $y) {
@@ -12,6 +14,11 @@ class users {
         $this->password = $n;
         $this->usermail = $y;
     }
+    function modifierfoup($p, $n) {
+        $this->id = $p;
+        $this->roles = $n;
+  
+    } 
 
 
 
@@ -68,4 +75,27 @@ function lecteurmail($dbh){
     $envoie = $mail->fetchAll(PDO::FETCH_CLASS,'users');
     return $envoie;
   
+}
+function afficheuser($dbh){
+    $query = $dbh->prepare("SELECT * FROM User");
+    $query->execute();
+    $user = $query->fetchAll(PDO::FETCH_CLASS,'users');
+    return $user;
+}
+static function deleteunmec($dbh, $users){
+
+        $sql = 'DELETE FROM User WHERE id_user = :id;';
+        $query = $dbh->prepare($sql);
+        $query->bindValue(':id', $users, PDO::PARAM_INT);
+        $query->execute();
+
+}
+function updateuser($dbh) {
+    
+    $sql = 'UPDATE User SET role_user = :roles WHERE id_user = :id;';
+
+    $query = $dbh->prepare($sql);
+    $query->bindValue(':id', $this->roles, PDO::PARAM_INT);
+    $query->bindValue(':id', $this->id, PDO::PARAM_INT);
+    $query->execute();
 }}

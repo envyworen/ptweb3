@@ -39,3 +39,30 @@ function logi($dbh){
 function deco(){
     session_destroy();
 }
+function deleteuser($dbh){
+    if (isset($_POST['supprimer_user'])) {
+         $users = $_POST['supprimer_user'];      
+        users::deleteart($dbh, $users);  
+    }
+}
+}
+function changerole($dbh){
+    if (isset($_POST['lecteur_user'])) {
+         $id = $_POST['lecteur_user'];
+         $roles = 1;      
+        }
+    elseif (isset($_POST['editeur_user'])) {
+        $id = $_POST['editeur_user']; 
+        $roles = 2;    
+    } 
+    elseif (isset($_POST['admin_user'])) {
+        $id = $_POST['admin_user']; 
+        $roles = 3;    
+    }       
+    $caq = new users();
+    
+    $caq->modifierfoup($id, $roles);
+
+    $caq->updateuser($dbh); 
+     
+}
