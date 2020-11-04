@@ -45,7 +45,6 @@ function deleteuser($dbh){
         users::deleteart($dbh, $users);  
     }
 }
-}
 function changerole($dbh){
     if (isset($_POST['lecteur_user'])) {
          $id = $_POST['lecteur_user'];
