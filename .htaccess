@@ -12,6 +12,7 @@ RewriteRule ^admin$ ?page=admin
 RewriteRule ^insert$ ?page=insertout
 RewriteRule ^delete$ ?page=del
 RewriteRule ^update$ ?page=mod
+RewriteRule ^user$ ?page=user
 RewriteRule ^detail-([a-z]+)-([0-9]+)$ ?page=fullarticle&cat=$1&id=$2 [QSA,L]
 
 AuthName "User = prof"
