@@ -43,13 +43,8 @@ function deco(){
 // Supprimer un user
 function deleteuser($dbh){
     if (isset($_POST['supprimer_user'])) {
-<<<<<<< HEAD
-        $users = $_POST['supprimer_user'];      
-        users::deleteuser($dbh, $users);  
-=======
          $users = $_POST['supprimer_user'];      
         users::deleteunmec($dbh, $users);  
->>>>>>> c1b1b18bba8ff4affbe36469b025f5a3964cbc05
     }
 }
 
@@ -66,13 +61,8 @@ function changerole($dbh){
     elseif (isset($_POST['admin_user'])) {
         $id = $_POST['admin_user']; 
         $roles = 3;    
-<<<<<<< HEAD
-    }  
-
-=======
     }
            
->>>>>>> c1b1b18bba8ff4affbe36469b025f5a3964cbc05
     $caq = new users();
     $caq->modifierfoup($id, $roles);
     $caq->updateuser($dbh); 
