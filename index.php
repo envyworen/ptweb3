@@ -137,7 +137,6 @@ switch ($page) {
            header('Location: index.php');
        }
        break;    
-<<<<<<< HEAD
     case 'user' :
         if ($role == 3) {
             $modele = $page;
@@ -149,19 +148,6 @@ switch ($page) {
             header('Location: index.php');
         }
     break;
-=======
-  case 'user' :
-           if ($role == 3) {
-               $modele = $page;
-               deleteuser($dbh);
-               changerole($dbh);
-               $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
-           }
-           else {
-               header('Location: index.php');
-           }
-           break;
->>>>>>> c1b1b18bba8ff4affbe36469b025f5a3964cbc05
 
 
     default :
