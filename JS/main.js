@@ -21,7 +21,7 @@ valider.addEventListener("click", function () {
 
 function modify(n) {
   var textarea = document.createElement("textarea");
-  let elt = n;
+  let elt = n.parentElement;
   elt.appendChild(textarea);
   let enfant = elt.querySelector("p");
   let truc = elt.querySelector("button");
