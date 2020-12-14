@@ -27,6 +27,9 @@ function modify(n) {
   let truc = elt.querySelector("button");
   textarea.innerHTML = enfant.innerHTML;
   console.log(truc);
+  console.log(elt);
+  console.log(enfant);
+  console.log(textarea);
   truc.style.display = "none";
   enfant.style.display = "none";
 }
