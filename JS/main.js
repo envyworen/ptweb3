@@ -23,6 +23,7 @@ function modify(n) {
     let elt = n.parentElement;
   
     let enfant = elt.querySelectorAll(".parag");
+    console.log(enfant);
     let truc = elt.querySelector(".modifier");
     for (let i = 0; i < enfant.length; i++) {
       var textarea = document.createElement("textarea");
@@ -30,8 +31,9 @@ function modify(n) {
       textarea.innerHTML = enfant[i].innerHTML;
       textarea.name = enfant[i].name;
       enfant[i].style.display = "none";
+    
+      console.log(enfant[i].getAttribute('name'));
     }
-    console.log(enfant.getAttribute('name'));
     truc.style.display = "none";
   }
   
