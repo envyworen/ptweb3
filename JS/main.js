@@ -22,7 +22,7 @@ valider.addEventListener("click", function () {
 function modify(n) {
     let elt = n.parentElement;
   
-    let enfant = elt.querySelectorAll("p");
+    let enfant = elt.querySelectorAll(".parag");
     let truc = elt.querySelector(".modifier");
     for (let i = 0; i < enfant.length; i++) {
       var textarea = document.createElement("textarea");
