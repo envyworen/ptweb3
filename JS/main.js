@@ -20,21 +20,17 @@ valider.addEventListener("click", function () {
 // test
 
 function modify(n) {
- 
-  let elt = n.parentElement;
-
-  let enfant = elt.querySelector("p");
-  let truc = elt.querySelector(".modifier");
-  for (let i = 0; i < enfant.length; i++) {
-    var textarea = document.createElement("textarea");
-    elt.appendChild(textarea);
-    textarea.innerHTML = enfant[i].innerHTML;
-    enfant[i].style.display = "none";
+    let elt = n.parentElement;
+  
+    let enfant = elt.querySelectorAll("p");
+    let truc = elt.querySelector(".modifier");
+    for (let i = 0; i < enfant.length; i++) {
+      var textarea = document.createElement("textarea");
+      elt.appendChild(textarea);
+      textarea.innerHTML = enfant[i].innerHTML;
+      enfant[i].style.display = "none";
+    }
+    console.log(truc);
+    truc.style.display = "none";
   }
-  console.log(truc);
-  console.log(elt);
-  console.log(enfant);
-  console.log(textarea);
-  truc.style.display = "none";
-  enfant.style.display = "none";
-}
+  
