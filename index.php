@@ -30,7 +30,7 @@ $return = reg($dbh);
 $feedback = logi($dbh);
 // $compo = compo::selectcomp($dbh, $id);
 // $menu = article::readTitre($dbh);
-
+// test
 //$yes = NULL;
 //if (isset($_POST['coole'])) {
 //    $yes = $_POST['coole'];
