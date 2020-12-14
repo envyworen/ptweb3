@@ -24,7 +24,7 @@ function modify(n) {
   let elt = n.parentElement;
   elt.appendChild(textarea);
   let enfant = elt.querySelector("p");
-  let truc = elt.querySelector("button");
+  let truc = elt.querySelector(".modifier");
   textarea.innerHTML = enfant.innerHTML;
   console.log(truc);
   console.log(elt);
