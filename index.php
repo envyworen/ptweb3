@@ -130,13 +130,14 @@ switch ($page) {
            if (isset($_POST['coole'])) {
               $categorie = $_POST['coole'];
            }
-           if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id']) ) {
+           var_dump($_POST);
+           if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id'])) {
             $titre = $_POST['titre'];
             $chap = $_POST['chap'];
             $auteur = $_POST['auteur'];
             $para = $_POST['para'];
             $id = $_POST['id'];
-            var_dump($_POST);
+            
          }
             
            $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user];
