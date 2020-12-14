@@ -31,7 +31,7 @@ function modify(n) {
       textarea.name = enfant[i].name;
       enfant[i].style.display = "none";
     }
-    console.log(truc);
+    console.log(enfant.name);
     truc.style.display = "none";
   }
   
