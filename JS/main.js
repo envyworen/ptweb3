@@ -20,12 +20,17 @@ valider.addEventListener("click", function () {
 // test
 
 function modify(n) {
-  var textarea = document.createElement("textarea");
+ 
   let elt = n.parentElement;
-  elt.appendChild(textarea);
+
   let enfant = elt.querySelector("p");
   let truc = elt.querySelector(".modifier");
-  textarea.innerHTML = enfant.innerHTML;
+  for (let i = 0; i < enfant.length; i++) {
+    var textarea = document.createElement("textarea");
+    elt.appendChild(textarea);
+    textarea.innerHTML = enfant[i].innerHTML;
+    enfant[i].style.display = "none";
+  }
   console.log(truc);
   console.log(elt);
   console.log(enfant);
