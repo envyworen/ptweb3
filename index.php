@@ -132,7 +132,7 @@ switch ($page) {
            }
            if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id'])) {
             update_art($dbh);
-            var_dump($_POST['type']);
+            
             
          }
             

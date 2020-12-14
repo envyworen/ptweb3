@@ -82,7 +82,7 @@ function update_art($dbh)
                                            $repertoireDestination.$nomDestination)) {}}}
         $dossier = NULL;
         $caq = new article();
-        $caq->updatearticle($titre, $chap, $dossier, $para, $titre, $auteur, $id_art_up);
+        $caq->updatearticle($h1, $chap, $dossier, $para, $titre, $auteur, $id);
         $caq->updateart($dbh);   
     }
 
