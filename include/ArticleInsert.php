@@ -53,13 +53,12 @@ function insert_art($dbh)
 // Modifier un artcile
 function update_art($dbh)
 {
-    if(isset($_POST['up'])){
-        $h1 = $_POST['h1_art'];
-        $chap = $_POST['chap_art'];
-        $auteur = $_POST['auteur_art'];
-        $para = $_POST['para_art'];
-        $titre = $_POST['titre'];
-        $id_art_up = $_POST['id_art_update'];
+        $h1 = $_POST['titre'];
+        $titre = $_POST['type'];
+        $chap = $_POST['chap'];
+        $auteur = $_POST['auteur'];
+        $para = $_POST['para'];
+        $id = $_POST['id'];
         if (!empty($_POST['monfichier'])) {
             $nomOrigine = $_FILES['monfichier']['name'];
             $elementsChemin = pathinfo($nomOrigine);
@@ -83,10 +82,10 @@ function update_art($dbh)
                                            $repertoireDestination.$nomDestination)) {}}}
         $dossier = NULL;
         $caq = new article();
-        $caq->updatearticle($h1, $chap, $dossier, $para, $titre, $auteur, $id_art_up);
+        $caq->updatearticle($titre, $chap, $dossier, $para, $titre, $auteur, $id_art_up);
         $caq->updateart($dbh);   
     }
-}
+
 
 // Supprimer un artcile
 function article_delete($dbh){

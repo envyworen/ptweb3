@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 if (isset($_POST['deco'])) {
     deco();
 }
-update_art($dbh);
+
 update_comp($dbh);
 insert_art($dbh);
 compo_insert($dbh);
@@ -130,14 +130,9 @@ switch ($page) {
            if (isset($_POST['coole'])) {
               $categorie = $_POST['coole'];
            }
-           var_dump($_POST);
            if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id'])) {
-            var_dump($_POST);
-            $titre = $_POST['titre'];
-            $chap = $_POST['chap'];
-            $auteur = $_POST['auteur'];
-            $para = $_POST['para'];
-            $id = $_POST['id'];
+            update_art($dbh);
+            var_dump($_POST['type']);
             
          }
             
