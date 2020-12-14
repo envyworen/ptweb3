@@ -132,6 +132,7 @@ switch ($page) {
            }
            var_dump($_POST);
            if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id'])) {
+            var_dump($_POST);
             $titre = $_POST['titre'];
             $chap = $_POST['chap'];
             $auteur = $_POST['auteur'];
