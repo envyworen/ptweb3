@@ -29,10 +29,10 @@ function modify(n) {
       var textarea = document.createElement("textarea");
       elt.appendChild(textarea);
       textarea.innerHTML = enfant[i].innerHTML;
-      textarea.name = enfant[i].name;
+      textarea.name = enfant[i].getAttribute('name');
       enfant[i].style.display = "none";
     
-      console.log(enfant[i].getAttribute('name'));
+      console.log();
     }
     truc.style.display = "none";
   }
