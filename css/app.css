@@ -298,6 +298,8 @@ html {
           justify-content: center;
   min-height: 100vh;
   z-index: 99;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 .blocktest {
