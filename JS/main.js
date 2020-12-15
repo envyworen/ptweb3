@@ -60,6 +60,7 @@ function modify(n) {
   }
   
 function modifycomp(n) {
+  let elt = n.parentElement;
   let select = document.createElement("select");
   elt.appendChild(select);
 
@@ -70,7 +71,6 @@ function modifycomp(n) {
     select.appendChild(option);
   });
 
-  let elt = n.parentElement;
   let enfant = elt.querySelectorAll(".parag");
   let type = elt.querySelector(".type");
   let truc = elt.querySelector(".modifier");
