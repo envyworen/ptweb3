@@ -1,4 +1,4 @@
-let elt = document.querySelector(".le-text");
+let elt = document.querySelector(".text");
 let elt2 = document.querySelector("#canvas");
 document.getElementById("button").addEventListener("click", function () {
   elt2.style.opacity = "0";
