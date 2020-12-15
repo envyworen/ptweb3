@@ -139,8 +139,8 @@ switch ($page) {
             update_art($dbh);
             
          }
-            
-           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh), 'comp' => compo::ReadOne($dbh, $id_comp)];
+           $json = json_encode('titre' => article::readTitre($dbh)); 
+           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh), 'comp' => compo::ReadOne($dbh, $id_comp), 'json' => $json];
        }
        else {
            header('Location: index.php');

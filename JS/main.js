@@ -59,3 +59,35 @@ function modify(n) {
     type.style.display = "none";
   }
   
+function modifycomp(n) {
+  let select = document.createElement("select");
+  elt.appendChild(select);
+
+  tableau.forEach(function(comp){
+    let option = document.createElement("option");
+    option.value = comp.id_art
+    option.innerHTML = comp.h1_art
+    select.appendChild(option);
+  });
+
+  let elt = n.parentElement;
+  let enfant = elt.querySelectorAll(".parag");
+  let type = elt.querySelector(".type");
+  let truc = elt.querySelector(".modifier");
+  select.name = "type";
+  for (let i = 0; i < enfant.length; i++) {
+    var textarea = document.createElement("textarea");
+    elt.appendChild(textarea);
+    textarea.innerHTML = enfant[i].innerHTML;
+    textarea.name = enfant[i].getAttribute('name');
+    enfant[i].style.display = "none";
+    console.log();
+  }
+
+  select.appendChild(inconcevable);
+  select.appendChild(surveillance);
+  select.appendChild(profils);
+  select.appendChild(silence);
+  truc.style.display = "none";
+  type.style.display = "none";
+}
