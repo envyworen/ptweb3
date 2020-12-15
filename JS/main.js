@@ -64,7 +64,7 @@ function modifycomp(n) {
   let select = document.createElement("select");
   elt.appendChild(select);
 
-  tableau.forEach(function(comp){
+  Tableau.forEach(function(comp){
     let option = document.createElement("option");
     option.value = comp.id_art
     option.innerHTML = comp.h1_art
