@@ -300,7 +300,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 200vh;
+  height: 200vh;
 }
 
 .zoom {
