@@ -139,7 +139,7 @@ switch ($page) {
             update_art($dbh);
             
          }
-         var_dump($_POST);
+   
          if (isset($_POST['st_comp']) && isset($_POST['id_art']) && isset($_POST['id_comp_update'])) {
              update_comp($dbh);
         }
