@@ -1,6 +1,5 @@
-let maison = document.querySelector(".maison");
-let blocktest = document.querySelector(".blocktest");
-maison.style.display = "none";
+let body = document.querySelector(".le_body");
+body.style.overflow = "hidden";
 let elt = document.querySelector(".text");
 let elt2 = document.querySelector("#canvas");
 document.getElementById("button").addEventListener("click", function () {
@@ -13,9 +12,8 @@ document.getElementById("button").addEventListener("click", function () {
 
 let test = document.querySelector(".zoom");
 elt.addEventListener("transitionend", () => {
-  maison.style.display = "flex";
-  blocktest.style.opacity = "1";
   document.querySelector(".index").style.display = "none";
+  body.style.overflow = "auto";
   test.style.display = "inline";
   test.style.opacity = "1";
   test.style.transform = "scale(1)";
