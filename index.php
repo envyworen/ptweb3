@@ -85,9 +85,33 @@ switch ($page) {
         $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user];
       break;
     case 'fullarticle' :
-      $modele = $page;
-      $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
-      break;
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+
+    
+    case 'justifier' :
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+    case 'les-profils' :
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+    case 'passe-sous-silence' :
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+    case 'rapport-de-force' :
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+    case 'sous-surveillance' :
+        $modele = $page;
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+    break;
+
+
     case 'login' :
       $modele = $page;
       $data = ['feedback' => $feedback, 'user' => $user];

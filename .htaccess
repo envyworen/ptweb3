@@ -8,6 +8,15 @@ RewriteRule ^silence$ ?page=namearticle&cat=silence
 RewriteRule ^surveillance$ ?page=namearticle&cat=surveillance
 RewriteRule ^connexion$ ?page=login
 RewriteRule ^inscription$ ?page=register
+
+
+RewriteRule ^justifier$ ?page=justifier
+RewriteRule ^les-profils$ ?page=les-profils
+RewriteRule ^passe-sous-silence$ ?page=passe-sous-silence
+RewriteRule ^rapport-de-force$ ?page=rapport-de-force
+RewriteRule ^sous-surveillance$ ?page=sous-surveillance
+
+
 RewriteRule ^admin$ ?page=admin
 RewriteRule ^insert$ ?page=insertout
 RewriteRule ^delete$ ?page=del
