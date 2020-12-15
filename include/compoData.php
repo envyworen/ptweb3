@@ -51,6 +51,7 @@ class compo{
         $this->id_comp = $f;
     }
 
+    // Créer une compo
     function createcomp($dbh) {
 
         $sql = 'INSERT INTO Compo (st_comp, texte_comp, media_comp, citation_comp, auteur_comp, id_art) VALUES (:st, :texte, :media_comp, :citation_comp, :auteur_comp, :id_art);';
@@ -66,6 +67,8 @@ class compo{
         $query->bindValue(':id_art', $this->art, PDO::PARAM_INT);
         $query->execute();    
     }
+
+    // Modifier une compo
     function updatecomp($dbh) {
     
         $sql = 'UPDATE Compo SET st_comp = :st , texte_comp = :texte, media_comp = :media_comp, auteur_comp = :auteur_comp, citation_comp = :citation_comp, id_art = :id_art WHERE id_comp = :id;';
@@ -80,6 +83,8 @@ class compo{
         $query->bindValue(':id', $this->id_comp, PDO::PARAM_INT);
         $query->execute();
     }
+
+    // Supprimer une compo
     static function deletecomp($dbh, $id_comp) {
         $sql = 'DELETE FROM Compo WHERE id_comp = :id;';
         $query = $dbh->prepare($sql);

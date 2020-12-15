@@ -18,56 +18,20 @@
 <p class="parag">{{ type.titre_art }}</p>
 <button class="modifier">Modifier</button>
 <button class="valider">Valider</button>
-
 {% endfor %}
-    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Formulaire modifier un article -->
+<form> 
     <fieldset>
         <legend>Modifier un artcile</legend>
         <select name="titre" id="">
             {% for row in read %}         
-            <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
+                <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
             {% endfor %}
         </select>
         <select name="id_art_update" id="">
             {% for row in menu %}
-            <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+                <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
             {% endfor %}
         </select>
         <input type="hidden" name="MAX_FILE_SIZE" value="4000000" />
@@ -78,12 +42,7 @@
         <label>Auteur de l'image / vidéo</label><input type="text" name="auteur_art">
         <textarea name="para_art" id="" cols="30" rows="10"></textarea>
 <!-- Formulaire update composition -->
-        
-
-
-
-
-<legend>Modifier votre composition</legend>
+    <legend>Modifier votre composition</legend>
         <select name="" id=""><option value=""></option></select>
         <input type="hidden" name="MAX_FILE_SIZE" value="4000000" />
         <label>Transfèrer le fichier </label>
@@ -94,12 +53,13 @@
         <label>Nom de l'auteur de l'article</label> <input type="text" name="auteur_comp">
         <select name="id_art" id="">
             {% for row in menu %}
-            <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+                <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
             {% endfor %}
         </select>
+
         <select name="id_art" id="">
             {% for row in menu %}
-            <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+                <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
             {% endfor %}
         </select>
     </fieldset>

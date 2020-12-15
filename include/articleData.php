@@ -26,6 +26,7 @@ class article {
         $this->auteur = $a;
         $this->id_art_up = $b;
     }
+
 // Inserer des éléments dans la table Article
     function createart($dbh) {
         
@@ -45,20 +46,20 @@ class article {
     }
 
 // Afficher les articles
-function updateart($dbh) {
-    
-    $sql = 'UPDATE Article SET h1_art = :h1 , chap_art = :chap, media_art = :media, para_art = :para, titre_art = :titre, auteur_art = :auteur WHERE id_art = :id;';
+    function updateart($dbh) {
+        
+        $sql = 'UPDATE Article SET h1_art = :h1 , chap_art = :chap, media_art = :media, para_art = :para, titre_art = :titre, auteur_art = :auteur WHERE id_art = :id;';
 
-    $query = $dbh->prepare($sql);
-    $query->bindValue(':h1', $this->h1, PDO::PARAM_STR);
-    $query->bindValue(':chap', $this->chap, PDO::PARAM_STR);
-    $query->bindValue(':media', $this->dossier, PDO::PARAM_STR);
-    $query->bindValue(':para', $this->para, PDO::PARAM_STR);
-    $query->bindValue(':titre', $this->titre, PDO::PARAM_STR);
-    $query->bindValue(':auteur', $this->auteur, PDO::PARAM_STR);
-    $query->bindValue(':id', $this->id_art_up, PDO::PARAM_INT);
-    $query->execute();
-}
+        $query = $dbh->prepare($sql);
+        $query->bindValue(':h1', $this->h1, PDO::PARAM_STR);
+        $query->bindValue(':chap', $this->chap, PDO::PARAM_STR);
+        $query->bindValue(':media', $this->dossier, PDO::PARAM_STR);
+        $query->bindValue(':para', $this->para, PDO::PARAM_STR);
+        $query->bindValue(':titre', $this->titre, PDO::PARAM_STR);
+        $query->bindValue(':auteur', $this->auteur, PDO::PARAM_STR);
+        $query->bindValue(':id', $this->id_art_up, PDO::PARAM_INT);
+        $query->execute();
+    }
     static function readType($dbh, $categorie) {
         $sql= 'SELECT * FROM Article WHERE titre_art = :valeur
         ORDER BY titre_art';
