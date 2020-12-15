@@ -74,7 +74,7 @@ function modifycomp(n) {
   let enfant = elt.querySelectorAll(".parag");
   let type = elt.querySelector(".type");
   let truc = elt.querySelector(".modifier");
-  select.name = "type";
+  select.name = "id_art";
   for (let i = 0; i < enfant.length; i++) {
     var textarea = document.createElement("textarea");
     elt.appendChild(textarea);
