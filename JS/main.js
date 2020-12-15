@@ -84,10 +84,6 @@ function modifycomp(n) {
     console.log();
   }
 
-  select.appendChild(inconcevable);
-  select.appendChild(surveillance);
-  select.appendChild(profils);
-  select.appendChild(silence);
   truc.style.display = "none";
   type.style.display = "none";
 }
