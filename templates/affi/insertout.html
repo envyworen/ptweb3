@@ -24,7 +24,7 @@
     </form>
     <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post">
         <select name="id_art" id="">
-            {% for row in read %}         
+            {% for row in titre %}         
             <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
             {% endfor %}
         </select>
@@ -34,6 +34,6 @@
           {% include 'insertcomp.html' %}
           {% endfor %}  #}
        
-          <button type="submit" name="comp">Inserer l'article</button>
+          <button type="submit" name="comp">Inserer la compo</button>
     </form>
 {% endblock %}

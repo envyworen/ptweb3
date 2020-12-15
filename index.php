@@ -109,7 +109,7 @@ switch ($page) {
     case 'insertout' :
         if ($role >= 2) {
             $modele = $page;
-            $data = ['read' => article::readall($dbh), 'user' => $user];
+            $data = ['read' => article::readall($dbh), 'user' => $user, 'titre' => article::readTitre($dbh)];
             compo_insert($dbh);
         
         }
