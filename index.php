@@ -139,7 +139,7 @@ switch ($page) {
             update_art($dbh);
             
          }
-           $json = json_encode('titre' => article::readTitre($dbh)); 
+           $json = json_encode(article::readTitre($dbh)); 
            $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh), 'comp' => compo::ReadOne($dbh, $id_comp), 'json' => $json];
        }
        else {
