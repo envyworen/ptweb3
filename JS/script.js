@@ -1,3 +1,5 @@
+let maison = document.querySelector(".maison");
+maison.style.display = "none";
 let elt = document.querySelector(".text");
 let elt2 = document.querySelector("#canvas");
 document.getElementById("button").addEventListener("click", function () {
@@ -6,10 +8,12 @@ document.getElementById("button").addEventListener("click", function () {
   elt.style.transform = "scale(0)";
 });
 
+
 let test = document.querySelector(".zoom");
 elt.addEventListener("transitionend", () => {
   document.querySelector(".index").style.display = "none";
   test.style.display = "inline";
   test.style.opacity = "1";
   test.style.transform = "scale(1)";
+  maison.style.display = "flex";
 });
