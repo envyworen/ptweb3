@@ -132,12 +132,15 @@ switch ($page) {
            if (isset($_POST['coole'])) {
               $categorie = $_POST['coole'];
            }
+           if (isset($_POST['comp'])) {
+              $id_comp = $_POST['comp'];
+         }
            if (isset($_POST['titre']) && isset($_POST['chap']) && isset($_POST['auteur']) && isset($_POST['para']) && isset($_POST['id'])) {
             update_art($dbh);
             
          }
             
-           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user];
+           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh)], 'comp' => compo::ReadOne($dbh, $id_comp);
        }
        else {
            header('Location: index.php');
