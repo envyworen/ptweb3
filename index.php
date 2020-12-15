@@ -140,7 +140,7 @@ switch ($page) {
             
          }
             
-           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh)], 'comp' => compo::ReadOne($dbh, $id_comp);
+           $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh), 'comp' => compo::ReadOne($dbh, $id_comp)];
        }
        else {
            header('Location: index.php');
