@@ -282,7 +282,7 @@ footer {
 
 .maison {
   opacity: 1;
-  height: 100vh;
+  height: 100%;
   z-index: 99;
 }
 
