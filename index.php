@@ -21,7 +21,7 @@ if (isset($_POST['deco'])) {
     deco();
 }
 
-update_comp($dbh);
+
 insert_art($dbh);
 
 compo_delete($dbh);
@@ -139,6 +139,9 @@ switch ($page) {
             update_art($dbh);
             
          }
+         if (isset($_POST['st_comp']) && isset($_POST['id_art']) && isset($_POST['id_comp_update'])) {
+             update_comp($dbh);
+        }
            $json = json_encode(article::readTitre($dbh)); 
            $data = ['list' => article::readType($dbh, $categorie), 'read' => article::readall($dbh), 'user' => $user, 'tcomp' => compo::Allcomp($dbh), 'comp' => compo::ReadOne($dbh, $id_comp), 'json' => $json];
        }

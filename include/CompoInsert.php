@@ -41,7 +41,7 @@ function compo_insert($dbh){
         
 }
 function update_comp($dbh){
-    if (isset($_POST['sqfup'])){
+
 
         $st = $_POST['st_comp'];
         $text = $_POST['texte_comp'];
@@ -80,7 +80,7 @@ function update_comp($dbh){
         
             $insert->updatecomp($dbh);
         }
-}
+
 // Supprimer une composition
 function compo_delete($dbh){
     if (

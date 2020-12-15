@@ -10,13 +10,13 @@
 {% for compo in comp %}
 <fieldset>
     <form action="?page=mod" method="post">
-        <h2 class="parag" name="titre">{{ compo.st_comp }} </h2> 
-        <p class="parag" name="chap">{{ compo.citation_comp }}</p> 
-        <p class="parag" name="auteur">{{ compo.auteur_comp }}</p>
-        <p class="parag" name="para">{{ compo.texte_comp }}</p>
-        <p class="type" name="para">{{ compo.id_art }}</p>
+        <h2 class="parag" name="st_comp">{{ compo.st_comp }} </h2> 
+        <p class="parag" name="citation_comp">{{ compo.citation_comp }}</p> 
+        <p class="parag" name="auteur_comp">{{ compo.auteur_comp }}</p>
+        <p class="parag" name="texte_comp">{{ compo.texte_comp }}</p>
+        <p class="type" name="id_art">{{ compo.id_art }}</p>
         <span class="modifier" onclick="modifycomp(this)" >Modifier</span>
-        <button class="valider" name="id" value="{{ compo.id_comp }}" >Valider</button>
+        <button class="valider" name="id_comp_update" value="{{ compo.id_comp }}" >Valider</button>
         </form>
 </fieldset>
 {% endfor %}
