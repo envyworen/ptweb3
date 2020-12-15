@@ -2,7 +2,6 @@
 // Inserer une composition
 function compo_insert($dbh){
     if (isset($_POST['comp'])){
-        var_dump($_POST);
         $st = $_POST['st_comp'];
         $text = $_POST['texte_comp'];
         $autcomp = $_POST['auteur_comp'];
