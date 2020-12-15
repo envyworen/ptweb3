@@ -190,6 +190,12 @@ footer {
   width: 100%;
 }
 
+.block-justifier {
+  background-color: #0f0f0f;
+  padding: 0;
+  margin: 0;
+}
+
 .titre-compo {
   color: white;
   font-family: sans-serif;
