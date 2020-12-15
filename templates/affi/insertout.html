@@ -8,7 +8,6 @@
         <option value="3">3</option>
     </select>
     <input type="submit"> -->
-</form>
     <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post">
         <select name="titre" id="">
             {% for row in read %}         
@@ -22,5 +21,19 @@
         {% endfor %}  #}
      
         <button type="submit" name="valide">Inserer l'article</button>
+    </form>
+    <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post">
+        <select name="id_art" id="">
+            {% for row in read %}         
+            <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+            {% endfor %}
+        </select>
+        {% include 'inscomp.html' %}
+        {# {% for i in 1.. compte %}
+              
+          {% include 'insertcomp.html' %}
+          {% endfor %}  #}
+       
+          <button type="submit" name="comp">Inserer l'article</button>
     </form>
 {% endblock %}

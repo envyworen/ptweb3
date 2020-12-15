@@ -23,7 +23,7 @@ if (isset($_POST['deco'])) {
 
 update_comp($dbh);
 insert_art($dbh);
-compo_insert($dbh);
+
 compo_delete($dbh);
 article_delete($dbh);
 $return = reg($dbh);
@@ -110,6 +110,8 @@ switch ($page) {
         if ($role >= 2) {
             $modele = $page;
             $data = ['read' => article::readall($dbh), 'user' => $user];
+            compo_insert($dbh);
+        
         }
         else {
             header('Location: index.php');
