@@ -298,8 +298,6 @@ html {
           justify-content: center;
   min-height: 100vh;
   z-index: 99;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
 }
 
 .blocktest {
@@ -313,6 +311,8 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .zoom {

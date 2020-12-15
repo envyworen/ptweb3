@@ -65,13 +65,13 @@ html {
   justify-content: center;
   min-height: 100vh;
   z-index: 99;
-  transition: all 0.25s ease;
 }
 .blocktest {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100%;
+  transition: all 1s ease;
 }
 .zoom {
   font-family: sans-serif;
