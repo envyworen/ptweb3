@@ -22,12 +22,13 @@ class compo{
         $comp = $query -> fetchall(PDO :: FETCH_CLASS, 'compo');
         return $comp;
     }
-    static  function ReadOne($dbh, $id) {
+    static  function ReadOne($dbh, $id_comp) {
+        var_dump($id_comp);
         $sql = 'SELECT *
         FROM Compo
         WHERE id_comp = :valeur';
         $query = $dbh -> prepare($sql);
-        $query->bindValue (':valeur', $id, PDO::PARAM_INT);
+        $query->bindValue (':valeur', $id_comp, PDO::PARAM_INT);
         $query->execute();
         $comp = $query -> fetchall(PDO :: FETCH_CLASS, 'compo');
         return $comp;
