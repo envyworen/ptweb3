@@ -41,7 +41,7 @@ function compo_insert($dbh){
         
 }
 function update_comp($dbh){
-
+        var_dump($_POST);
 
         $st = $_POST['st_comp'];
         $text = $_POST['texte_comp'];
