@@ -23,7 +23,6 @@ class compo{
         return $comp;
     }
     static  function ReadOne($dbh, $id_comp) {
-        var_dump($id_comp);
         $sql = 'SELECT *
         FROM Compo
         WHERE id_comp = :valeur';
