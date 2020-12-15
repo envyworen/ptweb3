@@ -1,5 +1,94 @@
-
-{% extends 'base.html' %}
-    {% block main %}
-        <h1>{{ titre }}</h1>
-    {% endblock %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+    <title>Violence</title>
+</head>
+{% block main %}
+<body class="le_body">
+    <div class="index">
+        <div class="tout">
+        <div class="text">
+            <div class="opacity">
+            <div class="padd">
+                <h1 class="title">AUTEURS DE VIOLENCES SEXUELLES,</h1>
+                <p>EXPLORATION D'UN TERRITOIRE MÉCONNU</p>
+            </div>
+            </div>
+            <button id="button">Entrer dans l'enquête</button>
+        </div>
+        <canvas id="canvas"> </canvas>
+        </div>
+    </div>
+    <div class="home">
+        <div class="blocktest">
+        <div class="zoom">
+            <div class="article">
+            <section class="sec1">
+                <div>
+                <h1>Sous surveillance</h1>
+                </div>
+                <a href="affi/categorie/sous-surveillance.html" class="boule">
+                <span><p>
+                    Comment éviter un maximum les gens à devenir 
+                    des auteurs de violences sexuelles et comment les 
+                    juger une fois le cap passé ?
+                </p></span>
+                </a>
+            </section>
+            <section class="sec2">
+                <div>
+                <h1>Rapports de force</h1>
+                </div>
+                <a href="affi/categorie/rapport-de-force.html" class="boule">
+                <span><p>
+                    Quelles sont les principales raisons qui 
+                    donnent naissance à des auteurs de violences 
+                    sexuelles ?
+                </p></span>
+                </a>
+            </section>
+            <section class="sec3">
+                <div>
+                <h1>Passé sous silence</h1>
+                </div>
+                <a href="affi/categorie/passe-sous-silence.html" class="boule">
+                <span><p>
+                    Comment les femmes peuvent-elles briser le 
+                    silence et parler de leurs aggressions ?
+                </p></span>
+                </a>
+            </section>
+            <section class="sec4">
+                <div>
+                <h1>Justifier l'inconcevable</h1>
+                </div>
+                <a href="affi/categorie/justifier-l'inconcevable.html" class="boule">
+                <span><p>
+                    Voici les motifs de viol selon les auteurs 
+                    de violences sexuelles.
+                </p></span>
+                </a>
+            </section>
+            <section class="sec5">
+                <div>
+                <h1>Profils</h1>
+                </div>
+                <a href="affi/categorie/profils.html" class="boule">
+                <span><p>
+                    Quelles sont les personnes prospices à devenir des 
+                    auteurs de violences sexuelles ?
+                </p></span>
+                </a>
+            </section>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="JS/canvas.js"></script>
+    <script type="text/javascript" src="JS/script.js"></script>
+</body>
+{% endblock %}
