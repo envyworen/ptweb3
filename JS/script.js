@@ -11,9 +11,9 @@ document.getElementById("button").addEventListener("click", function () {
 
 let test = document.querySelector(".zoom");
 elt.addEventListener("transitionend", () => {
+  maison.style.display = "flex";
   document.querySelector(".index").style.display = "none";
   test.style.display = "inline";
   test.style.opacity = "1";
   test.style.transform = "scale(1)";
-  maison.style.display = "flex";
 });
