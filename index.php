@@ -147,7 +147,7 @@ switch ($page) {
         if ($role == 3) {
             $modele = $page;
             deleteuser($dbh);
-            changerole($dbh)
+            changerole($dbh);
             $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
         }
         else {
