@@ -140,6 +140,7 @@ switch ($page) {
             
          }
          if (isset($_POST['st_comp']) && isset($_POST['id_art']) && isset($_POST['id_comp_update'])) {
+             var_dump($_POST);
              update_comp($dbh);
         }
            $json = json_encode(article::readTitre($dbh)); 
