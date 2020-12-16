@@ -249,7 +249,7 @@ html {
   padding: 15px;
 }
 
-.title, p {
+.title, .desc-titre {
   color: white;
   font-family: sans-serif;
 }
