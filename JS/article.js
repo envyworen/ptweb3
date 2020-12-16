@@ -26,7 +26,7 @@ articles.forEach(function(article) {
     
   });
 
-let liens = querySelectorAll(".boule");
+let liens = document.querySelectorAll(".boule");
 
 for (var i = 0; i < liens.length; i++) {
   liens[0].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-inconcevable-12";
