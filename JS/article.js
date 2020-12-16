@@ -5,7 +5,7 @@ articles.forEach(function(article) {
       return Math.floor(Math.random() * (max - min)) + min;
     }
     
-    let link = createElement("a");
+    let link = document.createElement("a");
     link.classList.add("boule");
     link.style.marginTop = getRandomInt(20, 230)+"px";
     link.style.marginLeft = getRandomInt(20, 230)+"px";
