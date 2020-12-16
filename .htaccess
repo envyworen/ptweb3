@@ -10,11 +10,11 @@ RewriteRule ^connexion$ ?page=login
 RewriteRule ^inscription$ ?page=register
 
 
-RewriteRule ^justifier$ ?page=justifier
-RewriteRule ^les-profils$ ?page=les-profils
-RewriteRule ^passe-sous-silence$ ?page=passe-sous-silence
-RewriteRule ^rapport-de-force$ ?page=rapport-de-force
-RewriteRule ^sous-surveillance$ ?page=sous-surveillance
+RewriteRule ^justifier$ ?page=justifier&choice=inconcevable
+RewriteRule ^les-profils$ ?page=les-profils&choice=profils
+RewriteRule ^passe-sous-silence$ ?page=passe-sous-silence&choice=silence
+RewriteRule ^rapport-de-force$ ?page=rapport-de-force&choice=force
+RewriteRule ^sous-surveillance$ ?page=sous-surveillance&choice=surveillance
 
 
 RewriteRule ^admin$ ?page=admin

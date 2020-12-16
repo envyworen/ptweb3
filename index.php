@@ -92,23 +92,38 @@ switch ($page) {
     
     case 'justifier' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        if (isset($_GET['choice'])) {
+            $categorie = $_GET['choice'];
+        }
+        $data = ['list' =>  json_encode(article::readType($dbh, $categorie))];
     break;
     case 'les-profils' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        if (isset($_GET['choice'])) {
+            $categorie = $_GET['choice'];
+        }
+        $data = ['list' => json_encode(article::readType($dbh, $categorie))];
     break;
     case 'passe-sous-silence' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        if (isset($_GET['choice'])) {
+            $categorie = $_GET['choice'];
+        }
+        $data = ['list' => json_encode(article::readType($dbh, $categorie))];
     break;
     case 'rapport-de-force' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        if (isset($_GET['choice'])) {
+            $categorie = $_GET['choice'];
+        }
+        $data = ['list' => json_encode(article::readType($dbh, $categorie))];
     break;
     case 'sous-surveillance' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        if (isset($_GET['choice'])) {
+            $categorie = $_GET['choice'];
+        }
+        $data = ['list' => json_encode(article::readType($dbh, $categorie))];
     break;
 
 
