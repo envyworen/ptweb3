@@ -7,8 +7,8 @@ articles.forEach(function(article) {
     
     let link = document.createElement("a");
     link.classList.add("boule");
-    link.style.marginTop = getRandomInt(2, 50)+"%";
-    link.style.marginLeft = getRandomInt(2, 50)+"%";
+    link.style.marginTop = getRandomInt(2, 70)+"%";
+    link.style.marginLeft = getRandomInt(2, 55)+"%";
 
     let point = document.createElement("span");
     link.appendChild(point);
@@ -18,8 +18,8 @@ articles.forEach(function(article) {
 
     let tous = document.querySelector(".tous");
     let block = document.createElement("div");
-    block.style.width = "15rem";
-    block.style.height = "15rem";
+    block.style.width = "20rem";
+    block.style.height = "20rem";
     block.appendChild(link);
     tous.appendChild(block);
     
