@@ -8,7 +8,7 @@ articles.forEach(function(article) {
   let link = document.createElement("a");
   link.classList.add("boule");
   link.style.marginTop = getRandomInt(2, 70)+"%";
-  link.style.marginLeft = getRandomInt(2, 55)+"%";
+  link.style.marginLeft = getRandomInt(2, 95)+"%";
 
   let point = document.createElement("span");
   link.appendChild(point);
