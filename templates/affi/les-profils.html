@@ -4,15 +4,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/app.css">
 	<link rel="stylesheet" href="../css/lightbox.css">
-    <title>Violence</title>
+    <title>Profils</title>
 </head>
 
 <body>
     <main class="block-justifier">
         <h1 class="titre-compo">Profils</h1>
-        <div>
-        
+        <script>
+            let articles = {{ list | raw }};
+        </script>
+        <div class="tous">
+            
         </div>
     </main>
+    <script type="text/javascript" src="../JS/profils.js"></script>
 </body>
 </html>
