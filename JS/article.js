@@ -7,14 +7,13 @@ articles.forEach(function(article) {
     
     let tous = document.querySelector(".tous");
     let block = document.createElement("div");
-    block.style.width = "150px";
-    block.style.height = "150px";
+    block.style.width = "250px";
+    block.style.height = "250px";
     block.style.backgroundColor = "green";
     tous.appendChild(block);
     
     let point = document.createElement("span");
-    point.style.position = "absolute";
-    point.style.top = getRandomInt(0, 100)+"px";
-    point.style.left = getRandomInt(0, 100)+"px";
+    point.style.marginTop = getRandomInt(0, 200)+"px";
+    point.style.marginLeft = getRandomInt(0, 200)+"px";
     block.appendChild(point);
   });
