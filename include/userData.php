@@ -59,7 +59,7 @@ static function login($dbh, $username, $password)
            $role = $result['role_user'];
             $_SESSION['user'] = $username;
             $_SESSION['role'] = $role;
-             header('Location: '. $_SERVER['HTTP_REFERER']);
+             header('Location: surveillance');
         } else {
             $feedback = "Le mot de passe est incorrect ";
         }
