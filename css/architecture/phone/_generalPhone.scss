@@ -1,0 +1,60 @@
+//variables
+$haut: 3rem;
+$left: 7rem;
+$right: 7rem;
+$backcolor: rgb(29, 29, 29);
+$fontcolor: whitesmoke;
+$blood: rgb(155, 0, 0);
+$p: 20pt;
+$h3: 20pt;
+$h2: 15pt;
+$h1: 30pt;
+$flexswitch: flex;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background-color: $backcolor;
+
+}
+
+h1{
+    font-size: $h1;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: $h2;
+}
+
+h3{
+    font-size: $h3;
+}
+
+p{
+    font-size: $p;
+}
+
+h1, h3{
+    font-family: "Quick";
+    color: $fontcolor;
+}
+
+p, h2 {
+    font-family: Balham;
+    color: $fontcolor;
+}
+
+i{
+    font-size: 40pt !important;
+}
+
+a{
+    text-decoration: none;
+    color: $fontcolor !important;
+    font-size: 20pt;
+}

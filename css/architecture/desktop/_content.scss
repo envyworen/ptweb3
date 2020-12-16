@@ -1,0 +1,144 @@
+//images
+.picture{
+    width: 80vw;
+}
+.div-img{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+//text descriptifs
+
+.desc-img{
+    margin-top: 3rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.description{
+    width: 80vw;
+}
+//articles
+
+article{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+//contenu écris
+
+    //left
+
+.para-left{
+    margin-top: 5vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 5vh;
+}
+
+.left-content{
+    width: 60vw;
+    text-align: left;
+    margin-left: $left;
+}
+
+    //right
+
+.para-right{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.right-content{
+    width: 60vw;
+    text-align: right;
+    margin-right: $right;
+}
+
+//auteurs
+
+.auteur{
+   width: 100vw;
+   display: flex;
+   justify-content: flex-end;
+   margin-bottom: 3rem;
+}
+
+.auteur p {
+    margin-right: $right;
+}
+
+
+
+//flèche
+
+a i{
+    width: 50rem;
+}
+
+
+
+//swipe article
+
+.swipe-article{
+    width: 100vw;
+    display: flex;
+    flex-direction: row; // switch responsive
+}
+
+
+.border{
+    margin: 0;
+    padding: 0;
+    width: 40vw;
+    height: 40vh;
+}
+
+.center{
+    width: 50vw;
+    height: 40vh;
+} 
+
+// taille div
+
+.border-fleche{
+    height: 20vh;
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centre-fleche{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(117, 117, 117);
+
+}
+
+//texte
+.texte-centre{
+    background-color: rgb(100, 0, 0);
+    height: 30vh;
+}
+
+.border-texte{
+    background-color: rgb(134, 0, 0);
+    height: 30vh;
+}
+
+//padding
+
+.padding{
+    padding: 3rem;
+}
+
