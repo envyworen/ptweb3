@@ -37,18 +37,18 @@ articles.forEach(function(article) {
     "Position verticale dans la fenêtre": eY
   });
 
-  let svg = document.createElement(svg);
+  let svg = document.createElement("svg");
   svg.style.position = "absolute";
   svg.height = "20rem"
   svg.width = "20rem"
   tous.appendChild(svg);
-  let ligne = document.createElement(line);
+  let ligne = document.createElement("line");
   ligne.x1 = cX;
   ligne.y1 = cY;
   ligne.x2 = eX;
   ligne.y2 = eY;
   svg.appendChild(ligne);
-  
+
 });
 
 let liens = document.querySelectorAll(".boule");
