@@ -20,6 +20,7 @@ articles.forEach(function(article) {
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
+  block.style.zindex = -100;
   block.appendChild(link);
   tous.appendChild(block);
 
