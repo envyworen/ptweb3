@@ -164,9 +164,6 @@ img, video {
   .auteur p {
     margin-right: 2rem;
   }
-  a i {
-    width: 50rem;
-  }
   .swipe-article {
     width: 100vw;
     display: -webkit-box;
@@ -577,9 +574,6 @@ img, video {
   .auteur p {
     margin-right: 4rem;
   }
-  a i {
-    width: 50rem;
-  }
   .swipe-article {
     width: 100vw;
     display: -webkit-box;
@@ -636,6 +630,33 @@ img, video {
   }
   .padding {
     padding: 3rem;
+  }
+  .flex {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .carte-article {
+    width: 50vw;
+    height: 30vh;
+  }
+  .carte-content {
+    padding: 2rem;
+  }
+  .carte-article-texte {
+    background-color: grey;
+    height: 20vh;
+  }
+  .carte-link {
+    background-color: #5f0000;
   }
 }
 
