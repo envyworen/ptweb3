@@ -32,8 +32,8 @@ articles.forEach(function(article) {
 
   let svg = document.createElement("svg");
   svg.style.position = "absolute";
-  svg.height = "20rem"
-  svg.width = "20rem"
+  svg.style.height = "320px"
+  svg.style.width = "320px"
   tous.appendChild(svg);
 
   let ligne = document.createElement("line");
