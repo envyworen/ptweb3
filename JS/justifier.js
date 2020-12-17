@@ -10,6 +10,13 @@ articles.forEach(function(article) {
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
 
+  var cX = link.offsetLeft;
+  var cY = link.offsetTop;
+  console.log({
+    "Position horizontale dans la fenêtre": cX, 
+    "Position verticale dans la fenêtre": cY
+  });
+
   let point = document.createElement("span");
   link.appendChild(point);
 
@@ -23,14 +30,25 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var positions = link.elementPosition;
+  var eX = link.offsetLeft;
+  var eY = link.offsetTop;
   console.log({
-    "Position horizontale dans la fenêtre": positions.clientX, 
-    "Position verticale dans la fenêtre": positions.clientY, 
-    "Position horizontale dans le document": positions.viewportX, 
-    "Position verticale dans le document": positions.viewportY
+    "Position horizontale dans la fenêtre": eX, 
+    "Position verticale dans la fenêtre": eY
   });
 
+  let svg = document.createElement(svg);
+  svg.style.position = "absolute";
+  svg.height = "20rem"
+  svg.width = "20rem"
+  tous.appendChild(svg);
+  let ligne = document.createElement(line);
+  ligne.x1 = cX;
+  ligne.y1 = cY;
+  ligne.x2 = eX;
+  ligne.y2 = eY;
+  svg.appendChild(ligne);
+  
 });
 
 let liens = document.querySelectorAll(".boule");
