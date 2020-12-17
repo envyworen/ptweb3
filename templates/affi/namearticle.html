@@ -23,14 +23,14 @@
 			<div class="carte-link">
 				<div class="button-article">
 					<div class="button-content">
-						<a href="detail-{{ cat }}-{{ type.id_art }}"><h2>Lire la suite</h2> </a>
+						<a href="detail-{{ cat }}-{{ type.id_art }}-"><h2>Lire la suite</h2> </a>
 					</div>	
 				</div>
 			</div>	
 
 		</div>
 	</div>
-	<p> {{ loop.index }} </p>
+	<p> {{ loop.index.id_art }} </p>
 	
 
 	{% endfor %}
