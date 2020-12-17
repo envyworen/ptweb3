@@ -647,10 +647,12 @@ img, video {
   }
   .carte-article {
     width: 50vw;
-    height: 40vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .carte-content {
-    padding: 2rem;
+    padding: 3rem;
   }
   .carte-article-texte {
     background-color: grey;
