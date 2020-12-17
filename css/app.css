@@ -668,10 +668,10 @@ img, video {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .carte-article-texte h2, p {
+  .black {
     color: black !important;
   }
-  .carte-article-texte p {
+  .carte-content p {
     font-weight: bold !important;
   }
   .carte-link {
