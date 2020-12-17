@@ -12,13 +12,20 @@
     border-radius: 3rem;
 }
 
+
+
 .carte-content{
     padding: 3rem;
 }
 
 .carte-article-texte{
-    background-color: grey;
+    background-color: $fontcolor;
     height: fit-content; 
+}
+
+.carte-article-texte h2,p{
+
+    color: $backcolor !important;
 }
 
 .carte-link{
@@ -41,4 +48,5 @@
 
 a h2{
     font-size: 15pt !important;
+    font-style: none;
 }

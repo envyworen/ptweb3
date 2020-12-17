@@ -656,10 +656,13 @@ img, video {
     padding: 3rem;
   }
   .carte-article-texte {
-    background-color: grey;
+    background-color: whitesmoke;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+  .carte-article-texte h2, p {
+    color: black !important;
   }
   .carte-link {
     display: -webkit-box;
@@ -688,6 +691,7 @@ img, video {
   }
   a h2 {
     font-size: 15pt !important;
+    font-style: none;
   }
 }
 
