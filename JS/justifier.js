@@ -39,10 +39,10 @@ articles.forEach(function(article) {
   let ligne = document.createElement("line");
   ligne.setAttribute("x1", "0");
   ligne.setAttribute("y1", "0");
-  ligne.setAttribute("x2", "200");
-  ligne.setAttribute("y2", "200");
+  ligne.setAttribute("x2", eX);
+  ligne.setAttribute("y2", eY);
   ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "4px";
+  ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
 
 });
