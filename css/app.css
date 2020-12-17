@@ -673,6 +673,16 @@ img, video {
             justify-content: center;
     height: 10vh;
   }
+  .button-article {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 2rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: red;
+  }
 }
 
 header {
