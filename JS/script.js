@@ -20,8 +20,8 @@ elt.addEventListener("transitionend", () => {
 });
 
 $(document).ready(function() {
-  function scroll_to_top(i) {
-    $(i).click(function() {
+  function scroll_to_top(a) {
+    $(a).click(function() {
         $('html,body').animate({scrollTop: 0}, 'slow');
     });
   }
