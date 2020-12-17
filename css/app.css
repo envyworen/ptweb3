@@ -656,7 +656,9 @@ img, video {
   }
   .carte-article-texte {
     background-color: grey;
-    height: 30vh;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .carte-link {
     background-color: #5f0000;
