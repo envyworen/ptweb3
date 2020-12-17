@@ -82,11 +82,11 @@ switch ($page) {
         if (isset($_GET['cat'])) {
             $categorie = $_GET['cat'];
         }
-        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user];
+        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role];
       break;
     case 'fullarticle' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role];
     break;
 
     
