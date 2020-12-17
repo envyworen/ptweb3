@@ -70,7 +70,7 @@
         <p>{{ user }}</p>
         <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
      
-        {%  if user is not empty and user.role >= 2 %}    
+        {% if user.role > 1 %}    
         <p><a href="admin">admin</a></p>
         {% endif %}
         {% else %}
