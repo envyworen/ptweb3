@@ -666,6 +666,7 @@ img, video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    border-radius: 3rem;
   }
   .carte-article-texte h2, p {
     color: black !important;
