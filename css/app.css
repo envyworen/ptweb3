@@ -686,6 +686,9 @@ img, video {
   .button-content {
     padding: 1rem;
   }
+  a h2 {
+    font-size: 15pt !important;
+  }
 }
 
 header {
