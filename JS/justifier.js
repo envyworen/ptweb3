@@ -37,12 +37,12 @@ articles.forEach(function(article) {
   tous.appendChild(svg);
 
   let ligne = document.createElement("line");
-  ligne.setAttribute("x1", 0);
-  ligne.setAttribute("y1", 0);
+  ligne.setAttribute("x1", "0");
+  ligne.setAttribute("y1", "0");
   ligne.setAttribute("x2", eX/16);
   ligne.setAttribute("y2", eY/16);
   ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "4";
+  ligne.style.strokeWidth = "2";
   svg.appendChild(ligne);
 
 });
