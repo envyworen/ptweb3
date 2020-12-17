@@ -646,14 +646,14 @@ img, video {
   }
   .carte-article {
     width: 50vw;
-    height: 30vh;
+    height: 40vh;
   }
   .carte-content {
     padding: 2rem;
   }
   .carte-article-texte {
     background-color: grey;
-    height: 20vh;
+    height: 30vh;
   }
   .carte-link {
     background-color: #5f0000;
