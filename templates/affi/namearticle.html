@@ -1,9 +1,29 @@
 {% extends 'base.html' %}
 {% block main %}
-{% for type in list %}
-	
-	<h2>{{ type.h1_art }} </h2> 
-	<p>{{ type.chap_art }}</p> 
-<a href="detail-{{ cat }}-{{ type.id_art }}">lire la suite >>></a>
-{% endfor %}
+
+<div class="flex">
+	{% for type in list %}
+	<div class ="carte-article">
+		
+			<div class="carte-article-texte">
+				<div class="carte-content">
+					<h2>{{ type.h1_art }} </h2> 
+					<p>{{ type.chap_art }}</p> 
+				</div>
+			</div>
+			
+
+			<div class="carte-link">
+				<div class="carte-content">
+					<a href="detail-{{ cat }}-{{ type.id_art }}">lire la suite >>></a>
+				</div>
+			</div>	
+
+		</div>
+	</div>
+
+	{% endfor %}
+
+</div>
+
 {% endblock %}

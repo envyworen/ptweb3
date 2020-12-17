@@ -164,9 +164,6 @@ img, video {
   .auteur p {
     margin-right: 2rem;
   }
-  a i {
-    width: 50rem;
-  }
   .swipe-article {
     width: 100vw;
     display: -webkit-box;
@@ -576,9 +573,6 @@ img, video {
   }
   .auteur p {
     margin-right: 4rem;
-  }
-  a i {
-    width: 50rem;
   }
   .swipe-article {
     width: 100vw;
