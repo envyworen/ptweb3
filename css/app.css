@@ -657,6 +657,7 @@ img, video {
     height: -moz-fit-content;
     height: fit-content;
     border-radius: 3rem;
+    background-color: whitesmoke;
   }
   .carte-content {
     padding: 3rem;
