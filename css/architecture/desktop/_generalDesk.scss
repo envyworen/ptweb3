@@ -5,12 +5,17 @@ $right: 4rem;
 $backcolor: rgb(0, 0, 0);
 $fontcolor: whitesmoke;
 $blood: rgb(155, 0, 0);
-$p: 20pt;
-$h3: 60pt;
-$h2: 25pt;
-$h1: 70pt;
-$flexswitch: flex;
+$a: 10pt;
+$p: 10pt;
+$h3: 50pt;
+$h2: 20pt;
+$h1: 60pt;
 
+.a{
+    text-decoration: none;
+    color: $fontcolor !important;
+    font-size: $a;
+}
 
 *{
     margin: 0;
@@ -49,7 +54,7 @@ p, h2 {
     color: $fontcolor;
 }
 
-a{
+.fleche-direction{
     text-decoration: none;
     color: $fontcolor !important;
     font-size: 40pt;

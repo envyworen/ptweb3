@@ -1,44 +1,52 @@
 {% extends 'base.html' %}
 {% block main %}
 
-<div class="entete">
-	<h1>{{ One.h1_art }}</h1>
-	<h2>{{ One.chap_art }}</h2> 
-</div>
+<article class="entete">
+	<h1 class="entete-h1">{{ One.h1_art }}</h1>
+	<h2 class="entete-h2">{{ One.chap_art }}</h2> 
+</article>
 
 {% if One.media_art is not empty %}
     
 {% if 'jpg' in One.media_art %}
-<div class="div_img">
-<a href="media/img/{{ One.media_art }}" data-lightbox="1"><img src="media/img/{{ One.media_art }}" alt=""></a>
+<div class="div-img">
+	<a href="media/img/{{ One.media_art }}" data-lightbox="1"><img src="media/img/{{ One.media_art }}" alt=""></a>
 </div>
 
 {% endif %}
 {% if 'mp4' in One.media_art %}
-<div class="div_img">
-<video controls src="media/video/{{ One.media_art }}"></video>
+<div class="div-img">
+	<video controls src="media/video/{{ One.media_art }}"></video>
 </div>
 
 {% endif %}
 {% endif %}
-{% if One.auteur_art is not empty %}   
-<div class="desc_img">
-	<p class="leg_img">{{ One.auteur_art }}</p>
-</div>
+{% if One.auteur_art is not empty %} 
+<div class="para-left">
+	<div class="left-content">
+		<p class="texte-left">{{ One.auteur_art }}</p>
+	</div>
+</div>  
+
 {% endif %}
 
 {% for type in compo %}
 
 {% if type.st_comp is not empty %}    
-<div class="div_compo">
-	<div>
-		<h3>{{ type.st_comp }}</h3>
-	</div>
+<article>
+	<div class="para-right">
+		<div class="right-content"> 
+			<h3>{{ type.st_comp }}</h3>
+		</div>
 	
 {% endif %}
 {% if type.texte_comp is not empty %} 
+		<div class="right-content">
+			<p>{{ type.texte_comp }}</p> 
+		</div>
+	</div>
+</article>
 
-	<p>{{ type.texte_comp }}</p> 
 {% endif %}
 {% if type.citation_comp is not empty %}
 
@@ -46,7 +54,7 @@
 {% endif %}
 {% if type.media_comp is not empty %}
 {% if 'jpg' in type.media_comp %}
-<div class="div_img">
+<div class="div-img">
     <img src="media/img/{{ type.media_comp }}" alt="">           
 </div>
           
@@ -54,7 +62,7 @@
    
     {% endif %}
 {% if 'mp4' in type.media_comp %}
-<div class="div_img">
+<div class="div-img">
     <video controls src="media/video/{{ type.media_comp }}"></video>         
 </div>
 
@@ -66,9 +74,53 @@
  </div>  
 
         
-    {% endif %}
+	{% endif %}
+	{% endfor %}
 	
-{% endfor %}
+	<article class="swipe-article">
+
+		<div class="border">
+			<div class="border-fleche">
+				<a class="fleche-direction" href="#"> <i class="fas fa-caret-left"></i></a>
+			</div>
+			
+			<div class="border-texte">
+				<div class="padding">
+					<h2>Article précédent</h2>
+					<p>insert nom d'article précédant à celui qui est affiché</p>
+				</div>  
+			</div>
+		</div>
+
+		<div class="centre">
+
+			<div class="centre-fleche">
+				<a class="fleche-direction" href="#"><i class="fas fa-caret-up"></i></a>  
+			</div>
+
+			<div class="border-texte">
+				<div class="padding">
+					<h2>Revenir en haut de page</h2>
+					<p>insert nom d'article précédant à celui qui est affiché</p>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="border">
+			<div class="border-fleche">
+				<a class="fleche-direction" href="#"><i class="fas fa-caret-right"></i></a>
+			</div>
+
+			<div class="border-texte">
+				<div class="padding">
+					<h2>Article suivant</h2>
+					<p>insert nom d'article précédant à celui qui est affiché</p>
+				</div>       
+			</div>
+		</div>
+	</article>
+
 	<footer>
 	</footer>
 	

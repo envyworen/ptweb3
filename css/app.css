@@ -21,6 +21,11 @@
     font-size: 30pt;
     text-transform: uppercase;
   }
+  .a {
+    text-decoration: none;
+    color: whitesmoke !important;
+    font-size: 20pt;
+  }
   h2 {
     font-size: 15pt;
   }
@@ -41,7 +46,7 @@
   i {
     font-size: 40pt !important;
   }
-  a {
+  .fleche-direction {
     text-decoration: none;
     color: whitesmoke !important;
     font-size: 20pt;
@@ -212,6 +217,11 @@
 }
 
 @media screen and (min-width: 577px) and (max-width: 1024px) {
+  .a {
+    text-decoration: none;
+    color: whitesmoke !important;
+    font-size: 10pt;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -241,10 +251,10 @@
     font-family: Balham;
     color: whitesmoke;
   }
-  a {
+  .fleche-direction {
     text-decoration: none;
     color: whitesmoke !important;
-    font-size: 20pt;
+    font-size: 30pt;
   }
   .entete {
     display: -webkit-box;
@@ -412,6 +422,11 @@
 }
 
 @media screen and (min-width: 1025px) {
+  .a {
+    text-decoration: none;
+    color: whitesmoke !important;
+    font-size: 10pt;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -421,17 +436,17 @@
     background-color: black;
   }
   h1 {
-    font-size: 70pt;
+    font-size: 60pt;
     text-transform: uppercase;
   }
   h2 {
-    font-size: 25pt;
+    font-size: 20pt;
   }
   h3 {
-    font-size: 60pt;
+    font-size: 50pt;
   }
   p {
-    font-size: 20pt;
+    font-size: 10pt;
   }
   h1, h3 {
     font-family: "Quick";
@@ -441,7 +456,7 @@
     font-family: Balham;
     color: whitesmoke;
   }
-  a {
+  .fleche-direction {
     text-decoration: none;
     color: whitesmoke !important;
     font-size: 40pt;
