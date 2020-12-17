@@ -442,7 +442,7 @@ img, video {
 
 @media screen and (min-width: 1025px) {
   .a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: whitesmoke !important;
     font-size: 10pt;
   }

@@ -12,9 +12,10 @@ $h2: 25pt;
 $h1: 60pt;
 
 .a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: $fontcolor !important;
     font-size: $a;
+    
 }
 
 *{
