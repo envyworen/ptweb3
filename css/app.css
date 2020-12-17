@@ -657,7 +657,7 @@ img, video {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    border-radius: 3rem;
+    border-radius: 1rem;
     background-color: whitesmoke;
   }
   .titre-carte {
