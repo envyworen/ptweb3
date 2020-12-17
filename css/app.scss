@@ -3,7 +3,11 @@
     src: url('../fonts/CourierSTD.otf');
 }
 
-
+@font-face {
+    font-family: courrier;
+    src: url('../fonts/CourierStd-Bold.otf');
+    font-weight: bold;
+}
 
 @font-face {
     font-family: titre;

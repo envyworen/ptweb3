@@ -4,6 +4,12 @@
 }
 
 @font-face {
+  font-family: courrier;
+  src: url("../fonts/CourierStd-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
   font-family: titre;
   src: url("../fonts/GTWalsheimPro-CondensedBold.ttf");
 }
@@ -663,6 +669,9 @@ img, video {
   }
   .carte-article-texte h2, p {
     color: black !important;
+  }
+  .carte-article-texte p {
+    font-weight: bold !important;
   }
   .carte-link {
     display: -webkit-box;
