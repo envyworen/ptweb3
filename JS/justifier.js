@@ -32,10 +32,10 @@ articles.forEach(function(article) {
 
   let svg = document.createElement("svg");
   svg.style.position = "absolute";
-  svg.style.height = "20rem"
-  svg.style.width = "20rem"
+  svg.height = "20rem"
+  svg.width = "20rem"
   tous.appendChild(svg);
-  svg.style.zIndex = "9999";
+
   let ligne = document.createElement("line");
   ligne.setAttribute("x1", "0");
   ligne.setAttribute("y1", "0");
