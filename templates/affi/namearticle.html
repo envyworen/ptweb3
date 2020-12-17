@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block main %}
-	<p> {{ list.id_art }} </p>
+
 	{% for key,type in list %}
 	<div class="flex">
 		<div class ="carte-article">
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<p> {{loop.index0}} </p>
-	<p> {{ type.1.id_art }} </p>
+	<p> {{ type.id_art[1] }} </p>
 	
 
 	{% endfor %}
