@@ -194,7 +194,7 @@ switch ($page) {
             $modele = $page;
             deleteuser($dbh);
             changerole($dbh);
-            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user];
+            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user,];
         }
         else {
             header('Location: index.php');

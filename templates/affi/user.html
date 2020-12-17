@@ -1,6 +1,10 @@
 {% extends 'baseAdmin.html' %}
 {% block admin %}
 
+<script>
+    let role = {{ role | raw }};
+</script>
+
 {% for utili in utilisateur %}
     <p>{{ utili.pseudo_user }}  {{ utili.role_user }}
         <form action="user" method="POST">
