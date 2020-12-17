@@ -126,6 +126,9 @@ img, video {
     width: 90vw;
     text-align: justify;
   }
+  .left-content h3 {
+    text-align: left !important;
+  }
   .para-right {
     margin-top: 5vh;
     width: 100vw;
@@ -144,6 +147,9 @@ img, video {
   .right-content {
     width: 90vw;
     text-align: justify;
+  }
+  .right-content h3 {
+    text-align: left !important;
   }
   .auteur {
     width: 100vw;
