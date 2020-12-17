@@ -39,14 +39,14 @@ articles.forEach(function(article) {
 
   let svg = document.createElement("svg");
   svg.style.position = "absolute";
-  svg.height = "20rem"
-  svg.width = "20rem"
+  svg.style.height = "20rem"
+  svg.style.width = "20rem"
   tous.appendChild(svg);
   let ligne = document.createElement("line");
-  ligne.x1 = cX;
-  ligne.y1 = cY;
-  ligne.x2 = eX;
-  ligne.y2 = eY;
+  ligne.setAttribute("x1", cX);
+  ligne.setAttribute("x1", cY);
+  ligne.setAttribute("x2", eX);
+  ligne.setAttribute("x2", eX);
   ligne.style.stroke = "red"
   ligne.style.strokeWidth = "2"
   svg.appendChild(ligne);
