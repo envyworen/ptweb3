@@ -30,7 +30,9 @@
 
 		</div>
 	</div>
-	<p> {{ key - 1 }} {{ type.id_art }} </p>
+	{% for cle - 1,row in list %}	
+	<p> {{ cle }} {{ row.id_art }} </p>
+	{% endfor %}
 	
 
 	{% endfor %}
