@@ -15,7 +15,7 @@ RewriteRule ^les-profils$ ?page=les-profils&choice=profils
 RewriteRule ^passe-sous-silence$ ?page=passe-sous-silence&choice=silence
 RewriteRule ^rapport-de-force$ ?page=rapport-de-force&choice=force
 RewriteRule ^sous-surveillance$ ?page=sous-surveillance&choice=surveillance
-
+RewriteRule ^mention$ ?page=mention
 
 RewriteRule ^admin$ ?page=admin
 RewriteRule ^insert$ ?page=insertout

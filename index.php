@@ -200,7 +200,14 @@ switch ($page) {
             header('Location: index.php');
         }
     break;
-
+    case 'mention' :
+    
+             $modele = $page;
+      
+            $data = [];
+    
+  
+    break;
 
     default :
       $modele = '../index';
