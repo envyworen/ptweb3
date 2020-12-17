@@ -45,6 +45,10 @@ article{
     text-align: justify;
 }
 
+.left-content h3{
+    text-align: left !important;
+}
+
     //right
 
 .para-right{
@@ -59,6 +63,10 @@ article{
 .right-content{
     width: 90vw;
     text-align: justify;
+}
+
+.right-content h3{
+    text-align: left !important;
 }
 
 //auteurs
@@ -132,7 +140,7 @@ a i{
 
 .border-texte{
     background-color: rgb(134, 0, 0);
-    height: 20vh;
+    height: 10vh;
 }
 
 //padding
