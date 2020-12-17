@@ -677,11 +677,14 @@ img, video {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    border-radius: 2rem;
+    border-radius: 1rem;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     background-color: red;
+  }
+  .button-content {
+    padding: 1rem;
   }
 }
 
