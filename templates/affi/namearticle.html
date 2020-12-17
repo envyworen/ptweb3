@@ -29,7 +29,8 @@
 
 		</div>
 	</div>
-	<p> {{ type[1].id_art }} </p>
+	{{ dump(type[0].id_art) }}
+	<p> {{ type[loop.index0].id_art }} </p>
 	
 
 	{% endfor %}
