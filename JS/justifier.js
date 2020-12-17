@@ -23,7 +23,7 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var positions = document.elementPosition(link);
+  var positions = link.elementPosition();
   console.log({
     "Position horizontale dans la fenêtre": positions.clientX, 
     "Position verticale dans la fenêtre": positions.clientY, 
