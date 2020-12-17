@@ -526,7 +526,7 @@
     margin-bottom: 5vh;
   }
   .left-content {
-    width: 60vw;
+    width: 80vw;
     text-align: left;
     margin-left: 4rem;
   }
@@ -544,7 +544,7 @@
             justify-content: left;
   }
   .right-content {
-    width: 60vw;
+    width: 80vw;
     text-align: left;
     margin-left: 4rem;
   }
