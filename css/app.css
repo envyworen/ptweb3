@@ -650,6 +650,7 @@ img, video {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   .carte-article {
     width: 50vw;
@@ -663,11 +664,9 @@ img, video {
     padding: 3rem;
   }
   .carte-article-texte {
-    background-color: whitesmoke;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    border-radius: 3rem;
   }
   .carte-article-texte h2, p {
     color: black !important;
