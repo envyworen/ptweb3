@@ -40,8 +40,8 @@ articles.forEach(function(article) {
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
-  ligne.style.stroke = "red"
-  ligne.style.strokeWidth = "4px"
+  ligne.style.stroke = "rgb(255,0,0)";
+  ligne.style.strokeWidth = "4px";
   svg.appendChild(ligne);
 
 });
