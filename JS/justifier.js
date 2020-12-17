@@ -42,7 +42,7 @@ articles.forEach(function(article) {
   ligne.setAttribute("x2", eX/16);
   ligne.setAttribute("y2", eY/16);
   ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "2";
+  ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
   console.log(ligne);
 });
