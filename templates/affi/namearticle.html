@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
 {% block main %}
 
-<div class="flex">
+
 	{% for type in list %}
-	<div class ="carte-article">
+	<div class="flex">
+		<div class ="carte-article">
 		
 			<div class="carte-article-texte">
 				<div class="carte-content">
@@ -21,9 +22,11 @@
 
 		</div>
 	</div>
+	
+	
 
 	{% endfor %}
 
-</div>
+
 
 {% endblock %}
