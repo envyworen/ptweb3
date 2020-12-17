@@ -23,8 +23,8 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var eX = link.offsetLeft();
-  var ey = link.offsetTop();
+  var eX = link.offsetLeft;
+  var eY = link.offsetTop;
   console.log({
     "Position horizontale dans la fenêtre": eX, 
     "Position verticale dans la fenêtre": eY
