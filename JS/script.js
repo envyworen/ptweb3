@@ -18,3 +18,12 @@ elt.addEventListener("transitionend", () => {
   test.style.opacity = "1";
   test.style.transform = "scale(1)";
 });
+
+$(document).ready(function() {
+  function scroll_to_top(div) {
+    $(div).click(function() {
+        $('html,body').animate({scrollTop: 0}, 'slow');
+    });
+  }
+  scroll_to_top("#scroll_to_top");
+});
