@@ -47,6 +47,8 @@ articles.forEach(function(article) {
   ligne.y1 = cY;
   ligne.x2 = eX;
   ligne.y2 = eY;
+  ligne.style.stroke = "red"
+  ligne.style.strokeWidth = "2"
   svg.appendChild(ligne);
 
 });
