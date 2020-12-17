@@ -3,7 +3,11 @@
     src: url('../fonts/CourierSTD.otf');
 }
 
-
+@font-face {
+    font-family: courrier;
+    src: url('../fonts/CourierStd-Bold.otf');
+    font-weight: bold;
+}
 
 @font-face {
     font-family: titre;
@@ -16,6 +20,7 @@
     @import "architecture/phone/generalPhone";
     @import "architecture/phone/entete";
     @import "architecture/phone/content";
+    @import "architecture/phone/carte";
     
     
 }
@@ -24,6 +29,7 @@
     @import "architecture/pad/generalPad";
     @import "architecture/pad/entete";
     @import "architecture/pad/content";
+    @import "architecture/pad/carte";
    
 }
 
@@ -31,6 +37,7 @@
     @import "architecture/desktop/generalDesk";
     @import "architecture/desktop/entete";
     @import "architecture/desktop/content";
+    @import "architecture/desktop/carte";
 }
 
 
