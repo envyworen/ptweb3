@@ -1,11 +1,11 @@
 @font-face {
-  font-family: Balham;
-  src: url("../fonts/Balham.otf");
+  font-family: courrier;
+  src: url("../fonts/CourierSTD.otf");
 }
 
 @font-face {
-  font-family: Quick;
-  src: url("../fonts/Quicksand_Book.otf");
+  font-family: titre;
+  src: url("../fonts/GTWalsheimPro-CondensedBold.ttf");
 }
 
 img, video {
@@ -39,12 +39,12 @@ img, video {
   p {
     font-size: 20pt;
   }
-  h1, h3 {
-    font-family: "Quick";
+  p, a {
+    font-family: 'Courier';
     color: whitesmoke;
   }
-  p, h2 {
-    font-family: Balham;
+  h1, h2, h3 {
+    font-family: 'titre';
     color: whitesmoke;
   }
   i {
@@ -253,12 +253,12 @@ img, video {
   p {
     font-size: 15pt;
   }
-  h1, h3 {
-    font-family: "Quick";
+  p, a {
+    font-family: 'Courier';
     color: whitesmoke;
   }
-  p, h2 {
-    font-family: Balham;
+  h1, h2, h3 {
+    font-family: 'titre';
     color: whitesmoke;
   }
   .fleche-direction {
@@ -464,12 +464,12 @@ img, video {
   p {
     font-size: 15pt;
   }
-  h1, h3 {
-    font-family: "Quick";
+  p, a {
+    font-family: 'Courier';
     color: whitesmoke;
   }
-  p, h2 {
-    font-family: Balham;
+  h1, h2, h3 {
+    font-family: 'titre';
     color: whitesmoke;
   }
   .fleche-direction {

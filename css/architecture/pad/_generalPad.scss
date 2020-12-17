@@ -46,13 +46,13 @@ p{
     font-size: $p;
 }
 
-h1, h3{
-    font-family: "Quick";
+p, a{
+    font-family: 'Courier';
     color: $fontcolor;
 }
 
-p, h2 {
-    font-family: Balham;
+h1, h2, h3{
+    font-family: 'titre';
     color: $fontcolor;
 }
 
