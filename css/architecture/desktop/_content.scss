@@ -52,14 +52,13 @@ article{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    align-items: flex-end;
+    justify-content: left;
 }
 
 .right-content{
     width: 60vw;
-    text-align: right;
-    margin-right: $right;
+    text-align: left;
+    margin-left: $left;
 }
 
 //auteurs

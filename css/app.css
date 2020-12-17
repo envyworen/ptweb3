@@ -446,7 +446,7 @@
     font-size: 50pt;
   }
   p {
-    font-size: 10pt;
+    font-size: 20pt;
   }
   h1, h3 {
     font-family: "Quick";
@@ -539,17 +539,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: right;
-        -ms-flex-pack: right;
-            justify-content: right;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   .right-content {
     width: 60vw;
-    text-align: right;
-    margin-right: 4rem;
+    text-align: left;
+    margin-left: 4rem;
   }
   .auteur {
     width: 100vw;
