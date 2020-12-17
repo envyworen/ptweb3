@@ -129,17 +129,17 @@ switch ($page) {
 
     case 'login' :
       $modele = $page;
-      $data = ['feedback' => $feedback, 'user' => $user];
+      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role ];
       break;
 
     case 'register' :
       $modele = $page;
-      $data = ['feedback' => $return, 'user' => $user];
+      $data = ['feedback' => $return, 'user' => $user, 'role' => $role];
       break;  
     case 'admin' :
         if ($role > 1) {
             $modele = $page;
-            $data = ['feedback' => $feedback, 'user' => $user];
+            $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role];
         }
         else {
             header('Location: index.php');
@@ -194,7 +194,7 @@ switch ($page) {
             $modele = $page;
             deleteuser($dbh);
             changerole($dbh);
-            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user,];
+            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user, 'role' => $role];
         }
         else {
             header('Location: index.php');
@@ -211,7 +211,7 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = ['user' => $user];
+      $data = ['user' => $user, 'role' => $role];
   }
 
   // Affichage du modèle choisi avec les données récupérées

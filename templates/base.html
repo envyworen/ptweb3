@@ -65,14 +65,14 @@
                 <a class="accueil dropbtn dropdown" href="#" >Home</a>
             </div>
         </nav>
-        
+        <p></p>
+    {% if role is not empty and role > 1 %}    
+    <p><a href="admin">admin</a></p>
+    {% endif %}
     {% if user is not empty %}    
         <p>{{ user }}</p>
         <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
      
-        {% if user.role > 1 %}    
-        <p><a href="admin">admin</a></p>
-        {% endif %}
         {% else %}
         <p><a href="connexion">connexion</a></p>
         <p><a href="inscription">inscription</a></p>    
