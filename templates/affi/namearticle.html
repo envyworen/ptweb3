@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block main %}
 
-
+	{{ dump(list) }}
 	{% for key,type in list %}
 	<div class="flex">
 		<div class ="carte-article">
@@ -30,9 +30,7 @@
 
 		</div>
 	</div>
-	{% for cle - 1,row in list %}	
-	<p> {{ cle }} {{ row.id_art }} </p>
-	{% endfor %}
+	<p> {{ key }} {{ type.id_art }} </p>
 	
 
 	{% endfor %}
