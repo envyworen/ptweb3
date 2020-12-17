@@ -44,7 +44,7 @@ articles.forEach(function(article) {
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "2";
   svg.appendChild(ligne);
-
+  console.log(ligne);
 });
 
 let liens = document.querySelectorAll(".boule");
