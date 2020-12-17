@@ -10,13 +10,6 @@ articles.forEach(function(article) {
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
 
-  var cX = link.offsetLeft;
-  var cY = link.offsetTop;
-  console.log({
-    "Position horizontale dans la fenêtre": cX, 
-    "Position verticale dans la fenêtre": cY
-  });
-
   let point = document.createElement("span");
   link.appendChild(point);
 
@@ -43,12 +36,12 @@ articles.forEach(function(article) {
   svg.style.width = "20rem"
   tous.appendChild(svg);
   let ligne = document.createElement("line");
-  ligne.setAttribute("x1", cX);
-  ligne.setAttribute("x1", cY);
+  ligne.setAttribute("x1", "250");
+  ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
-  ligne.setAttribute("x2", eX);
+  ligne.setAttribute("y2", eY);
   ligne.style.stroke = "red"
-  ligne.style.strokeWidth = "2"
+  ligne.style.strokeWidth = "4px"
   svg.appendChild(ligne);
 
 });
