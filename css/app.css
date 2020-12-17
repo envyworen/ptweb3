@@ -124,7 +124,7 @@ img, video {
   }
   .left-content {
     width: 90vw;
-    text-align: justify;
+    text-align: left;
   }
   .left-content h3 {
     text-align: left !important;
@@ -146,7 +146,7 @@ img, video {
   }
   .right-content {
     width: 90vw;
-    text-align: justify;
+    text-align: left;
   }
   .right-content h3 {
     text-align: left !important;
