@@ -37,10 +37,10 @@ articles.forEach(function(article) {
   tous.appendChild(svg);
   svg.style.zIndex = "9999";
   let ligne = document.createElement("line");
-  ligne.setAttribute("x1", "250");
-  ligne.setAttribute("y1", "250");
-  ligne.setAttribute("x2", eX);
-  ligne.setAttribute("y2", eY);
+  ligne.setAttribute("x1", "0");
+  ligne.setAttribute("y1", "0");
+  ligne.setAttribute("x2", "200");
+  ligne.setAttribute("y2", "200");
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4px";
   svg.appendChild(ligne);
