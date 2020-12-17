@@ -23,14 +23,14 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var positions = elementPosition(link);
+  var positions = document.elementPosition(link);
   console.log({
     "Position horizontale dans la fenêtre": positions.clientX, 
     "Position verticale dans la fenêtre": positions.clientY, 
     "Position horizontale dans le document": positions.viewportX, 
     "Position verticale dans le document": positions.viewportY
   });
-  
+
 });
 
 let liens = document.querySelectorAll(".boule");
