@@ -39,8 +39,8 @@ articles.forEach(function(article) {
   let ligne = document.createElement("line");
   ligne.setAttribute("x1", "0");
   ligne.setAttribute("y1", "0");
-  ligne.setAttribute("x2", eX);
-  ligne.setAttribute("y2", eY);
+  ligne.setAttribute("x2", eX/16);
+  ligne.setAttribute("y2", eY/16);
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
