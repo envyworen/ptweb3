@@ -35,7 +35,7 @@ articles.forEach(function(article) {
   svg.style.height = "20rem"
   svg.style.width = "20rem"
   tous.appendChild(svg);
-  let ligne = document.createElement("line");
+  let ligne = document.createElement("/line");
   ligne.setAttribute("x1", "250");
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
