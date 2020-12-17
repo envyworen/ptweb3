@@ -23,12 +23,11 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var positions = link.elementPosition();
+  var eX = link.offsetLeft();
+  var ey = link.offsetTop();
   console.log({
-    "Position horizontale dans la fenêtre": positions.clientX, 
-    "Position verticale dans la fenêtre": positions.clientY, 
-    "Position horizontale dans le document": positions.viewportX, 
-    "Position verticale dans le document": positions.viewportY
+    "Position horizontale dans la fenêtre": eX, 
+    "Position verticale dans la fenêtre": eY
   });
 
 });
