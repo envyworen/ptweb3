@@ -69,7 +69,9 @@
     {% if user is not empty %}    
         <p>{{ user }}</p>
         <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
+        {% if user.role >= 2 %}    
         <p><a href="admin">admin</a></p>
+         {% else %}
     {% else %}
         <p><a href="connexion">connexion</a></p>
         <p><a href="inscription">inscription</a></p>    
