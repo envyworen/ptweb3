@@ -37,19 +37,19 @@ var BreakException = {};
    try { 
     articles.forEach(function(articl, items) {
       console.log(articl);
-
-      let link1 = qqch[items];
-      let link2 = qqch[items+1];
-      eX = link1.offsetLeft;
-      eY = link1.offsetTop;
-      jX = link2.offsetLeft;
-      jY = link2.offsetTop;
       
       console.log({"coordonnées x" : qqch});
 
       if (items === 3) {
         throw BreakException;
     }
+        let link1 = qqch[items];
+        let link2 = qqch[items+1];
+        eX = link1.offsetLeft;
+        eY = link1.offsetTop;
+        jX = link2.offsetLeft;
+        jY = link2.offsetTop;
+
         let ns = 'http://www.w3.org/2000/svg';
         svg = document.createElementNS(ns,"svg");
         svg.style.height = "320px";
