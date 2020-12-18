@@ -753,11 +753,9 @@ img, video {
   .border {
     margin: 0;
     padding: 0;
-    width: 40%;
     height: 40vh;
   }
   .center {
-    width: 50%;
     height: 40vh;
   }
   .border-fleche {
