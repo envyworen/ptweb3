@@ -1,8 +1,9 @@
 let liste = document.querySelectorAll(".sous");
-console.log(tabjson);
+
 tabjson.forEach(function(drop) {
     let menu = document.createElement('a');
     let mi = document.createElement('li');
+    console.log(liste);
     mi.appendChild(menu);
     menu.innerText = drop.h1_art;
     if (drop.titre_art == 'surveillance') {
