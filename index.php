@@ -213,6 +213,6 @@ switch ($page) {
       $modele = '../index';
       $data = ['user' => $user, 'role' => $role];
   }
-
+$data = 'menu' => article::readTitre($dbh);
   // Affichage du modèle choisi avec les données récupérées
 echo $twig->render('affi/'.$modele.'.html', $data);
