@@ -929,6 +929,7 @@ body:before {
   content: "";
   position: absolute;
   background-color: #8d0101;
+  background-size: cover;
   width: 100%;
   overflow: hidden;
   top: 0;
