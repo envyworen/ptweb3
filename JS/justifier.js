@@ -1,3 +1,6 @@
+let truc = document.createElement("div");
+truc.style.position = "absolute";
+
 articles.forEach(function(article) {
   console.log(article);
   
@@ -16,7 +19,10 @@ articles.forEach(function(article) {
   let description = document.createElement("p");
   point.appendChild(description);
 
+
   tous = document.querySelector(".tous");
+  tous.appendChild(truc);
+
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
@@ -35,6 +41,9 @@ articles.forEach(function(article) {
   svg.style.height = "320px";
   svg.style.width = "320px";
 
+  truc.appendChild(svg);
+
+
   let ligne = document.createElementNS(ns,"line");
   ligne.setAttribute("x1", "250");
   ligne.setAttribute("y1", "250");
@@ -45,10 +54,6 @@ articles.forEach(function(article) {
   svg.appendChild(ligne);
 });
 
-let truc = document.createElement("div");
-truc.style.position = "absolute";
-truc.appendChild(svg);
-tous.appendChild(truc);
 
 
 
