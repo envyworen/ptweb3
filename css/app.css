@@ -910,6 +910,12 @@ nav {
   background-color: gold;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (min-width: 980px) {
   .logo {
     width: 5vw;
