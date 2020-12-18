@@ -82,11 +82,11 @@ switch ($page) {
         if (isset($_GET['cat'])) {
             $categorie = $_GET['cat'];
         }
-        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role];
+        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
       break;
     case 'fullarticle' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role];
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
     break;
 
     
@@ -129,12 +129,12 @@ switch ($page) {
 
     case 'login' :
       $modele = $page;
-      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role ];
+      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh); ];
       break;
 
     case 'register' :
       $modele = $page;
-      $data = ['feedback' => $return, 'user' => $user, 'role' => $role];
+      $data = ['feedback' => $return, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh);];
       break;  
     case 'admin' :
         if ($role > 1) {
@@ -194,7 +194,7 @@ switch ($page) {
             $modele = $page;
             deleteuser($dbh);
             changerole($dbh);
-            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user, 'role' => $role];
+            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
         }
         else {
             header('Location: index.php');
@@ -211,8 +211,8 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = ['user' => $user, 'role' => $role];
+      $data = ['user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh);];
   }
-$data = 'menu' => article::readTitre($dbh);
+
   // Affichage du modèle choisi avec les données récupérées
 echo $twig->render('affi/'.$modele.'.html', $data);
