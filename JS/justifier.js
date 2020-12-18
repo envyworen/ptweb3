@@ -1,5 +1,6 @@
 let main = document.querySelector(".block-justifier");
 main.style.zIndex = "999";
+main.style.position = "absolute";
 
 var qqch = [];
 articles.forEach(function(article) {
