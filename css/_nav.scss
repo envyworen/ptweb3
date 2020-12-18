@@ -1,18 +1,22 @@
-nav{
-  display: flex;
-  height: 10vh;
-  align-items: center;
-  justify-content: space-evenly;
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
 }
-
-.nav-flex{
-  display: flex;
+.nav-cat{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: sticky;
+  top: 0px;
 }
-
+.conteneur-nav{
+  position: absolute;
+  width: 100%;
+}
 .nav-cat input[type=checkbox]{
   display: none;
 }
-
 .nav-cat label{
   display: inline-block;
   width: 100%;
@@ -20,32 +24,149 @@ nav{
   text-align: center;
   background-color: gold;
 }
-
-.flex{
+.nav-cat ul{
+  display: none;
+  list-style-type: none;
+  background-color: #555;
+}
+.nav-cat input[type=checkbox]:checked + ul{
   display: flex;
+  flex-flow : column wrap;
+}
+.nav-cat ul li{
+  flex: 1 1 auto;
+  text-align: center;
+}
+.nav-cat > div > ul > li > a{
+  color: white;
+}
+.nav-cat a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+.sous{
+  display: flex;
+  flex-flow: column wrap;
+  z-index: 1000;
+}
+
+.sous li{
+  flex: 1 1 auto;
+  text-align: left;
+}
+.sous a{
+  padding: 10px;
+  background-color: RGBa(200,200,200,0.8);
 }
 
 @media screen and (min-width: 980px){
+  .conteneur-nav{
+      position: static;
+  }
+  .nav-cat label, .nav-cat input{
+      display: none;
+  }
+  .nav-cat input[type=checkbox]:checked + ul, .nav-cat ul{
+      display: flex;
+      flex-flow: row wrap;
+      background-color: white;
+  }
+  .nav-cat ul li{
+      position: relative;
+  }
+  .nav-cat > div > ul > li > a{
+      color: black;
+  }
+  .nav-cat a{
+      border-bottom: 2px solid transparent;
+  }
+  .nav-cat a:hover{
+      color: orange;
+      border-bottom: 2px solid gold;
+  }
+  .sous{
+      display: none;
+      box-shadow: 0px 1px 2px #CCC;
+      background-color: white;
+      position: absolute;
+      width: 100%;
+  }
+  .nav-cat > div > ul li:hover .sous{
+      display: flex;
+      flex-flow: column wrap;
+  }
+  .sous a{
+      border-bottom: none;
+      background-color: white;
+  }
+  .sous a:hover{
+      border-bottom: none;
+      background-color: RGBa(200,200,200,0.1);
+  }
+  .deroulant > a::after{
+      content:" ▼";
+      font-size: 12px;
+  }
+
+  nav{
+      display: flex;
+      justify-content: space-evenly;
+      height: 10vh;
+      align-items: center;
+  }
 
   .logo{
-    width: 5vw;
-    margin-left: 1rem;
-    margin-top: .5rem;
+      width: 5vw;
+  }
+  .inscription{
+      margin-right: 2rem;
+      height: 10vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+  }
+
+  .flex{
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      width: 30vw;
+  }
 }
 
-
-
-  
+.conteneur-contenu{
+margin: 50px 20px;
+height: 1500px;
 }
-
 
 @media screen and (max-width: 980px){
 
-  .logo{
-    width: 20vw;
-    margin-left: 1rem;
-    margin-top: .5rem;
-}
+  nav{
+      display: flex;
+      flex-direction: column;
+      height: 15vh;
+      align-items: center;
+  }
 
-  
+  .flex{
+      justify-content: space-evenly;
+      display: flex;
+      align-items: center;
+      width: 100vw;
+  }
+
+  .logo{
+      width: 20vw;
+      margin-left: 1rem;
+      margin-top: .5rem;
+  }
+
+  .inscription{
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+  }
+
 }
