@@ -1,6 +1,6 @@
 let truc = document.createElement("div");
 truc.style.position = "absolute";
-
+var qqch = [];
 articles.forEach(function(article) {
   console.log(article);
   
@@ -29,16 +29,23 @@ articles.forEach(function(article) {
   block.appendChild(link);
   tous.appendChild(block);
 
+  qqch.push(link);
+
 });
 
 var BreakException = {};
    try { 
-    var qqch = {};
     articles.forEach(function(articl, items) {
       console.log(articl);
 
-      qqch.push("x" : link.offsetLeft, "y" : link.offsetTop);
-      console.log({"coordonnées" : qqch});
+      let link1 = qqch[items];
+      let link2 = qqch[items+1];
+      eX = link1.offsetLeft;
+      eY = link1.offsetTop;
+      jX = link2.offsetLeft;
+      jY = link2.offsetTop;
+      
+      console.log({"coordonnées x" : qqch});
 
       if (items === 3) {
         throw BreakException;
@@ -51,10 +58,10 @@ var BreakException = {};
         truc.appendChild(svg);
 
         let ligne = document.createElementNS(ns,"line");
-        ligne.setAttribute("x1", qqch[items]);
-        ligne.setAttribute("y1", qqch[items]);
-        ligne.setAttribute("x2", qqch[items+1]);
-        ligne.setAttribute("y2", qqch[items+1]);
+        ligne.setAttribute("x1", eX);
+        ligne.setAttribute("y1", eY);
+        ligne.setAttribute("x2", jX);
+        ligne.setAttribute("y2", jY);
         ligne.style.stroke = "rgb(255,0,0)";
         ligne.style.strokeWidth = "4";
         svg.appendChild(ligne);
