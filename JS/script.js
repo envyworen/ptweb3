@@ -7,7 +7,6 @@ conseil.style.transform = "scale(0)";
 document.getElementById("button").addEventListener("click", function () {
   elt2.style.opacity = "0";
   elt.style.opacity = "0";
-  blocktest.style.opacity = "0";
   elt.style.transform = "scale(0)";
 });
 
