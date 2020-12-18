@@ -54,7 +54,7 @@ var BreakException = {};
       
       console.log({"coordonnées x" : qqch});
 
-      if (items === 3) {
+      if (items === articles.length - 1) {
         throw BreakException;
     }
 
@@ -76,11 +76,11 @@ var BreakException = {};
       ligne.style.position = "absolute";
       ligne.style.zIndex = "99";
       svg.appendChild(ligne);
-   
+      $(window).resize(function() { 
  
         ligne.remove();
       
-
+    });
     });
 
     } catch (e) {
