@@ -45,11 +45,11 @@ var BreakException = {};
     }
         let link1 = qqch[items];
         let link2 = qqch[items+1];
-        eX = link1.x;
-        eY = link1.y;
-        jX = link2.x;
-        jY = link2.y;
-
+        eX = link1.offsetLeft;
+        eY = link1.offsetLeft;
+        jX = link2.offsetLeft;
+        jY = link2.offsetLeft;
+        console.log(eX);
         let ns = 'http://www.w3.org/2000/svg';
         svg = document.createElementNS(ns,"svg");
         svg.style.height = "100%";
