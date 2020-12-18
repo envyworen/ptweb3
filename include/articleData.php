@@ -95,19 +95,19 @@ function updateart($dbh) {
         return $objet;
     }
     static function Next($dbh, $id) {
-        $sql= 'SELECT h1_art, min(id_art) AS suivant  FROM Article WHERE id_art > :valeur';
+        $sql= 'SELECT h1_art, id_art AS suivant  FROM Article WHERE id_art > :valeur ORDER BY id_art';
         $query = $dbh->prepare($sql);
         $query->bindValue(':valeur', $id, PDO::PARAM_STR);
         $query->execute();
-        $objet = $query->fetchObject('article');
+        $objet = $query->fetch('article');
         return $objet;
     }
     static function Prev($dbh, $id) {
-        $sql= 'SELECT h1_art, max(id_art) AS precedent  FROM Article WHERE id_art < :valeur';
+        $sql= 'SELECT h1_art, id_art AS precedent  FROM Article WHERE id_art < :valeur ORDER BY id_art DESC';
         $query = $dbh->prepare($sql);
         $query->bindValue(':valeur', $id, PDO::PARAM_STR);
         $query->execute();
-        $objet = $query->fetchObject('article');
+        $objet = $query->fetch('article');
         return $objet;
     }
 
