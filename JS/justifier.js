@@ -1,5 +1,3 @@
-let main = document.querySelector(".block-justifier");
-main.style.zIndex = "9999";
 var qqch = [];
 articles.forEach(function(article) {
   console.log(article);
@@ -12,6 +10,7 @@ articles.forEach(function(article) {
   link.classList.add("boule");
   link.style.width = "15px";
   link.style.height = "15px";
+  link.style.zIndex = "9999";
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
 
