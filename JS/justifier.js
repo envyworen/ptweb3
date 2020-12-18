@@ -1,7 +1,8 @@
 let truc = document.createElement("div");
 truc.style.position = "absolute";
-
-articles.forEach(function(article) {
+var BreakException = {};
+   try { 
+articles.forEach(function(article, items) {
   console.log(article);
   
   function getRandomInt(min, max) {
@@ -35,11 +36,13 @@ articles.forEach(function(article) {
     "Position horizontale dans la fenêtre": eX, 
     "Position verticale dans la fenêtre": eY
   });
-  
-  let ns = 'http://www.w3.org/2000/svg';
-  svg = document.createElementNS(ns,"svg");
-  svg.style.height = "320px";
-  svg.style.width = "320px";
+    if (items === 3) {
+            throw BreakException;
+        }
+      let ns = 'http://www.w3.org/2000/svg';
+      svg = document.createElementNS(ns,"svg");
+      svg.style.height = "320px";
+      svg.style.width = "320px";
 
   truc.appendChild(svg);
 
@@ -52,7 +55,11 @@ articles.forEach(function(article) {
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
-});
+
+      });
+      } catch (e) {
+        if (e !== BreakException) throw e;
+      }
 
 
 
