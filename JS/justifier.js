@@ -48,7 +48,7 @@ var BreakException = {};
   setInterval(function () {
     $(window).resize(function() { 
       if( typeof(ligne) == 'undefined' ){
-        alert("variableInexistante n'existe pas !");
+        
       } else {
         ligne.remove();
       }
