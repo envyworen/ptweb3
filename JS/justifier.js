@@ -46,9 +46,9 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
-  window.onresize = function() {
-    ligne.remove();
-  }
+    $(window).resize(function() { 
+      ligne.remove(); 
+    });
    try { 
      
     articles.forEach(function(articl, items) {
