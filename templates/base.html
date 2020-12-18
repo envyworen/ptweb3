@@ -12,55 +12,28 @@
 <body>
 	<header>
 
-        <nav>
-            <div class="nav-flex">
-              <div class="Home">
-                <a><img  class="logo" src="media/img/logo.png" alt=""></a>
-              </div>
+    
+      <nav>
+        <div class="burger">
+          <a href="#" class="burger__button" id="burger-button">
+            <span class="burger__button__icon"></span>
+          </a>
+          <ul class="burger__menu">
+            <li><a class ="home" href="#">Home</a></li>
+            <li><a href="#">Sous-surveillance</a></li>
+            <li><a href="#">Passé sous silence</a></li>
+            <li><a href="#">Profils</a></li>
+            <li><a href="#">Justifier l'inconcevable</a></li>
+            <li><a href="#">Rapport de force</a></li>
+          </ul>
+        </div>
+
+        <div class="flex-end">
+          <a class="inscr-padding" href="">Connexion</a>
+          <a class="inscr-padding" href="">Inscription</a>
+        </div>
+      </nav>
         
-              <div class="inscription">
-                <a>Inscription</a>
-                <a>Connexion</a>
-              </div> 
-            </div>
-          
-        
-            <div class="nav-cat">
-              <div class="conteneur-nav">
-                <label for="mobile">Catégories</label>
-                <input type="checkbox" id="mobile" role="button">
-                
-                <ul class="flex">
-                  <li class="deroulant"><a href="surveillance">Sous surveillance</a>
-                    <ul class="sous">
-               
-                    </ul>
-                  </li>
-                  <li class="deroulant"><a href="silence">Passé sous silence</a>
-                    <ul class="sous">
-               
-                    </ul>
-                  </li>
-                  <li class="deroulant"><a href="profils">Profils</a>
-                    <ul class="sous">
-              
-                    </ul>
-                  </li>
-                  <li class="deroulant"><a href="inconcevable">Justifier l'inconcevable</a>
-                    <ul class="sous">
-                   
-                    </ul>
-                  </li>
-                  <li class="deroulant"><a href="force">Rapports de force</a>
-                    <ul class="sous">
-                 
-                    </ul>
-                  </li>
-                </ul>
-               
-              </div>
-            </div>
-          </nav>
      
     {% if role is not empty and role > 1 %}    
     <p><a href="admin">admin</a></p>
@@ -84,5 +57,6 @@
     </script>
     <script src="JS/lightbox-plus-jquery.min.js"></script>
     <script src="JS/admin.js"></script>
+    <script src="JS/nav.js"></script>
 </body>
 </html>
