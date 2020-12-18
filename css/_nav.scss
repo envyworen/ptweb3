@@ -1,8 +1,13 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
 .nav-responsiv{
   width: 100%;
   margin: 0 auto;
-  background-color: rgb(26, 26, 26);
+  background-color: white;
+  position: sticky;
   top: 0px;
 }
 .conteneur-nav{
@@ -19,7 +24,7 @@
   text-align: center;
   background-color: gold;
 }
-.nav-responsive ul{
+.nav-responsiv ul{
   display: none;
   list-style-type: none;
   background-color: #555;
@@ -63,7 +68,7 @@
   .nav-responsiv label, .nav-responsiv input{
       display: none;
   }
-  .nav-responsiv input[type=checkbox]:checked + ul, .nav-responsiv ul{
+  .nav-responsiv input[type=checkbox]:checked + ul, article ul{
       display: flex;
       flex-flow: row wrap;
       background-color: white;
@@ -88,7 +93,7 @@
       position: absolute;
       width: 100%;
   }
-  article > div > ul li:hover .sous{
+  .nav-responsiv > div > ul li:hover .sous{
       display: flex;
       flex-flow: column wrap;
   }
@@ -105,7 +110,7 @@
       font-size: 12px;
   }
 
-    nav{
+  nav{
       display: flex;
       justify-content: space-evenly;
       height: 10vh;
