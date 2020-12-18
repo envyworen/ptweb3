@@ -889,6 +889,10 @@ header {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 nav {
   top: 0;
   padding: 0;
