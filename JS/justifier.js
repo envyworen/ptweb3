@@ -42,7 +42,10 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
-    if (ligne) {
+    if (typeof(ligne) == "undefined") {
+      
+    }
+    else {
       ligne.remove();
     }
    try { 
