@@ -89,7 +89,8 @@ switch ($page) {
     case 'fullarticle' :
         $modele = $page;
         $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh)), 'next' => article::Next($dbh, $id), 'prev' => article::Prev($dbh, $id), 'cat' => $categorie];
-    break;
+        var_dump(article::Prev($dbh, $id));
+        break;
 
     
     case 'justifier' :
