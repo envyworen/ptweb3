@@ -84,7 +84,7 @@ switch ($page) {
         if (isset($_GET['cat'])) {
             $categorie = $_GET['cat'];
         }
-        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))]
+        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
       break;
     case 'fullarticle' :
         $modele = $page;
