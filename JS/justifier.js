@@ -45,10 +45,10 @@ articles.forEach(function(article) {
 
 
   let ligne = document.createElementNS(ns,"line");
-  ligne.setAttribute("x1", "250");
-  ligne.setAttribute("y1", "250");
-  ligne.setAttribute("x2", eX);
-  ligne.setAttribute("y2", eY);
+  ligne.setAttribute("x1", eX);
+  ligne.setAttribute("y1", eY);
+  ligne.setAttribute("x2", "250");
+  ligne.setAttribute("y2", "250");
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
