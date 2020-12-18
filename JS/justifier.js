@@ -47,7 +47,11 @@ body.appendChild(svg);
 var BreakException = {};
   setInterval(function () {
     $(window).resize(function() { 
-      ligne.remove(); 
+      if( typeof(ligne) == 'undefined' ){
+        alert("variableInexistante n'existe pas !");
+      } else {
+        ligne.remove();
+      }
     });
    try { 
      
