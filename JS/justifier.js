@@ -46,13 +46,7 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
-    $(window).resize(function() { 
-      if( typeof(ligne) == 'undefined' ){
-        
-      } else {
-        ligne.remove();
-      }
-    });
+  
    try { 
      
     articles.forEach(function(articl, items) {
@@ -87,6 +81,11 @@ var BreakException = {};
     } catch (e) {
       if (e !== BreakException) throw e;
   }
+  $(window).resize(function() { 
+ 
+    ligne.remove();
+  
+});
 }, 90);
 
 let liens = document.querySelectorAll(".boule");
