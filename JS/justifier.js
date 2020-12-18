@@ -33,7 +33,7 @@ articles.forEach(function(article) {
 
   let ns = 'http://www.w3.org/2000/svg';
   let svg = document.createElementNS(ns,"svg");
-  svg.style.position = "absolute";
+  svg.style.position = "relative";
   svg.style.height = "320px"
   svg.style.width = "320px"
   tous.appendChild(svg);
