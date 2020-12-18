@@ -33,11 +33,11 @@ articles.forEach(function(article) {
 
 var BreakException = {};
    try { 
-
+    var qqch = [];
     articles.forEach(function(articl, items) {
       console.log(articl);
 
-      var coord = [link.offsetLeft, link.offsetTop];
+      qqch.push(link.offsetLeft, link.offsetTop);
       console.log({"coordonnées" : coord});
 
       if (items === 3) {
