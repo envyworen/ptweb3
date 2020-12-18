@@ -1,3 +1,5 @@
+let main = document.querySelector("block-justifier");
+main.style.zIndex = "9999";
 var qqch = [];
 articles.forEach(function(article) {
   console.log(article);
@@ -37,7 +39,6 @@ svg.style.height = "100vh";
 svg.style.width = "100vw";
 svg.style.position = "absolute";
 svg.style.top = "0";
-svg.style.zIndex = "-9999";
 body.appendChild(svg);
 
 var BreakException = {};
