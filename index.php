@@ -211,7 +211,7 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = ['user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh);];
+      $data = ['user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh)];
   }
 
   // Affichage du modèle choisi avec les données récupérées
