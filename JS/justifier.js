@@ -42,6 +42,7 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
+    ligne.remove();
    try { 
      
     articles.forEach(function(articl, items) {
