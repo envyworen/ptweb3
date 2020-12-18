@@ -42,7 +42,6 @@ svg.style.height = "100vh";
 svg.style.width = "100vw";
 svg.style.position = "absolute";
 svg.style.top = "0";
-svg.style.zIndex = "-999";
 body.appendChild(svg);
 
 var BreakException = {};
@@ -75,7 +74,6 @@ var BreakException = {};
       ligne.style.stroke = "rgb(255,0,0)";
       ligne.style.strokeWidth = "4";
       ligne.style.position = "absolute";
-      ligne.style.zIndex = "-99";
       svg.appendChild(ligne);
       $(window).resize(function() { 
  
