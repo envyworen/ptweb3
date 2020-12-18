@@ -1,8 +1,7 @@
 let truc = document.createElement("div");
 truc.style.position = "absolute";
-var BreakException = {};
-   try { 
-articles.forEach(function(article, items) {
+
+articles.forEach(function(article) {
   console.log(article);
   
   function getRandomInt(min, max) {
@@ -30,39 +29,45 @@ articles.forEach(function(article, items) {
   block.appendChild(link);
   tous.appendChild(block);
 
-  var eX = link.offsetLeft;
-  var eY = link.offsetTop;
-  console.log({
-    "Position horizontale dans la fenêtre": eX, 
-    "Position verticale dans la fenêtre": eY
-  });
-    if (items === 3) {
-            throw BreakException;
-        }
-      let ns = 'http://www.w3.org/2000/svg';
-      svg = document.createElementNS(ns,"svg");
-      svg.style.height = "320px";
-      svg.style.width = "320px";
+});
 
-  truc.appendChild(svg);
+var BreakException = {};
+   try { 
 
+    articles.forEach(function(articl, items) {
+      console.log(articl);
 
-  let ligne = document.createElementNS(ns,"line");
-  ligne.setAttribute("x1", eX);
-  ligne.setAttribute("y1", eY);
-  ligne.setAttribute("x2", "250");
-  ligne.setAttribute("y2", "250");
-  ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "4";
-  svg.appendChild(ligne);
-
+      var eX = link.offsetLeft;
+      var eY = link.offsetTop;
+      console.log({
+        "Position horizontale dans la fenêtre": eX, 
+        "Position verticale dans la fenêtre": eY
       });
-      } catch (e) {
-        if (e !== BreakException) throw e;
-      }
 
+      if (items === 3) {
+        throw BreakException;
+    }
+        let ns = 'http://www.w3.org/2000/svg';
+        svg = document.createElementNS(ns,"svg");
+        svg.style.height = "320px";
+        svg.style.width = "320px";
 
+        truc.appendChild(svg);
 
+        let ligne = document.createElementNS(ns,"line");
+        ligne.setAttribute("x1", eX[items]);
+        ligne.setAttribute("y1", eY[items]);
+        ligne.setAttribute("x2", eX[items+1]);
+        ligne.setAttribute("y2", eY[items+1]);
+        ligne.style.stroke = "rgb(255,0,0)";
+        ligne.style.strokeWidth = "4";
+        svg.appendChild(ligne);
+
+    });
+
+} catch (e) {
+  if (e !== BreakException) throw e;
+}
 
 
 let liens = document.querySelectorAll(".boule");
