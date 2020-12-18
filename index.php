@@ -72,6 +72,8 @@ $feedback = logi($dbh);
         ]);
 }}
 */
+
+
 if (isset($_GET['page']))
 { $page = $_GET['page'];
 } else {$page = '';}
@@ -211,7 +213,7 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = ['user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh)];
+      $data = ['user' => $user, 'role' => $role, 'menu' => $tabjon];
   }
 
   // Affichage du modèle choisi avec les données récupérées
