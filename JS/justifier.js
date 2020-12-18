@@ -33,6 +33,14 @@ articles.forEach(function(article) {
 
 });
 
+let body = document.querySelector("body");
+let ns = 'http://www.w3.org/2000/svg';
+svg = document.createElementNS(ns,"svg");
+svg.style.height = "100vh";
+svg.style.width = "100vw";
+svg.style.position = "absolute";
+body.appendChild(svg);
+
 var BreakException = {};
    try { 
     articles.forEach(function(articl, items) {
@@ -46,17 +54,10 @@ var BreakException = {};
         let link1 = qqch[items];
         let link2 = qqch[items+1];
         eX = link1.offsetLeft;
-        eY = link1.offsetLeft;
+        eY = link1.offsetTop;
         jX = link2.offsetLeft;
-        jY = link2.offsetLeft;
+        jY = link2.offsetTop;
         console.log(eX);
-        let ns = 'http://www.w3.org/2000/svg';
-        svg = document.createElementNS(ns,"svg");
-        svg.style.height = "100%";
-        svg.style.width = "100%";
-        svg.style.position = "absolute";
-
-        truc.appendChild(svg);
 
         let ligne = document.createElementNS(ns,"line");
         ligne.setAttribute("x1", eX);
