@@ -39,6 +39,7 @@ svg = document.createElementNS(ns,"svg");
 svg.style.height = "100vh";
 svg.style.width = "100vw";
 svg.style.position = "absolute";
+svg.style.top = "0";
 body.appendChild(svg);
 
 var BreakException = {};
