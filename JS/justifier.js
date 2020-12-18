@@ -41,7 +41,7 @@ svg.style.top = "0";
 body.appendChild(svg);
 
 var BreakException = {};
-  setTimeout(function () {
+  setInterval(function () {
    try { 
      
     articles.forEach(function(articl, items) {
