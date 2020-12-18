@@ -38,7 +38,7 @@ var BreakException = {};
       console.log(articl);
 
       qqch.push(link.offsetLeft, link.offsetTop);
-      console.log({"coordonnées" : coord});
+      console.log({"coordonnées" : qqch});
 
       if (items === 3) {
         throw BreakException;
