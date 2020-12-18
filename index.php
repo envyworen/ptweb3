@@ -129,12 +129,12 @@ switch ($page) {
 
     case 'login' :
       $modele = $page;
-      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh); ];
+      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh) ];
       break;
 
     case 'register' :
       $modele = $page;
-      $data = ['feedback' => $return, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh);];
+      $data = ['feedback' => $return, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh)];
       break;  
     case 'admin' :
         if ($role > 1) {
