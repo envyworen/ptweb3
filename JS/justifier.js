@@ -45,15 +45,16 @@ var BreakException = {};
     }
         let link1 = qqch[items];
         let link2 = qqch[items+1];
-        eX = link1.offsetLeft;
-        eY = link1.offsetTop;
-        jX = link2.offsetLeft;
-        jY = link2.offsetTop;
+        eX = link1.pageXOffset;
+        eY = link1.pageYOffset;
+        jX = link2.pageXOffset;
+        jY = link2.pageYOffset;
 
         let ns = 'http://www.w3.org/2000/svg';
         svg = document.createElementNS(ns,"svg");
-        svg.style.height = "320px";
-        svg.style.width = "320px";
+        svg.style.height = "100%";
+        svg.style.width = "100%";
+        svg.style.position = "absolute";
 
         truc.appendChild(svg);
 
@@ -64,6 +65,7 @@ var BreakException = {};
         ligne.setAttribute("y2", jY);
         ligne.style.stroke = "rgb(255,0,0)";
         ligne.style.strokeWidth = "4";
+        ligne.style.position = "absolute";
         svg.appendChild(ligne);
 
     });
