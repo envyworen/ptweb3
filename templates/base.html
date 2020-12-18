@@ -12,7 +12,6 @@
 <body>
 	<header>
 
-<<<<<<< HEAD
     
       <nav>
         <div class="burger">
@@ -30,37 +29,31 @@
         </div>
 
         <div class="flex-end">
-          <a class="inscr-padding" href="">Connexion</a>
-          <a class="inscr-padding" href="">Inscription</a>
+          {% if role is not empty and role > 1 %}    
+          <a href="admin">admin</a>
+          {% endif %}
+          {% if user is not empty %}    
+          <p>{{ user }}</p>
+          <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
+
+          {% else %}
+          <a href="connexion">connexion</a>
+          <a href="inscription">inscription</a>  
+          {% endif %}
         </div>
       </nav>
-=======
-        <nav>
-            <div class="nav-flex">
-        
-              <div class="inscription">
-                {% if role is not empty and role > 1 %}    
-                <p><a href="admin">admin</a></p>
-                {% endif %}
-                {% if user is not empty %}    
-                <p>{{ user }}</p>
-                <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
-     
-                {% else %}
-                <p><a href="connexion">connexion</a></p>
-                <p><a href="inscription">inscription</a></p>    
-                {% endif %}
     </header>
-              </div> 
-            </div>
+
           
->>>>>>> 97e0b7c862234e549c94745cc502c67eb35d8358
         
      
 
     {% block main %}
     {% endblock %}
     <footer>
+        <div class="Home">
+          <a><img  class="logo" src="media/img/logo.png" alt=""></a>
+        </div>
         <a href="mention">Mentions légales</a>
     </footer>
     <script> 
