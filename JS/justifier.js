@@ -66,7 +66,7 @@ var BreakException = {};
       jY = link2.offsetTop + 7.5;
       console.log(eX);
 
-      let ligne = document.createElementNS(ns,"line");
+       ligne = document.createElementNS(ns,"line");
       ligne.setAttribute("x1", eX);
       ligne.setAttribute("y1", eY);
       ligne.setAttribute("x2", jX);
