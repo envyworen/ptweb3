@@ -8,6 +8,8 @@ articles.forEach(function(article) {
   
   link = document.createElement("a");
   link.classList.add("boule");
+  link.style.width = "15px";
+  link.style.height = "15px";
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
 
