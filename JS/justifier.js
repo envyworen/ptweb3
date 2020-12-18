@@ -31,19 +31,18 @@ articles.forEach(function(article) {
     "Position verticale dans la fenêtre": eY
   });
 
-  let svg = document.createElement("svg");
+  let ns = 'http://www.w3.org/2000/svg';
+  let svg = document.createElementNS(ns,"svg");
   svg.style.position = "absolute";
   svg.style.height = "320px"
   svg.style.width = "320px"
   tous.appendChild(svg);
 
-  let ligne = document.createElement("line");
+  let ligne = document.createElementNS(ns,"line");
   ligne.setAttribute("x1", "250");
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
-  svg.setAttribute("version", "1.1");
-  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
