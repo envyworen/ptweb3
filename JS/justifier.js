@@ -16,7 +16,7 @@ articles.forEach(function(article) {
   let description = document.createElement("p");
   point.appendChild(description);
 
-  let tous = document.querySelector(".tous");
+  tous = document.querySelector(".tous");
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
@@ -31,7 +31,7 @@ articles.forEach(function(article) {
   });
   
   let ns = 'http://www.w3.org/2000/svg';
-  let svg = document.createElementNS(ns,"svg");
+  svg = document.createElementNS(ns,"svg");
   svg.style.height = "320px";
   svg.style.width = "320px";
 
