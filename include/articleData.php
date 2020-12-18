@@ -99,7 +99,7 @@ function updateart($dbh) {
         $query = $dbh->prepare($sql);
         $query->bindValue(':valeur', $id, PDO::PARAM_STR);
         $query->execute();
-        $objet = $query->fetch('article');
+        $objet = $query->fetchObject('article');
         return $objet;
     }
     static function Prev($dbh, $id) {
@@ -107,7 +107,7 @@ function updateart($dbh) {
         $query = $dbh->prepare($sql);
         $query->bindValue(':valeur', $id, PDO::PARAM_STR);
         $query->execute();
-        $objet = $query->fetch('article');
+        $objet = $query->fetchObject('article');
         return $objet;
     }
 
