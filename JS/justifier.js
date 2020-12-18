@@ -76,11 +76,11 @@ var BreakException = {};
       ligne.style.position = "absolute";
       ligne.style.zIndex = "99";
       svg.appendChild(ligne);
-      $(window).resize(function() { 
+   
  
         ligne.remove();
       
-    });
+
     });
 
     } catch (e) {
