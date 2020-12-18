@@ -51,10 +51,10 @@ var BreakException = {};
         truc.appendChild(svg);
 
         let ligne = document.createElementNS(ns,"line");
-        ligne.setAttribute("x1", coord[items]);
-        ligne.setAttribute("y1", coord[items]);
-        ligne.setAttribute("x2", coord[items+1]);
-        ligne.setAttribute("y2", coord[items+1]);
+        ligne.setAttribute("x1", qqch[items]);
+        ligne.setAttribute("y1", qqch[items]);
+        ligne.setAttribute("x2", qqch[items+1]);
+        ligne.setAttribute("y2", qqch[items+1]);
         ligne.style.stroke = "rgb(255,0,0)";
         ligne.style.strokeWidth = "4";
         svg.appendChild(ligne);
