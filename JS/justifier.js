@@ -1,5 +1,3 @@
-let truc = document.createElement("div");
-truc.style.position = "absolute";
 var qqch = [];
 articles.forEach(function(article) {
   console.log(article);
@@ -19,10 +17,7 @@ articles.forEach(function(article) {
   let description = document.createElement("p");
   point.appendChild(description);
 
-
   tous = document.querySelector(".tous");
-  tous.appendChild(truc);
-
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
