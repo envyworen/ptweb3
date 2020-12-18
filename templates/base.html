@@ -11,66 +11,65 @@
 </head>
 <body>
 	<header>
-        <nav > <!-- A FINIR -->
-            <div classe="" >
-				<div class="dropbtn dropdown" ><a href="surveillance">Sous surveillance</a>
-                    <div class="dropdown-content" >
-                        <a href="#">Condamnés à se soigner</a>
-                        <a href="#">"Je ne ressens plus rien"</a>
-                        <a href="#">Avocats en défense</a>
-                        <a href="#">Le parcours du condamné</a>
-                        <a href="#">Jugés à vie</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown" ><a href="silence">Passé sous silence</a>
-                    <div class="dropdown-content">
-                        <a href="#">Des criminelles sous-estimées</a>
-                        <a href="#">Parcours des preuves</a>
-                        <a href="#">Secrets de famille</a>
-                        <a href="#">Silence arc-en-ciel</a>
-                        <a href="#">Le silence des victimes</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown" ><a href="profils">Profils</a>
-                    <div class="dropdown-content">
-                        <a href="#">Homme, 39 ans, agresseur de proximité</a>
-                        <a href="#">Sur les traces des auteurs</a>
-                        <a href="#">"Ce ne sont pas tous des malades"</a>
-                        <a href="#">Traiter des auteurs</a>
-                       <a href="#">Quand l'auteur se dit victime</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown"><a  href="inconcevable">Justifier l'inconcevable</a>
-                    <div class="dropdown-content">
-                        <a href="#">Violence sous X</a>
-                        <a href="#">Au nom de Dieu</a>
-                        <a href="#">Facultés sexuelles</a>
-                        <a href="#">Violer pour punir</a>
-                        <a href="#">Viol-fiction</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown"><a   href="force">Rapports de force</a>
-                    <div class="dropdown-content">
-                        <a href="#">Vengeance en réseau</a>
-                        <a href="#">C'est ma femme, c'est normal</a>
-                        <a href="#">Franchir la ligne</a>
-                        <a href="#">Souffrir en famille</a>
-                        <a href="#">Emprise sur ordonnance</a>
-                     </div>
-                </div>
-                <a class="accueil dropbtn dropdown" href="#" >Home</a>
-            </div>
-        </nav>
+<<<<<<< HEAD
+        <nav>
+            <div class="flex">
+              <div class="Home">
+                <a><img  class="media/img/logo.png" src="media/img/logo.png" alt=""></a>
+              </div>
         
+              <div class="inscription">
+                <a>Inscription</a>
+                <a>Connexion</a>
+              </div> 
+            </div>
+          
+        
+            <div class="nav-responsiv">
+              <div class="conteneur-nav">
+                <label for="mobile">Catégories</label>
+                <input type="checkbox" id="mobile" role="button">
+                
+                <ul>
+                  <li class="deroulant"><a href="surveillance">Sous surveillance</a>
+                    <ul class="sous">
+                        
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="silence">Passé sous silence</a>
+                    <ul class="sous">
+               
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="profils">Profils</a>
+                    <ul class="sous">
+              
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="inconcevable">Justifier l'inconcevable</a>
+                    <ul class="sous">
+                   
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="force">Rapports de force</a>
+                    <ul class="sous">
+                 
+                    </ul>
+                  </li>
+                </ul>
+               
+              </div>
+            </div>
+          </nav>
+     
+    {% if role is not empty and role > 1 %}    
+    <p><a href="admin">admin</a></p>
+    {% endif %}
     {% if user is not empty %}    
         <p>{{ user }}</p>
         <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
-        <p><a href="admin">admin</a></p>
-    {% else %}
+     
+        {% else %}
         <p><a href="connexion">connexion</a></p>
         <p><a href="inscription">inscription</a></p>    
         {% endif %}
@@ -80,6 +79,9 @@
     <footer>
         <a href="mention">Mentions légales</a>
     </footer>
+    <script> 
+       let tabjson = {{ menu | raw }} 
+    </script>
     <script src="JS/lightbox-plus-jquery.min.js"></script>
     <script src="JS/admin.js"></script>
 </body>

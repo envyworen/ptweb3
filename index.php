@@ -72,6 +72,8 @@ $feedback = logi($dbh);
         ]);
 }}
 */
+
+
 if (isset($_GET['page']))
 { $page = $_GET['page'];
 } else {$page = '';}
@@ -82,11 +84,11 @@ switch ($page) {
         if (isset($_GET['cat'])) {
             $categorie = $_GET['cat'];
         }
-        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user];
+        $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
       break;
     case 'fullarticle' :
         $modele = $page;
-        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user];
+        $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
     break;
 
     
@@ -129,17 +131,17 @@ switch ($page) {
 
     case 'login' :
       $modele = $page;
-      $data = ['feedback' => $feedback, 'user' => $user];
+      $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh) ];
       break;
 
     case 'register' :
       $modele = $page;
-      $data = ['feedback' => $return, 'user' => $user];
+      $data = ['feedback' => $return, 'user' => $user, 'role' => $role, 'menu' => article::readTitre($dbh)];
       break;  
     case 'admin' :
         if ($role > 1) {
             $modele = $page;
-            $data = ['feedback' => $feedback, 'user' => $user];
+            $data = ['feedback' => $feedback, 'user' => $user, 'role' => $role];
         }
         else {
             header('Location: index.php');
@@ -194,7 +196,7 @@ switch ($page) {
             $modele = $page;
             deleteuser($dbh);
             changerole($dbh);
-            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user,];
+            $data = ['utilisateur' => users::afficheuser($dbh), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
         }
         else {
             header('Location: index.php');
@@ -211,7 +213,7 @@ switch ($page) {
 
     default :
       $modele = '../index';
-      $data = ['user' => $user];
+      $data = ['user' => $user, 'role' => $role, 'menu' => $tabjon];
   }
 
   // Affichage du modèle choisi avec les données récupérées

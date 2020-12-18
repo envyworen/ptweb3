@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: courrier;
   src: url("../fonts/CourierSTD.otf");
@@ -879,79 +880,242 @@ img, video {
   }
 }
 
-header {
-  background-color: lightgrey;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+.nav-responsiv {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  height: 60px;
 }
 
-/* Style The Dropdown Button */
-.dropbtn {
-  margin: 10px 40px;
-  font-size: 20px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
+.conteneur-nav {
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  width: 100%;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.nav-responsiv input[type=checkbox] {
+  display: none;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: lightgrey;
-}
-
-.accueil {
-  text-decoration: none;
-  height: 40px;
+.nav-responsiv label {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0px;
   text-align: center;
-  line-height: 40px;
-  width: 80px;
+  background-color: gold;
+}
+
+.nav-responsiv ul {
+  display: none;
+  list-style-type: none;
+  background-color: #555;
+}
+
+.nav-responsiv input[type=checkbox]:checked + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.nav-responsiv ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: center;
+}
+
+.nav-responsiv > div > ul > li > a {
   color: white;
-  background-color: grey;
-  border-radius: 5%;
+}
+
+.nav-responsiv a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 0px;
+}
+
+.sous {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  z-index: 1000;
+}
+
+.sous li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: left;
+}
+
+.sous a {
+  padding: 10px;
+  background-color: RGBa(200, 200, 200, 0.8);
+}
+
+@media screen and (min-width: 980px) {
+  .conteneur-nav {
+    position: static;
+  }
+  .nav-responsiv label, .nav-responsiv input {
+    display: none;
+  }
+  .nav-responsiv input[type=checkbox]:checked + ul, article ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    background-color: white;
+  }
+  .nav-responsiv ul li {
+    position: relative;
+  }
+  .nav-responsiv > div > ul > li > a {
+    color: black;
+  }
+  .nav-responsiv a {
+    border-bottom: 2px solid transparent;
+  }
+  .nav-responsiv a:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
+  }
+  .sous {
+    display: none;
+    -webkit-box-shadow: 0px 1px 2px #CCC;
+            box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+  }
+  .nav-responsiv > div > ul li:hover .sous {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .sous a {
+    border-bottom: none;
+    background-color: white;
+  }
+  .sous a:hover {
+    border-bottom: none;
+    background-color: RGBa(200, 200, 200, 0.1);
+  }
+  .deroulant > a::after {
+    content: " ▼";
+    font-size: 12px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 10vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo {
+    width: 5vw;
+  }
+  .inscription {
+    margin-right: 2rem;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .flex {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30vw;
+  }
+}
+
+.conteneur-contenu {
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 15vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+  }
+  .logo {
+    width: 20vw;
+    margin-left: 1rem;
+    margin-top: .5rem;
+  }
+  .inscription {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
 }
 
 footer {

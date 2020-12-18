@@ -20,6 +20,7 @@ articles.forEach(function(article) {
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
+  block.style.zindex = "-100";
   block.appendChild(link);
   tous.appendChild(block);
 
@@ -32,21 +33,28 @@ articles.forEach(function(article) {
 
   let svg = document.createElement("svg");
   svg.style.position = "absolute";
-  svg.style.height = "20rem"
-  svg.style.width = "20rem"
+  svg.style.height = "320px"
+  svg.style.width = "320px"
   tous.appendChild(svg);
-  svg.style.zIndex = "9999";
+
   let ligne = document.createElement("line");
+<<<<<<< HEAD
   ligne.setAttribute("x1", "250");
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
   ligne.setAttribute("version", "1.1");
   ligne.setAttribute("xmins", "http://www.w3.org/2000/svg");
+=======
+  ligne.setAttribute("x1", "0");
+  ligne.setAttribute("y1", "0");
+  ligne.setAttribute("x2", eX/16);
+  ligne.setAttribute("y2", eY/16);
+>>>>>>> 30ae46a959aad51ba66040469089ec75fc24bca1
   ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "4px";
+  ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
-
+  console.log(ligne);
 });
 
 let liens = document.querySelectorAll(".boule");
