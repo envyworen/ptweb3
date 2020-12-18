@@ -40,7 +40,7 @@ body.open:before {
 }
 body:before {
   content: "";
-  position: absolute;
+  position: fixed;
   background-color: #8d0101;
   background-size: cover;
   width: 100%;
