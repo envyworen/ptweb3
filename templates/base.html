@@ -11,60 +11,77 @@
 </head>
 <body>
 	<header>
-        <nav > <!-- A FINIR -->
-            <div classe="" >
-				<div class="dropbtn dropdown" ><a href="surveillance">Sous surveillance</a>
-                    <div class="dropdown-content" >
-                        <a href="#">Condamnés à se soigner</a>
-                        <a href="#">"Je ne ressens plus rien"</a>
-                        <a href="#">Avocats en défense</a>
-                        <a href="#">Le parcours du condamné</a>
-                        <a href="#">Jugés à vie</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown" ><a href="silence">Passé sous silence</a>
-                    <div class="dropdown-content">
-                        <a href="#">Des criminelles sous-estimées</a>
-                        <a href="#">Parcours des preuves</a>
-                        <a href="#">Secrets de famille</a>
-                        <a href="#">Silence arc-en-ciel</a>
-                        <a href="#">Le silence des victimes</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown" ><a href="profils">Profils</a>
-                    <div class="dropdown-content">
-                        <a href="#">Homme, 39 ans, agresseur de proximité</a>
-                        <a href="#">Sur les traces des auteurs</a>
-                        <a href="#">"Ce ne sont pas tous des malades"</a>
-                        <a href="#">Traiter des auteurs</a>
-                       <a href="#">Quand l'auteur se dit victime</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown"><a  href="inconcevable">Justifier l'inconcevable</a>
-                    <div class="dropdown-content">
-                        <a href="#">Violence sous X</a>
-                        <a href="#">Au nom de Dieu</a>
-                        <a href="#">Facultés sexuelles</a>
-                        <a href="#">Violer pour punir</a>
-                        <a href="#">Viol-fiction</a>
-                    </div>
-                </div>
-
-                <div class="dropbtn dropdown"><a   href="force">Rapports de force</a>
-                    <div class="dropdown-content">
-                        <a href="#">Vengeance en réseau</a>
-                        <a href="#">C'est ma femme, c'est normal</a>
-                        <a href="#">Franchir la ligne</a>
-                        <a href="#">Souffrir en famille</a>
-                        <a href="#">Emprise sur ordonnance</a>
-                     </div>
-                </div>
-                <a class="accueil dropbtn dropdown" href="#" >Home</a>
+        <nav>
+            <div class="flex">
+              <div class="Home">
+                <a><img  class="logo" src="media/img/logo.png" alt=""></a>
+              </div>
+        
+              <div class="inscription">
+                <a>Inscription</a>
+                <a>Connexion</a>
+              </div>
+        
+            
             </div>
-        </nav>
+          
+        
+            <article>
+              <div class="conteneur-nav">
+                <label for="mobile">Catégories</label>
+                <input type="checkbox" id="mobile" role="button">
+                
+                <ul>
+                  <li class="deroulant"><a href="surveillance">Sous surveillance</a>
+                    <ul class="sous">
+                      <li><a href="#">Condamnés à se soigner</a></li>
+                      <li><a href="#">"Je ne ressens plus rien"</a></li>
+                      <li><a href="#">Avocats en défense</a></li>
+                      <li><a href="#">Le parcours du condamné</a></li>
+                      <li><a href="#">Jugés à vie</a></li>
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="silence">Passé sous silence</a>
+                    <ul class="sous">
+                      <li><a href="#">Des criminelles sous-estimées</a></li>
+                      <li><a href="#">Parcours des preuves</a></li>
+                      <li><a href="#">Secrets de famille</a></li>
+                      <li><a href="#">Silence arc-en-ciel</a></li>
+                      <li><a href="#">Le silence des victimes</a></li>
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="profils">Profils</a>
+                    <ul class="sous">
+                      <li><a href="#">Homme, 39 ans, agresseur de proximité</a></li>
+                      <li><a href="#">Sur les traces des auteurs</a></li>
+                      <li><a href="#">"Ce ne sont pas tous des malades"</a></li>
+                      <li><a href="#">Traiter des auteurs</a></li>
+                      <li><a href="#">Quand l'auteur se dit victime</a></li>
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="inconcevable">Justifier l'inconcevable</a>
+                    <ul class="sous">
+                      <li><a href="#">Violence sous X</a></li>
+                      <li><a href="#">Au nom de Dieu</a></li>
+                      <li><a href="#">Facultés sexuelles</a></li>
+                      <li><a href="#">Violer pour punir</a></li>
+                      <li><a href="#">Viol-fiction</a></li>
+                    </ul>
+                  </li>
+                  <li class="deroulant"><a href="force">Rapports de force</a>
+                    <ul class="sous">
+                      <li><a href="#">Vengeance en réseau</a></li>
+                      <li><a href="#">C'est ma femme, c'est normal</a></li>
+                      <li><a href="#">Franchir la ligne</a></li>
+                      <li><a href="#">Souffrir en famille</a></li>
+                      <li><a href="#">Emprise sur ordonnance</a></li>
+                    </ul>
+                  </li>
+                </ul>
+               
+              </div>
+            </article>
+          </nav>
      
     {% if role is not empty and role > 1 %}    
     <p><a href="admin">admin</a></p>
