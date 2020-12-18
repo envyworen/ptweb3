@@ -1,3 +1,6 @@
+let truc = document.createElement("div");
+truc.style.position = "absolute";
+
 articles.forEach(function(article) {
   console.log(article);
   
@@ -5,7 +8,7 @@ articles.forEach(function(article) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
   
-  let link = document.createElement("a");
+  link = document.createElement("a");
   link.classList.add("boule");
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
@@ -16,39 +19,56 @@ articles.forEach(function(article) {
   let description = document.createElement("p");
   point.appendChild(description);
 
-  let tous = document.querySelector(".tous");
+
+  tous = document.querySelector(".tous");
+  tous.appendChild(truc);
+
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
-  block.style.zindex = "-100";
   block.appendChild(link);
   tous.appendChild(block);
 
-  var eX = link.offsetLeft;
-  var eY = link.offsetTop;
-  console.log({
-    "Position horizontale dans la fenêtre": eX, 
-    "Position verticale dans la fenêtre": eY
-  });
-
-  let svg = document.createElement("svg");
-  svg.style.position = "absolute";
-  svg.style.height = "320px"
-  svg.style.width = "320px"
-  tous.appendChild(svg);
-
-  let ligne = document.createElement("line");
-  ligne.setAttribute("x1", "250");
-  ligne.setAttribute("y1", "250");
-  ligne.setAttribute("x2", eX);
-  ligne.setAttribute("y2", eY);
-  svg.setAttribute("version", "1.1");
-  svg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-  ligne.style.stroke = "rgb(255,0,0)";
-  ligne.style.strokeWidth = "4";
-  svg.appendChild(ligne);
-  console.log(ligne);
 });
+
+var BreakException = {};
+   try { 
+
+    articles.forEach(function(articl, items) {
+      console.log(articl);
+
+      var eX = link.offsetLeft;
+      var eY = link.offsetTop;
+      console.log({
+        "Position horizontale dans la fenêtre": eX, 
+        "Position verticale dans la fenêtre": eY
+      });
+
+      if (items === 3) {
+        throw BreakException;
+    }
+        let ns = 'http://www.w3.org/2000/svg';
+        svg = document.createElementNS(ns,"svg");
+        svg.style.height = "320px";
+        svg.style.width = "320px";
+
+        truc.appendChild(svg);
+
+        let ligne = document.createElementNS(ns,"line");
+        ligne.setAttribute("x1", eX[items]);
+        ligne.setAttribute("y1", eY[items]);
+        ligne.setAttribute("x2", eX[items+1]);
+        ligne.setAttribute("y2", eY[items+1]);
+        ligne.style.stroke = "rgb(255,0,0)";
+        ligne.style.strokeWidth = "4";
+        svg.appendChild(ligne);
+
+    });
+
+} catch (e) {
+  if (e !== BreakException) throw e;
+}
+
 
 let liens = document.querySelectorAll(".boule");
 

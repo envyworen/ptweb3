@@ -28,8 +28,9 @@ articles.forEach(function(article) {
 let liens = document.querySelectorAll(".boule");
 
 for (var i = 0; i < liens.length; i++) {
-liens[0].href = "";
-liens[1].href = "";
-liens[2].href = "";
-liens[3].href = "";
+liens[0].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-profils-13";
+liens[1].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-profils-19";
+liens[2].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-profils-21";
+liens[3].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-profils-24";
+liens[4].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-profils-25";
 }
