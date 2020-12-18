@@ -20,7 +20,6 @@ articles.forEach(function(article) {
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
-  block.style.zindex = "-100";
   block.appendChild(link);
   tous.appendChild(block);
 
@@ -30,14 +29,12 @@ articles.forEach(function(article) {
     "Position horizontale dans la fenêtre": eX, 
     "Position verticale dans la fenêtre": eY
   });
-  let page = document.createElement("div");
-  page.style.position = "absolute";
-  tous.appendChild(page);
+  
   let ns = 'http://www.w3.org/2000/svg';
   let svg = document.createElementNS(ns,"svg");
-  svg.style.height = "320px"
-  svg.style.width = "320px"
-  page.appendChild(svg);
+  svg.classList.add("trait");
+  svg.style.height = "320px";
+  svg.style.width = "320px";
 
   let ligne = document.createElementNS(ns,"line");
   ligne.setAttribute("x1", "250");
@@ -47,8 +44,17 @@ articles.forEach(function(article) {
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
-  console.log(ligne);
 });
+
+let gros = document.querySelector(".tous");
+let trait = document.querySelector(".trait");
+let truc = document.createElement("div");
+truc.style.position = "absolute";
+truc.appendChild(trait);
+gros.appendChild(truc);
+
+
+
 
 let liens = document.querySelectorAll(".boule");
 
