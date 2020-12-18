@@ -37,12 +37,8 @@ var BreakException = {};
     articles.forEach(function(articl, items) {
       console.log(articl);
 
-      var eX = link.offsetLeft;
-      var eY = link.offsetTop;
-      console.log({
-        "Position horizontale dans la fenêtre": eX, 
-        "Position verticale dans la fenêtre": eY
-      });
+      var coord = [link.offsetLeft, link.offsetTop];
+      console.log({"coordonnées" : coord});
 
       if (items === 3) {
         throw BreakException;
@@ -55,10 +51,10 @@ var BreakException = {};
         truc.appendChild(svg);
 
         let ligne = document.createElementNS(ns,"line");
-        ligne.setAttribute("x1", eX[items]);
-        ligne.setAttribute("y1", eY[items]);
-        ligne.setAttribute("x2", eX[items+1]);
-        ligne.setAttribute("y2", eY[items+1]);
+        ligne.setAttribute("x1", coord[items]);
+        ligne.setAttribute("y1", coord[items]);
+        ligne.setAttribute("x2", coord[items+1]);
+        ligne.setAttribute("y2", coord[items+1]);
         ligne.style.stroke = "rgb(255,0,0)";
         ligne.style.strokeWidth = "4";
         svg.appendChild(ligne);
