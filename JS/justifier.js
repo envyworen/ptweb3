@@ -51,17 +51,17 @@ var BreakException = {};
     }
         let link1 = qqch[items];
         let link2 = qqch[items+1];
-        eX = link1.offsetLeft;
-        eY = link1.offsetTop;
-        jX = link2.offsetLeft;
-        jY = link2.offsetTop;
+        eX = link1.offsetLeft * 100 / body.width;
+        eY = link1.offsetTop * 100 / body.height;
+        jX = link2.offsetLeft * 100 / body.width;
+        jY = link2.offsetTop * 100 / body.height;
         console.log(eX);
 
         let ligne = document.createElementNS(ns,"line");
-        ligne.setAttribute("x1", eX);
-        ligne.setAttribute("y1", eY);
-        ligne.setAttribute("x2", jX);
-        ligne.setAttribute("y2", jY);
+        ligne.setAttribute("x1", eX+"%");
+        ligne.setAttribute("y1", eY+"%");
+        ligne.setAttribute("x2", jX+"%");
+        ligne.setAttribute("y2", jY+"%");
         ligne.style.stroke = "rgb(255,0,0)";
         ligne.style.strokeWidth = "4";
         ligne.style.position = "absolute";
