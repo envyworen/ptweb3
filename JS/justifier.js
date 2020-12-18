@@ -1,4 +1,4 @@
-let main = document.querySelector("block-justifier");
+let main = document.querySelector(".block-justifier");
 main.style.zIndex = "9999";
 var qqch = [];
 articles.forEach(function(article) {
