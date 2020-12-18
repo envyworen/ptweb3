@@ -32,7 +32,6 @@ articles.forEach(function(article) {
   
   let ns = 'http://www.w3.org/2000/svg';
   let svg = document.createElementNS(ns,"svg");
-  svg.classList.add("trait");
   svg.style.height = "320px";
   svg.style.width = "320px";
 
@@ -46,12 +45,10 @@ articles.forEach(function(article) {
   svg.appendChild(ligne);
 });
 
-let gros = document.querySelector(".tous");
-let trait = document.querySelector(".trait");
 let truc = document.createElement("div");
 truc.style.position = "absolute";
-truc.appendChild(trait);
-gros.appendChild(truc);
+truc.appendChild(svg);
+tous.appendChild(truc);
 
 
 
