@@ -41,6 +41,8 @@ articles.forEach(function(article) {
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
+  ligne.setAttribute("version", "1.1");
+  ligne.setAttribute("xmins", "http://www.w3.org/2000/svg");
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4px";
   svg.appendChild(ligne);
