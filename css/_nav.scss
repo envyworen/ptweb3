@@ -1,5 +1,5 @@
 
-article{
+.nav-responsiv{
   width: 100%;
   margin: 0 auto;
   background-color: rgb(26, 26, 26);
@@ -9,33 +9,33 @@ article{
   position: absolute;
   width: 100%;
 }
-article input[type=checkbox]{
+.nav-responsiv input[type=checkbox]{
   display: none;
 }
-article label{
+.nav-responsiv label{
   display: inline-block;
   width: 100%;
   padding: 10px 0px;
   text-align: center;
   background-color: gold;
 }
-article ul{
+.nav-responsive ul{
   display: none;
   list-style-type: none;
   background-color: #555;
 }
-article input[type=checkbox]:checked + ul{
+.nav-responsiv input[type=checkbox]:checked + ul{
   display: flex;
   flex-flow : column wrap;
 }
-article ul li{
+.nav-responsiv ul li{
   flex: 1 1 auto;
   text-align: center;
 }
-article > div > ul > li > a{
+.nav-responsiv > div > ul > li > a{
   color: white;
 }
-article a{
+.nav-responsiv a{
   display: block;
   text-decoration: none;
   color: black;
@@ -60,24 +60,24 @@ article a{
   .conteneur-nav{
       position: static;
   }
-  article label, article input{
+  .nav-responsiv label, .nav-responsiv input{
       display: none;
   }
-  article input[type=checkbox]:checked + ul, article ul{
+  .nav-responsiv input[type=checkbox]:checked + ul, .nav-responsiv ul{
       display: flex;
       flex-flow: row wrap;
       background-color: white;
   }
-  article ul li{
+  .nav-responsiv ul li{
       position: relative;
   }
-  article > div > ul > li > a{
+  .nav-responsiv > div > ul > li > a{
       color: black;
   }
-  article a{
+  .nav-responsiv a{
       border-bottom: 2px solid transparent;
   }
-  article a:hover{
+  .nav-responsiv a:hover{
       color: orange;
       border-bottom: 2px solid gold;
   }
@@ -105,7 +105,7 @@ article a{
       font-size: 12px;
   }
 
-  nav{
+    nav{
       display: flex;
       justify-content: space-evenly;
       height: 10vh;

@@ -880,12 +880,10 @@ img, video {
   }
 }
 
-article {
+.nav-responsiv {
   width: 100%;
   margin: 0 auto;
   background-color: #1a1a1a;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0px;
 }
 
@@ -894,11 +892,11 @@ article {
   width: 100%;
 }
 
-article input[type=checkbox] {
+.nav-responsiv input[type=checkbox] {
   display: none;
 }
 
-article label {
+.nav-responsiv label {
   display: inline-block;
   width: 100%;
   padding: 10px 0px;
@@ -906,13 +904,13 @@ article label {
   background-color: gold;
 }
 
-article ul {
+.nav-responsive ul {
   display: none;
   list-style-type: none;
   background-color: #555;
 }
 
-article input[type=checkbox]:checked + ul {
+.nav-responsiv input[type=checkbox]:checked + ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,18 +920,18 @@ article input[type=checkbox]:checked + ul {
           flex-flow: column wrap;
 }
 
-article ul li {
+.nav-responsiv ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   text-align: center;
 }
 
-article > div > ul > li > a {
+.nav-responsiv > div > ul > li > a {
   color: white;
 }
 
-article a {
+.nav-responsiv a {
   display: block;
   text-decoration: none;
   color: black;
@@ -967,10 +965,10 @@ article a {
   .conteneur-nav {
     position: static;
   }
-  article label, article input {
+  .nav-responsiv label, .nav-responsiv input {
     display: none;
   }
-  article input[type=checkbox]:checked + ul, article ul {
+  .nav-responsiv input[type=checkbox]:checked + ul, .nav-responsiv ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -980,16 +978,16 @@ article a {
             flex-flow: row wrap;
     background-color: white;
   }
-  article ul li {
+  .nav-responsiv ul li {
     position: relative;
   }
-  article > div > ul > li > a {
+  .nav-responsiv > div > ul > li > a {
     color: black;
   }
-  article a {
+  .nav-responsiv a {
     border-bottom: 2px solid transparent;
   }
-  article a:hover {
+  .nav-responsiv a:hover {
     color: orange;
     border-bottom: 2px solid gold;
   }
