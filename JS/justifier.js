@@ -41,7 +41,9 @@ svg.style.top = "0";
 body.appendChild(svg);
 
 var BreakException = {};
+  setTimeout(function () {
    try { 
+     
     articles.forEach(function(articl, items) {
       console.log(articl);
       
@@ -51,33 +53,30 @@ var BreakException = {};
         throw BreakException;
     }
 
-        setTimeout(function () {
+      let link1 = qqch[items];
+      let link2 = qqch[items+1];
+      eX = link1.offsetLeft + 7.5;
+      eY = link1.offsetTop + 7.5;
+      jX = link2.offsetLeft + 7.5;
+      jY = link2.offsetTop + 7.5;
+      console.log(eX);
 
-          let link1 = qqch[items];
-          let link2 = qqch[items+1];
-          eX = link1.offsetLeft + 7.5;
-          eY = link1.offsetTop + 7.5;
-          jX = link2.offsetLeft + 7.5;
-          jY = link2.offsetTop + 7.5;
-          console.log(eX);
-
-          let ligne = document.createElementNS(ns,"line");
-          ligne.setAttribute("x1", eX);
-          ligne.setAttribute("y1", eY);
-          ligne.setAttribute("x2", jX);
-          ligne.setAttribute("y2", jY);
-          ligne.style.stroke = "rgb(255,0,0)";
-          ligne.style.strokeWidth = "4";
-          ligne.style.position = "absolute";
-          svg.appendChild(ligne);
-
-        }, 90);
+      let ligne = document.createElementNS(ns,"line");
+      ligne.setAttribute("x1", eX);
+      ligne.setAttribute("y1", eY);
+      ligne.setAttribute("x2", jX);
+      ligne.setAttribute("y2", jY);
+      ligne.style.stroke = "rgb(255,0,0)";
+      ligne.style.strokeWidth = "4";
+      ligne.style.position = "absolute";
+      svg.appendChild(ligne);
+  
     });
 
-} catch (e) {
-  if (e !== BreakException) throw e;
-}
-
+    } catch (e) {
+      if (e !== BreakException) throw e;
+  }
+}, 90);
 
 let liens = document.querySelectorAll(".boule");
 
