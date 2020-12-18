@@ -42,12 +42,12 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
-    if (typeof(ligne) == "undefined") {
-      
-    }
-    else {
-      ligne.remove();
-    }
+  try {
+    ligne.remove();
+  }
+  catch (e) {
+    if (e !== BreakException) throw e;
+  }
    try { 
      
     articles.forEach(function(articl, items) {
