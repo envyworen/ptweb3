@@ -43,7 +43,7 @@ articles.forEach(function(article) {
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
   svg.setAttribute("version", "1.1");
-  svg.setAttribute("xmins", "http://www.w3.org/2000/svg");
+  svg.setAttribute("xmins", "https://www.w3.org/2000/svg");
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
