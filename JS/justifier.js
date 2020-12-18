@@ -30,13 +30,14 @@ articles.forEach(function(article) {
     "Position horizontale dans la fenêtre": eX, 
     "Position verticale dans la fenêtre": eY
   });
-
+  let page = document.createElement("div");
+  page.style.position = "absolute";
+  tous.appendChild(page);
   let ns = 'http://www.w3.org/2000/svg';
   let svg = document.createElementNS(ns,"svg");
-  svg.style.position = "relative";
   svg.style.height = "320px"
   svg.style.width = "320px"
-  tous.appendChild(svg);
+  page.appendChild(svg);
 
   let ligne = document.createElementNS(ns,"line");
   ligne.setAttribute("x1", "250");
