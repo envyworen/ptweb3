@@ -19,8 +19,18 @@
               </div>
         
               <div class="inscription">
-                <a>Inscription</a>
-                <a>Connexion</a>
+                {% if role is not empty and role > 1 %}    
+                <p><a href="admin">admin</a></p>
+                {% endif %}
+                {% if user is not empty %}    
+                <p>{{ user }}</p>
+                <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
+     
+                {% else %}
+                <p><a href="connexion">connexion</a></p>
+                <p><a href="inscription">inscription</a></p>    
+                {% endif %}
+    </header>
               </div> 
             </div>
           
@@ -62,18 +72,7 @@
             </div>
           </nav>
      
-    {% if role is not empty and role > 1 %}    
-    <p><a href="admin">admin</a></p>
-    {% endif %}
-    {% if user is not empty %}    
-        <p>{{ user }}</p>
-        <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
-     
-        {% else %}
-        <p><a href="connexion">connexion</a></p>
-        <p><a href="inscription">inscription</a></p>    
-        {% endif %}
-    </header>
+
     {% block main %}
     {% endblock %}
     <footer>
