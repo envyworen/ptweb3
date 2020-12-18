@@ -79,7 +79,7 @@ function updateart($dbh) {
     }
 
     static function readTitre($dbh) {
-        $sql= 'SELECT h1_art,id_art  FROM Article' ;
+        $sql= 'SELECT h1_art,id_art,titre_art  FROM Article' ;
         $query = $dbh->prepare($sql);
         $query->execute();
         $objet = $query->fetchAll(PDO::FETCH_CLASS,'article');
