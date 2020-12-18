@@ -86,7 +86,7 @@
 			
 			<div class="border-texte">
 				<div class="padding">
-					<h2>Article précédent</h2>
+					<a href="detail-{{ cat }}-{{ prev.precedent }}" > <h2>{{ prev.h1_art }}</h2> </a>	
 				</div>  
 			</div>
 		</div>
@@ -99,7 +99,7 @@
 
 			<div class="border-texte">
 				<div class="padding">
-					<a href="detail-{{ cat }}-{{ prev.id_art }}" > <h2>{{ prev.h1_art }}</h2> </a>	
+				 <h2>En haut</h2>
 				</div>
 			</div>
 		</div>
@@ -112,7 +112,7 @@
 
 			<div class="border-texte">
 				<div class="padding">
-				<a href="detail-{{ cat }}-{{ next.id_art }}" > <h2>{{ next.h1_art }}</h2> </a>	
+				<a href="detail-{{ cat }}-{{ next.suivant }}" > <h2>{{ next.h1_art }}</h2> </a>	
 				</div>       
 			</div>
 		</div>

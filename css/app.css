@@ -1339,6 +1339,8 @@ span:focus p {
   position: absolute;
   bottom: 5%;
   right: 5%;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 
 section {

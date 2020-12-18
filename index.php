@@ -87,9 +87,13 @@ switch ($page) {
         $data = ['list' => article::readType($dbh, $categorie), 'cat' => $categorie, 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh))];
       break;
     case 'fullarticle' :
+        if (isset($_GET['cat'])) {
+            $categorie = $_GET['cat'];
+        }
         $modele = $page;
         $data = ['One' => article::readOne($dbh, $id), 'compo' => compo::selectcomp($dbh, $id), 'user' => $user, 'role' => $role, 'menu' => json_encode(article::readTitre($dbh)), 'next' => article::Next($dbh, $id), 'prev' => article::Prev($dbh, $id), 'cat' => $categorie];
-    break;
+        var_dump(article::Prev($dbh, $id));
+        break;
 
     
     case 'justifier' :
