@@ -25,7 +25,6 @@ articles.forEach(function(article) {
   point.appendChild(description);
 
   tous = document.querySelector(".tous");
-  tous.style.position = "absolute";
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
