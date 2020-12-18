@@ -1,6 +1,6 @@
 let main = document.querySelector(".block-justifier");
 main.style.zIndex = "999";
-main.style.position = "absolute";
+
 
 var qqch = [];
 articles.forEach(function(article) {
@@ -25,6 +25,7 @@ articles.forEach(function(article) {
   point.appendChild(description);
 
   tous = document.querySelector(".tous");
+  tous.style.position = "absolute";
   let block = document.createElement("div");
   block.style.width = "20rem";
   block.style.height = "20rem";
