@@ -38,19 +38,12 @@ articles.forEach(function(article) {
   tous.appendChild(svg);
 
   let ligne = document.createElement("line");
-<<<<<<< HEAD
   ligne.setAttribute("x1", "250");
   ligne.setAttribute("y1", "250");
   ligne.setAttribute("x2", eX);
   ligne.setAttribute("y2", eY);
   ligne.setAttribute("version", "1.1");
   ligne.setAttribute("xmins", "http://www.w3.org/2000/svg");
-=======
-  ligne.setAttribute("x1", "0");
-  ligne.setAttribute("y1", "0");
-  ligne.setAttribute("x2", eX/16);
-  ligne.setAttribute("y2", eY/16);
->>>>>>> 30ae46a959aad51ba66040469089ec75fc24bca1
   ligne.style.stroke = "rgb(255,0,0)";
   ligne.style.strokeWidth = "4";
   svg.appendChild(ligne);
