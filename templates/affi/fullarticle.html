@@ -81,12 +81,12 @@
 
 		<div class="border">
 			<div class="border-fleche">
-				<a class="fleche-direction" href="#"> <i class="fas fa-caret-left"></i></a>
+				<a href="detail-{{ cat }}-{{ prev.precedent }}" >> <i class="fas fa-caret-left"></i></a>
 			</div>
 			
 			<div class="border-texte">
 				<div class="padding">
-					<a href="detail-{{ cat }}-{{ prev.precedent }}" > <h2>{{ prev.h1_art }}</h2> </a>	
+			 <h2>{{ prev.h1_art }}</h2> 
 				</div>  
 			</div>
 		</div>
@@ -107,12 +107,12 @@
 		
 		<div class="border">
 			<div class="border-fleche">
-				<a class="fleche-direction" href="#"><i class="fas fa-caret-right"></i></a>
+				<a href="detail-{{ cat }}-{{ next.suivant }}" ><i class="fas fa-caret-right"></i></a>
 			</div>
 
 			<div class="border-texte">
 				<div class="padding">
-				<a href="detail-{{ cat }}-{{ next.suivant }}" > <h2>{{ next.h1_art }}</h2> </a>	
+		 <h2>{{ next.h1_art }}</h2> 	
 				</div>       
 			</div>
 		</div>
