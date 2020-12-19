@@ -74,7 +74,7 @@ var BreakException = {};
       ligne.setAttribute("x2", jX);
       ligne.setAttribute("y2", jY);
       ligne.style.stroke = "rgb(255,0,0)";
-      ligne.style.strokeWidth = "4";
+      ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
       svg.appendChild(ligne);
       $(window).resize(function() { 
