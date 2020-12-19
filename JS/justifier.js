@@ -23,7 +23,8 @@ articles.forEach(function(article) {
   link.appendChild(point);
 
   let description = document.createElement("p");
-  description.innerHTML = article.h1_art
+  description.innerHTML = article.h1_art;
+  description.style.textAlign = "center";
   liens.href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-" + article.titre_art + "-" + article.id_art ;
   point.appendChild(description);
 
