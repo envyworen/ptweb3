@@ -24,6 +24,7 @@ articles.forEach(function(article) {
 
   let description = document.createElement("p");
   description.innerHTML = article.h1_art
+  liens.href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-" + article.titre_art + "-" + article.id_art ;
   point.appendChild(description);
 
   tous = document.querySelector(".tous");
@@ -92,9 +93,3 @@ var BreakException = {};
 
 let liens = document.querySelectorAll(".boule");
 
-for (var i = 0; i < liens.length; i++) {
-  liens[0].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-inconcevable-12";
-  liens[1].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-inconcevable-14";
-  liens[2].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-inconcevable-15";
-  liens[3].href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-inconcevable-16";
-}
