@@ -25,7 +25,7 @@ articles.forEach(function(article) {
   let description = document.createElement("p");
   description.innerHTML = article.h1_art;
   description.style.textAlign = "center";
-  liens.href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-" + article.titre_art + "-" + article.id_art ;
+  link.href = "https://violence.caquelin.etu.mmi-unistra.fr/detail-" + article.titre_art + "-" + article.id_art ;
   point.appendChild(description);
 
   tous = document.querySelector(".tous");
