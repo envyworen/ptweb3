@@ -14,6 +14,7 @@ articles.forEach(function(article) {
   link.classList.add("boule");
   link.style.width = "15px";
   link.style.height = "15px";
+  link.style.position = "relative";
   link.style.zIndex = "9999";
   link.style.marginTop = getRandomInt(2, 70)+"%";
   link.style.marginLeft = getRandomInt(2, 95)+"%";
