@@ -22,6 +22,7 @@ articles.forEach(function(article) {
   link.appendChild(point);
 
   let description = document.createElement("p");
+  description.innerHTML = article.h1_art
   point.appendChild(description);
 
   tous = document.querySelector(".tous");
