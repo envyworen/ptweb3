@@ -1272,6 +1272,10 @@ footer {
       align-self: center;
 }
 
+.fred {
+  max-height: 100vh;
+}
+
 @media screen and (min-width: 0) and (max-width: 576px) {
   .titre-compo {
     color: white;
@@ -1346,7 +1350,7 @@ footer {
 }
 
 .connexion fieldset {
-  width: 50vw;
+  width: 30vw;
   background-color: #9b0000;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -1364,6 +1368,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+fieldset label, a, h2 {
+  padding: 2rem;
 }
 
 html {

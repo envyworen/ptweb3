@@ -7,7 +7,7 @@
 }
 
 .connexion fieldset{
-    width: 50vw;
+    width: 30vw;
     background-color: rgb(155, 0, 0);
     height: fit-content;
     display: flex;
@@ -16,3 +16,6 @@
     align-items: center;
 }
 
+fieldset label, a, h2 {
+    padding: 2rem;
+}
