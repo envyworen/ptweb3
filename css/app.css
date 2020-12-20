@@ -1586,7 +1586,7 @@ span p {
 }
 
 .conseil {
-  position: absolute;
+  position: fixed;
   bottom: 2%;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
