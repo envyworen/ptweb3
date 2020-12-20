@@ -22,6 +22,12 @@
     padding-top: 20%;
     align-self: center;
     font-size: 1.5em;
+
+    .tous {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
   }
   
   
@@ -33,6 +39,12 @@
     padding-top: 20%;
     align-self: center;
     font-size: 3em;
+  }
+
+  .tous {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 }
 .tous {
