@@ -29,7 +29,7 @@
             </form>
             <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post" class="form-flex">
                 <p class="form-pad">Choisir un article :</p>
-                <select class="form-pad"> 
+                <select class="form-pad" name="id_art"> 
                     {% for row in titre %}         
                     <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
                     {% endfor %}
