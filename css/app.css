@@ -1382,6 +1382,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: #0f0f0f;
+  padding-bottom: 10px;
 }
 
 #canvas {
@@ -1587,7 +1588,7 @@ span p {
 
 .conseil {
   position: fixed;
-  bottom: 2%;
+  bottom: 10px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
