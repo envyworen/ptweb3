@@ -13,7 +13,7 @@
         <div class="form-background">
 
             <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post" class="form-flex">
-    
+                <p>Choisir une catégorie :</p>
                 <select name="titre" id="">
                     {% for row in read %}         
                     <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
