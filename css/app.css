@@ -1293,6 +1293,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 50vw;
 }
 
 .ford-pad-flex {
