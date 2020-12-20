@@ -1285,7 +1285,7 @@ footer {
   width: 80vw;
 }
 
-.form-flex-collumn {
+.form-flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
