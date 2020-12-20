@@ -14,7 +14,7 @@
 
             <form id="modimg" enctype="multipart/form-data" action="?page=insertout" method="post" class="form-flex">
                 <p class="form-pad">Choisir une catégorie :</p>
-                <select class="form-pad"> 
+                <select class="form-pad" name="titre"> 
                     {% for row in read %}         
                     <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
                     {% endfor %}
