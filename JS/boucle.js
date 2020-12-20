@@ -42,8 +42,7 @@ articles.forEach(function(article) {
 let body = document.querySelector("body");
 let ns = 'http://www.w3.org/2000/svg';
 svg = document.createElementNS(ns,"svg");
-console.log(body.offsetHeight);
-svg.style.height = body.height;
+svg.style.height = body.offsetHeight;
 svg.style.width = "100vw";
 svg.style.position = "absolute";
 svg.style.top = "0";
@@ -69,7 +68,6 @@ var BreakException = {};
       eY = link1.offsetTop + 7.5;
       jX = link2.offsetLeft + 7.5;
       jY = link2.offsetTop + 7.5;
-      console.log(eX);
 
       let ligne = document.createElementNS(ns,"line");
       ligne.setAttribute("x1", eX);
