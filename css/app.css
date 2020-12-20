@@ -1331,6 +1331,28 @@ footer {
   }
 }
 
+.flex-centre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.connexion fieldset {
+  width: 50vw;
+  background-color: whitesmoke;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 html {
   min-height: 100%;
   padding: 0;
