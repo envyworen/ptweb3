@@ -1295,9 +1295,9 @@ footer {
             justify-content: space-evenly;
   }
   .titre-compo svg {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
   }
 }
 
@@ -1324,9 +1324,9 @@ footer {
             justify-content: space-evenly;
   }
   svg {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    height: -webkit-max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
   }
 }
 
