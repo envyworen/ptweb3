@@ -1295,6 +1295,10 @@ footer {
           flex-direction: column;
 }
 
+button {
+  font-family: 'titre';
+}
+
 .block-justifier {
   background-color: #0f0f0f;
   padding: 0;
