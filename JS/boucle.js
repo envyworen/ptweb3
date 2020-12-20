@@ -42,6 +42,7 @@ articles.forEach(function(article) {
 let body = document.querySelector("body");
 let ns = 'http://www.w3.org/2000/svg';
 svg = document.createElementNS(ns,"svg");
+console.log(body.height);
 svg.style.height = body.height;
 svg.style.width = "100vw";
 svg.style.position = "absolute";
