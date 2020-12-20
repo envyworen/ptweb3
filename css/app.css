@@ -183,11 +183,11 @@ img, video {
   .border {
     margin: 0;
     padding: 0;
-    width: 30vw;
+    width: 50%;
     height: 40vh;
   }
   .center {
-    width: 40vw;
+    width: 100%;
     height: 40vh;
   }
   .border-fleche {
@@ -474,11 +474,11 @@ img, video {
   .border {
     margin: 0;
     padding: 0;
-    width: 30vw;
+    width: 50%;
     height: 40vh;
   }
   .center {
-    width: 40vw;
+    width: 100%;
     height: 40vh;
   }
   .border-fleche {
@@ -754,7 +754,7 @@ img, video {
     margin: 0;
     padding: 0;
     height: 40vh;
-    width: 100%;
+    width: 50%;
   }
   .center {
     height: 40vh;
