@@ -712,6 +712,9 @@ img, video {
     color: whitesmoke !important;
     font-size: 40pt;
   }
+  label {
+    color: whitesmoke;
+  }
   .entete {
     display: -webkit-box;
     display: -ms-flexbox;
