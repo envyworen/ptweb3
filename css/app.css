@@ -712,9 +712,6 @@ img, video {
     color: whitesmoke !important;
     font-size: 40pt;
   }
-  label {
-    color: whitesmoke;
-  }
   .entete {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1248,9 +1245,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100%;
 }
 
@@ -1258,6 +1255,33 @@ footer {
   color: white;
   font-family: sans-serif;
   padding-top: 20%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .titre-compo {
+    color: white;
+    font-family: sans-serif;
+    padding-top: 20%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .titre-compo {
+    color: white;
+    font-family: sans-serif;
+    padding-top: 20%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 3em;
+  }
 }
 
 .tous {
