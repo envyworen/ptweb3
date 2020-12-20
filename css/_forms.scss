@@ -17,7 +17,12 @@
     text-align: left;
     background-color: rgb(155, 0, 0);
     padding: 1rem;
-    width: 30vw;
+    width: 60vw;
+}
+
+.form-flex-collumn{
+    display: flex;
+    flex-direction: column;
 }
 
 .ford-pad-flex{
