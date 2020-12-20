@@ -1451,7 +1451,7 @@ html {
   background-color: rgba(116, 116, 116, 0.8);
 }
 
-.maison {
+.maison:not(p) {
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1589,11 +1589,8 @@ span p {
 .conseil {
   position: fixed;
   bottom: 10px;
+  right: 10px;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
-}
-
-section {
-  margin: 50px;
 }
 /*# sourceMappingURL=app.css.map */
