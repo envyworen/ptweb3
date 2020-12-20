@@ -79,11 +79,11 @@ var BreakException = {};
       ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
       svg.appendChild(ligne);
-      $(window).resize(function() { 
+      // $(window).resize(function() { 
  
-        ligne.remove();
+      // ligne.remove();
       
-    });
+    // });
     });
 
     } catch (e) {
