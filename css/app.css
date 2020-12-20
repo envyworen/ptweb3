@@ -1382,7 +1382,6 @@ html {
   padding: 0;
   margin: 0;
   background-color: #0f0f0f;
-  padding-bottom: 3rem;
 }
 
 #canvas {
@@ -1595,5 +1594,9 @@ span p {
 
 section {
   margin: 50px;
+}
+
+.sec5 {
+  padding-top: 15px;
 }
 /*# sourceMappingURL=app.css.map */
