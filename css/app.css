@@ -1451,7 +1451,7 @@ html {
   background-color: rgba(116, 116, 116, 0.8);
 }
 
-.maison:not(.conseil) {
+.maison {
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
