@@ -1347,7 +1347,7 @@ footer {
 
 .connexion fieldset {
   width: 50vw;
-  background-color: whitesmoke;
+  background-color: #9b0000;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -1364,10 +1364,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.fieldset label {
-  color: black !important;
 }
 
 html {
