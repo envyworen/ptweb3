@@ -1620,7 +1620,7 @@ span p {
   span p {
     position: absolute;
     margin-top: 16px;
-    margin-left: -50px;
+    margin-left: -100px;
     color: #e74514;
     background: rgba(0, 0, 0, 0.9);
     padding: 8px;
