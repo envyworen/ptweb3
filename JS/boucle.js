@@ -49,8 +49,8 @@ svg.style.top = "0";
 body.appendChild(svg);
 
 var BreakException = {};
-  function boucle() {
-  
+  setInterval(function () {
+    
    try { 
      
     articles.forEach(function(articl, items) {
@@ -79,19 +79,16 @@ var BreakException = {};
       ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
       svg.appendChild(ligne);
-        $(window).resize(function() { 
+      $(window).resize(function() { 
  
         ligne.remove();
-      
-       });
+
+      });
     });
 
     } catch (e) {
       if (e !== BreakException) throw e;
-  }
-
-};
+    }
+}, 200);
 
 let liens = document.querySelectorAll(".boule");
-
-boucle();
