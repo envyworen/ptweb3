@@ -3,13 +3,17 @@
     <form action="?page=del" method="post" class="connexion">
         <fieldset class="from-co">
             <div class="form-pad">
+                <h2 class="form-pad">Supprimer une compo</h2>   
                 <select  name="id_comp_delete" id="">
                     <option value="NULL"></option>
                     {% for row in tcomp %}
                     <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
                     {% endfor %}
                 </select>
+
+                <h2>Supprimer un article</h2> 
                 <select  name="id_art_delete" id="">
+                      
                     <option value="NULL"></option>
                     {% for row in menu %}
                     <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
