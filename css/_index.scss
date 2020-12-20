@@ -60,11 +60,11 @@ html {
   transform: scale(1.04);
   background-color: rgba(116, 116, 116, 0.8);
 }
-.maison {
+.maison:not(.conseil) {
   opacity: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   min-height: 100vh;
   z-index: 99;
 }
@@ -110,7 +110,7 @@ span p {
   z-index: 9999;
   position: absolute;
   margin-top: 16px;
-  margin-left: -60px;
+  margin-left: -100px;
   color: whitesmoke;
   padding-top: 3vh;
   border-radius: 3px;
@@ -143,7 +143,7 @@ span p {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     transform: scale(0) rotate(-12deg);
     transition: all 0.25s;
-    font-size: 10pt;
+    font-size: 7pt;
     opacity: 0;
   }
   span:hover p,

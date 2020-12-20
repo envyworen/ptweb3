@@ -1451,7 +1451,7 @@ html {
   background-color: rgba(116, 116, 116, 0.8);
 }
 
-.maison {
+.maison:not(.conseil) {
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1459,9 +1459,9 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   min-height: 100vh;
   z-index: 99;
 }
@@ -1531,7 +1531,7 @@ span p {
   z-index: 9999;
   position: absolute;
   margin-top: 16px;
-  margin-left: -60px;
+  margin-left: -100px;
   color: whitesmoke;
   padding-top: 3vh;
   border-radius: 3px;
@@ -1574,7 +1574,7 @@ span p {
             transform: scale(0) rotate(-12deg);
     -webkit-transition: all 0.25s;
     transition: all 0.25s;
-    font-size: 10pt;
+    font-size: 7pt;
     opacity: 0;
   }
   span:hover p,
