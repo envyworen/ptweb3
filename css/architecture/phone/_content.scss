@@ -139,7 +139,26 @@ article{
 
 //padding
 
-.padding{
+.padding-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     padding: 1rem;
+    text-align: left;
 }
 
+.padding-centre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.padding-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    text-align: right;
+}
