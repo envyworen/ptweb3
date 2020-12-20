@@ -712,6 +712,9 @@ img, video {
     color: whitesmoke !important;
     font-size: 40pt;
   }
+  label {
+    color: whitesmoke;
+  }
   .entete {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1254,8 +1257,7 @@ footer {
 .titre-compo {
   color: white;
   font-family: sans-serif;
-  padding-left: 25%;
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 .tous {
