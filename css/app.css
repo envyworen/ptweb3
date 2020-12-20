@@ -1294,11 +1294,6 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .titre-compo svg {
-    height: -webkit-max-content !important;
-    height: -moz-max-content !important;
-    height: max-content !important;
-  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 1024px) {
@@ -1322,11 +1317,6 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-  }
-  svg {
-    height: -webkit-max-content !important;
-    height: -moz-max-content !important;
-    height: max-content !important;
   }
 }
 
