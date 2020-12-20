@@ -1472,8 +1472,6 @@ span p {
   width: 200px;
   -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  -webkit-transform: scale(0) rotate(-12deg);
-          transform: scale(0) rotate(-12deg);
   font-size: 10pt;
 }
 
