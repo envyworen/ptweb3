@@ -79,7 +79,7 @@ var BreakException = {};
       ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
       svg.appendChild(ligne);
-      if (svg.childNodes.length > 1) {
+      if (svg.childNodes.length > articles.length - 1) {
         ligne.remove();
       }
         $(window).resize(function() { 
