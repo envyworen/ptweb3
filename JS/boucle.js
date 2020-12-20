@@ -42,7 +42,6 @@ articles.forEach(function(article) {
 let body = document.querySelector("body");
 let ns = 'http://www.w3.org/2000/svg';
 svg = document.createElementNS(ns,"svg");
-svg.style.height = body.offsetHeight;
 svg.style.width = "100vw";
 svg.style.position = "absolute";
 svg.style.top = "0";
@@ -50,7 +49,7 @@ body.appendChild(svg);
 
 var BreakException = {};
   setInterval(function () {
-    
+  svg.style.height = body.offsetHeight;
    try { 
      
     articles.forEach(function(articl, items) {
