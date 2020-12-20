@@ -1,19 +1,25 @@
 <!-- Formulaire delete -->
-<form action="?page=del" method="post">
-    <fieldset>
-        <legend>Supprimer un article</legend>
-        <select name="id_comp_delete" id="">
-            <option value="NULL"></option>
-            {% for row in tcomp %}
-            <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
-            {% endfor %}
-        </select>
-        <select name="id_art_delete" id="">
-            <option value="NULL"></option>
-            {% for row in menu %}
-            <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
-            {% endfor %}
-        </select>
-        <input type="submit" name="del">
-    </fieldset>
-</form>
+<div class="flex-centre">
+    <form action="?page=del" method="post" class="connexion">
+        <fieldset class="from-co">
+            <div class="form-pad">
+                <select  name="id_comp_delete" id="">
+                    <option value="NULL"></option>
+                    {% for row in tcomp %}
+                    <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
+                    {% endfor %}
+                </select>
+                <select  name="id_art_delete" id="">
+                    <option value="NULL"></option>
+                    {% for row in menu %}
+                    <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+                    {% endfor %}
+                </select>
+                <input  type="submit" name="del">
+
+            </div>
+            
+        </fieldset>
+    </form>
+
+</div>
