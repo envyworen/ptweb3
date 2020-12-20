@@ -1312,7 +1312,7 @@ button {
 }
 
 textarea {
-  width: content-box;
+  width: 50vw;
 }
 
 .block-justifier {
