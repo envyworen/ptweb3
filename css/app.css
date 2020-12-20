@@ -888,7 +888,7 @@ img, video {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     text-align: left;
   }
   .padding-centre {
@@ -901,7 +901,7 @@ img, video {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
   }
   .padding-right {
@@ -914,7 +914,7 @@ img, video {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     text-align: right;
   }
   .flex {
@@ -1270,10 +1270,6 @@ footer {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.fred {
-  max-height: 100vh;
 }
 
 @media screen and (min-width: 0) and (max-width: 576px) {
