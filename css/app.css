@@ -1452,10 +1452,6 @@ button {
           align-items: center;
 }
 
-.form-pad {
-  padding: 2rem;
-}
-
 html {
   min-height: 100%;
   padding: 0;
