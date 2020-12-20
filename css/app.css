@@ -1272,6 +1272,18 @@ footer {
   }
 }
 
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .titre-compo {
+    color: white;
+    font-family: sans-serif;
+    padding-top: 20%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 2em;
+  }
+}
+
 .tous {
   display: -webkit-box;
   display: -ms-flexbox;
