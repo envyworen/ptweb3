@@ -1,0 +1,31 @@
+
+footer 
+{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    align-items: center;
+}
+
+.footer-padding{
+    padding: 2rem;
+}
+
+
+
+@media screen and (min-width: 0) and (max-width: 1024px) {
+
+    .logo{
+        width: 10vw;
+    }
+  
+  }
+  
+  @media screen and (min-width: 0) and (min-width: 1025px) {
+
+    .logo{
+        width: 5vw;
+    }
+  }

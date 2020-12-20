@@ -1,0 +1,19 @@
+.block-justifier {
+  background-color: #0f0f0f;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.titre-compo {
+  color: white;
+  font-family: sans-serif;
+  padding-left: 25%;
+  padding-top: 15%;
+}
+
+.tous {
+  display: flex;
+  justify-content: space-evenly;
+}

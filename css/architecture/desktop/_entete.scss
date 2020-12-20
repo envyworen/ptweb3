@@ -1,0 +1,16 @@
+.entete{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.entete-h2{
+    width: 60vw;
+    text-align: right;
+    margin-right: $right;
+}
+.entete-h1{
+    width: 40vw;
+    text-align: left;
+    margin-left: $left;
+}

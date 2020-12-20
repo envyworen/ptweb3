@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block main %}
+{% set i = 1 %}
+	{% for key,type in list %}
+	<div class="flex">
+		<div class ="carte-article">
+		
+			<div class="carte-article-texte">
+				<div class="carte-content">
+					<div class="titre-carte">
+						
+							<h2 >{{ type.h1_art }} </h2>
+							
+					</div>
+					<div class="carte-content">
+						<p class="black">{{ type.chap_art }}</p> 
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="carte-link">
+				<div class="button-article">
+					<div class="button-content">
+						<a href="detail-{{ cat }}-{{ type.id_art }}"><h2>Lire la suite</h2> </a>
+					</div>	
+				</div>
+			</div>	
+
+		</div>
+	</div>
+
+
+	{% endfor %}
+
+
+
+{% endblock %}

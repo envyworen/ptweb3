@@ -1,0 +1,63 @@
+//variables
+$haut: 3rem;
+$left: 4rem;
+$right: 4rem;
+$backcolor: rgb(0, 0, 0);
+$fontcolor: whitesmoke;
+$blood: rgb(155, 0, 0);
+$a: 10pt;
+$p: 15pt;
+$h3: 50pt;
+$h2: 25pt;
+$h1: 60pt;
+
+.a{
+    text-decoration: none !important;
+    color: $fontcolor !important;
+    font-size: $a;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background-color: $backcolor;
+
+}
+
+h1{
+    font-size: $h1;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: $h2;
+}
+
+h3{
+    font-size: $h3;
+}
+
+p{
+    font-size: $p;
+}
+
+p, a{
+    font-family: 'Courier';
+    color: $fontcolor;
+}
+
+h1, h2, h3{
+    font-family: 'titre';
+    color: $fontcolor;
+}
+
+.fleche-direction{
+    text-decoration: none;
+    color: $fontcolor !important;
+    font-size: 40pt;
+}
+

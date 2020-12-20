@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b59c1f4589.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/lightbox.css">
+    <title>Violence</title>
+</head>
+<body>
+	<header>
+
+    
+      <nav>
+        <div class="burger">
+          <a href="#" class="burger__button" id="burger-button">
+            <span class="burger__button__icon"></span>
+          </a>
+          <ul class="burger__menu">
+            <li><a class ="home" href="#">Home</a></li>
+            <li><a href="surveillance">Sous-surveillance</a></li>
+            <li><a href="silence">Passé sous silence</a></li>
+            <li><a href="profils">Profils</a></li>
+            <li><a href="inconcevable">Justifier l'inconcevable</a></li>
+            <li><a href="force">Rapport de force</a></li>
+          </ul>
+        </div>
+
+        <div class="flex-end">
+          {% if role is not empty and role > 1 %}    
+          <a class="inscr-padding" href="admin">admin</a>
+          {% endif %}
+          {% if user is not empty %}    
+          <p>{{ user }}</p>
+          <p><form action="index.php" method="post"><button type="submit" name="deco">deconnexion</button></form></p>
+
+          {% else %}
+          <a class="inscr-padding"href="connexion">connexion</a>
+          <a class="inscr-padding"href="inscription">inscription</a>  
+          {% endif %}
+        </div>
+      </nav>
+    </header>
+
+          
+        
+     
+
+    {% block main %}
+    {% endblock %}
+    <footer>
+        <div class="footer-padding">
+          <a href="http://cuej.unistra.fr/">Site Web du Cuej</a>
+        </div>
+        
+        <div class="footer-padding">
+          <a href="mention">Mentions légales</a>
+        </div>
+          
+    </footer>
+    <script> 
+       let tabjson = {{ menu | raw }} 
+    </script>
+    <script src="JS/lightbox-plus-jquery.min.js"></script>
+    <script src="JS/admin.js"></script>
+    <script src="JS/nav.js"></script>
+</body>
+</html>

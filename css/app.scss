@@ -1,0 +1,48 @@
+@font-face {
+    font-family: courrier;
+    src: url('../fonts/CourierSTD.otf');
+}
+
+@font-face {
+    font-family: courrier;
+    src: url('../fonts/CourierStd-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: titre;
+    src: url('../fonts/GTWalsheimPro-CondensedBold.ttf');
+}
+
+@import "media";
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+    @import "architecture/phone/generalPhone";
+    @import "architecture/phone/entete";
+    @import "architecture/phone/content";
+    @import "architecture/phone/carte";
+    
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    @import "architecture/pad/generalPad";
+    @import "architecture/pad/entete";
+    @import "architecture/pad/content";
+    @import "architecture/pad/carte";
+   
+}
+
+@media screen and (min-width: 1025px) {
+    @import "architecture/desktop/generalDesk";
+    @import "architecture/desktop/entete";
+    @import "architecture/desktop/content";
+    @import "architecture/desktop/carte";
+}
+
+
+
+@import "nav";
+@import "footer";
+@import "categorie";
+@import "index";

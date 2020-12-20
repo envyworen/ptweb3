@@ -1,0 +1,30 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteRule ^profils$ ?page=namearticle&cat=profils
+RewriteRule ^inconcevable$ ?page=namearticle&cat=inconcevable 
+RewriteRule ^force$ ?page=namearticle&cat=force
+RewriteRule ^silence$ ?page=namearticle&cat=silence
+RewriteRule ^surveillance$ ?page=namearticle&cat=surveillance
+RewriteRule ^connexion$ ?page=login
+RewriteRule ^inscription$ ?page=register
+
+
+RewriteRule ^justifier$ ?page=justifier&choice=inconcevable
+RewriteRule ^les-profils$ ?page=les-profils&choice=profils
+RewriteRule ^passe-sous-silence$ ?page=passe-sous-silence&choice=silence
+RewriteRule ^rapport-de-force$ ?page=rapport-de-force&choice=force
+RewriteRule ^sous-surveillance$ ?page=sous-surveillance&choice=surveillance
+RewriteRule ^mention$ ?page=mention
+
+RewriteRule ^admin$ ?page=admin
+RewriteRule ^insert$ ?page=insertout
+RewriteRule ^delete$ ?page=del
+RewriteRule ^update$ ?page=mod
+RewriteRule ^user$ ?page=user
+RewriteRule ^detail-([a-z]+)-([0-9]+)$ ?page=fullarticle&cat=$1&id=$2 [QSA,L]
+
+AuthName "User = prof"
+AuthType Basic
+AuthUserFile "/var/www/vhosts/caquelin.etu.mmi-unistra.fr/violence.caquelin.etu.mmi-unistra.fr/.htpasswd"
+Require valid-user
