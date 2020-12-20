@@ -2,19 +2,23 @@
 <div class="flex-centre">
     <form action="?page=del" method="post" class="connexion">
         <fieldset class="from-co">
-            <select class="form-pad" name="id_comp_delete" id="">
-                <option value="NULL"></option>
-                {% for row in tcomp %}
-                <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
-                {% endfor %}
-            </select>
-            <select class="form-pad" name="id_art_delete" id="">
-                <option value="NULL"></option>
-                {% for row in menu %}
-                <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
-                {% endfor %}
-            </select>
-            <input class="form-pad" type="submit" name="del">
+            <div class="form-pad">
+                <select  name="id_comp_delete" id="">
+                    <option value="NULL"></option>
+                    {% for row in tcomp %}
+                    <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
+                    {% endfor %}
+                </select>
+                <select  name="id_art_delete" id="">
+                    <option value="NULL"></option>
+                    {% for row in menu %}
+                    <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
+                    {% endfor %}
+                </select>
+                <input  type="submit" name="del">
+
+            </div>
+            
         </fieldset>
     </form>
 
