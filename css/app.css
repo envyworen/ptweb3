@@ -1449,6 +1449,55 @@ span {
   transition: all 0.35s ease;
 }
 
+@media screen and (min-width: 0) and (max-width: 576px) {
+  span p {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: -60px;
+    color: #e74514;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 8px;
+    border-radius: 3px;
+    width: 200px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.2) rotate(-12deg);
+            transform: scale(1.2) rotate(-12deg);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    font-size: 10pt;
+    opacity: 0;
+    -webkit-transform: scale() rotate(-12deg);
+    -moz-transform: scale() rotate(-12deg);
+    -ms-transform: scale() rotate(-12deg);
+    -o-transform: scale() rotate(-12deg);
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  span p {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: -60px;
+    color: #e74514;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 8px;
+    border-radius: 3px;
+    width: 200px;
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2) rotate(-12deg);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    font-size: 10pt;
+    opacity: 0;
+    -webkit-transform: scale(1.2) rotate(-12deg);
+    -moz-transform: scale(1.2) rotate(-12deg);
+    -ms-transform: scale(1.2) rotate(-12deg);
+    -o-transform: scale(1.2) rotate(-12deg);
+  }
+}
+
 span:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
