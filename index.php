@@ -22,8 +22,8 @@ if (isset($_POST['deco'])) {
 }
 
 
-insert_art($dbh);
-var_dump($_POST);
+
+
 compo_delete($dbh);
 article_delete($dbh);
 $return = reg($dbh);
@@ -156,6 +156,7 @@ switch ($page) {
             $modele = $page;
             $data = ['read' => article::readall($dbh), 'user' => $user, 'titre' => article::readTitre($dbh)];
             compo_insert($dbh);
+            insert_art($dbh);
         
         }
         else {

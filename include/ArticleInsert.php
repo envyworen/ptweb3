@@ -3,6 +3,7 @@
 function insert_art($dbh)
 {
     if(isset($_POST['valide'])){
+        var_dump($_POST);
         $h1 = $_POST['h1_art'];
         $chap = $_POST['chap_art'];
         $auteur = $_POST['auteur_art'];
