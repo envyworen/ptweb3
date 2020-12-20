@@ -1462,6 +1462,7 @@ span {
 }
 
 span p {
+  z-index: 9999;
   position: absolute;
   margin-top: 16px;
   margin-left: -60px;
