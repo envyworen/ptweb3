@@ -23,7 +23,7 @@ if (isset($_POST['deco'])) {
 
 
 insert_art($dbh);
-
+var_dump($_POST);
 compo_delete($dbh);
 article_delete($dbh);
 $return = reg($dbh);
