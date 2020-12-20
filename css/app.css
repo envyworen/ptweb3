@@ -1283,7 +1283,7 @@ footer {
   background-color: #9b0000;
 }
 
-.form-co {
+.form-flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
