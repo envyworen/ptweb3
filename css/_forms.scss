@@ -19,11 +19,25 @@
     padding: 1rem;
     width: 80vw;
 }
+@media screen and (min-width: 0) and (max-width: 1024px) {
+    .form-flex fieldset{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+}
 
+@media screen and (min-width: 1025px)  {
+    .form-flex fieldset{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+    }
+}
 .form-flex fieldset{
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 100vw;
 }
 
 .form-flex-column{
