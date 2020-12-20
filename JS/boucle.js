@@ -42,8 +42,8 @@ articles.forEach(function(article) {
 let body = document.querySelector("body");
 let ns = 'http://www.w3.org/2000/svg';
 svg = document.createElementNS(ns,"svg");
-svg.style.minHeight = "100%";
 svg.style.width = "100vw";
+svg.style.height = "100vh";
 svg.style.position = "absolute";
 svg.style.top = "0";
 body.appendChild(svg);
@@ -78,6 +78,7 @@ var BreakException = {};
       ligne.style.stroke = "rgb(255,0,0)";
       ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
+      svg.style.height = svg.height + "100vh";
       svg.appendChild(ligne);
       if (svg.childNodes.length > articles.length - 1) {
         ligne.remove();
