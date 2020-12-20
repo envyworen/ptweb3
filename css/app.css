@@ -798,14 +798,14 @@ img, video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
-    text-align: right;
+    text-align: left;
   }
   .padding-centre {
     display: -webkit-box;
@@ -824,14 +824,14 @@ img, video {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem;
-    text-align: left;
+    text-align: right;
   }
   .flex {
     width: 100vw;
