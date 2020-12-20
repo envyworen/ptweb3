@@ -4,7 +4,7 @@
         <fieldset class="from-co">
             <div class="form-pad-flex">
                 <h2 class="form-pad">Supprimer une compo</h2>   
-                <select  name="id_comp_delete" id="">
+                <select class="form-pad"  name="id_comp_delete" id="">
                     <option value="NULL"></option>
                     {% for row in tcomp %}
                     <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
@@ -12,8 +12,8 @@
                 </select>
 
                 <h2 class="form-pad">Supprimer un article</h2> 
-                <select  name="id_art_delete" id="">
-                      
+
+                <select class="form-pad" name="id_art_delete" id="">            
                     <option value="NULL"></option>
                     {% for row in menu %}
                     <option value="{{ row.id_art }}">{{ row.h1_art }}</option>
