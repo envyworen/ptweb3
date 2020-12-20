@@ -103,6 +103,20 @@ span {
   margin: 0;
   transition: all 0.35s ease;
 }
+
+span p {
+  position: absolute;
+  margin-top: 16px;
+  margin-left: -60px;
+  color: rgb(231, 69, 20);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  border-radius: 3px;
+  width: 200px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  transform: scale(0) rotate(-12deg);
+  font-size: 10pt;
+}
 @media screen and (min-width: 1025px) {
   span:hover {
     transform: scale(1.2);
