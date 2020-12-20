@@ -1311,6 +1311,10 @@ button {
   font-size: 15pt;
 }
 
+textarea {
+  width: 50vw;
+}
+
 .block-justifier {
   background-color: #0f0f0f;
   padding: 0;
