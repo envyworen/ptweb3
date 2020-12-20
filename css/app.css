@@ -1366,6 +1366,10 @@ footer {
           align-items: center;
 }
 
+.fieldset label {
+  color: black !important;
+}
+
 html {
   min-height: 100%;
   padding: 0;
