@@ -10,4 +10,8 @@
     width: 50vw;
     background-color: whitesmoke;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
