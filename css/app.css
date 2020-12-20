@@ -1460,6 +1460,10 @@ html {
   transition: all 1s ease;
 }
 
+.sec1, .sec2, .sec3, .sec4, .sec5 {
+  padding-left: 10px;
+}
+
 #button {
   width: 200px;
   height: 40px;
