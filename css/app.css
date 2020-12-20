@@ -1282,7 +1282,7 @@ footer {
   text-align: left;
   background-color: #9b0000;
   padding: 1rem;
-  width: 80vw;
+  width: 60vw;
 }
 
 .form-flex-column {
@@ -1309,10 +1309,6 @@ footer {
 button {
   font-family: 'titre';
   font-size: 15pt;
-}
-
-textarea, input {
-  width: 70vw;
 }
 
 .block-justifier {
