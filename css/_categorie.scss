@@ -15,6 +15,10 @@
   padding-top: 20%;
   align-self: center;
 }
+.fred {
+  max-height: 100vh;
+}
+
 @media screen and (min-width: 0) and (max-width: 576px) {
   .titre-compo {
     color: white;
