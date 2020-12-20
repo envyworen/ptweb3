@@ -60,7 +60,7 @@ html {
   transform: scale(1.04);
   background-color: rgba(116, 116, 116, 0.8);
 }
-.maison {
+.maison:not(p) {
   opacity: 1;
   display: flex;
   align-items: center;
