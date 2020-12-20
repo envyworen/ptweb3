@@ -10,3 +10,16 @@
     height: fit-content;
     width: fit-content;
 }
+
+.form-flex{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgb(155, 0, 0);
+}
+
+.form-flex-column{
+    display: flex;
+    flex-direction: column;
+
+}
