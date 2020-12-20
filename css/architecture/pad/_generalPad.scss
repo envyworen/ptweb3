@@ -61,3 +61,8 @@ h1, h2, h3{
     color: $fontcolor !important;
     font-size: 30pt;
 }
+
+label{
+    color: $fontcolor;
+    font-family: 'Courier';
+}

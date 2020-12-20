@@ -103,31 +103,33 @@ span {
   margin: 0;
   transition: all 0.35s ease;
 }
-span:hover {
-  transform: scale(1.2);
-  background-color: #8d0a0a;
-  cursor: pointer;
-}
-span p {
-  position: absolute;
-  margin-top: 16px;
-  margin-left: -60px;
-  color: rgb(231, 69, 20);
-  background: rgba(0, 0, 0, 0.9);
-  padding: 8px;
-  border-radius: 3px;
-  width: 200px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  transform: scale(0) rotate(-12deg);
-  transition: all 0.25s;
-  font-size: 10pt;
-  opacity: 0;
-}
-span:hover p,
-span:focus p {
-  cursor: pointer;
-  transform: scale(1) rotate(0);
-  opacity: 1;
+@media screen and (min-width: 1025px) {
+  span:hover {
+    transform: scale(1.2);
+    background-color: #8d0a0a;
+    cursor: pointer;
+  }
+  span p {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: -60px;
+    color: rgb(231, 69, 20);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 8px;
+    border-radius: 3px;
+    width: 200px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    transform: scale(0) rotate(-12deg);
+    transition: all 0.25s;
+    font-size: 10pt;
+    opacity: 0;
+  }
+  span:hover p,
+  span:focus p {
+    cursor: pointer;
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
 }
 
 .conseil {
