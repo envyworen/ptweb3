@@ -78,7 +78,6 @@ var BreakException = {};
       ligne.style.stroke = "rgb(255,0,0)";
       ligne.style.strokeWidth = "2";
       ligne.style.position = "absolute";
-      svg.style.height = svg.height + "100vh";
       svg.appendChild(ligne);
       if (svg.childNodes.length > articles.length - 1) {
         ligne.remove();
