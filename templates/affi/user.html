@@ -8,15 +8,18 @@
     
 
 {% for utili in utilisateur %}
+    <div class="form-pad">
+        <p>{{ utili.pseudo_user }} rank {{ utili.role_user }}
+            <form action="user" method="POST">
+            <button type="submit" name="supprimer_user" value="{{ utili.id_user }}">supprimer</button>
+            <button type="submit" name="lecteur_user" value="{{ utili.id_user }}">Passer lecteur</button>
+            <button type="submit" name="editeur_user" value="{{ utili.id_user }}">Passer Editeur</button>
+            <button type="submit" name="admin_user" value="{{ utili.id_user }}">Passer Admin</button>
+        </form>
+        </p>
+    
 
-    <p>{{ utili.pseudo_user }} rank {{ utili.role_user }}
-        <form action="user" method="POST">
-        <button type="submit" name="supprimer_user" value="{{ utili.id_user }}">supprimer</button>
-        <button type="submit" name="lecteur_user" value="{{ utili.id_user }}">Passer lecteur</button>
-        <button type="submit" name="editeur_user" value="{{ utili.id_user }}">Passer Editeur</button>
-        <button type="submit" name="admin_user" value="{{ utili.id_user }}">Passer Admin</button>
-    </form>
-    </p>
+    </div>
 
 
 
