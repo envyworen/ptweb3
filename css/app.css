@@ -1214,6 +1214,10 @@ body:before {
   }
 }
 
+.deconnexion {
+  margin-right: 1rem;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
