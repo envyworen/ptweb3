@@ -1,24 +1,29 @@
-
-<form action="?page=mod" method="post"  class="form-flex">
-    <select name="comp" id="">
-        {% for row in tcomp %}         
-        <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
-        {% endfor %}
-    </select>
-    <input type="submit">
-</form>
-{% for compo in comp %}
-<fieldset>
+<div class="flex-centre">
     <form action="?page=mod" method="post"  class="form-flex">
-        <h2 class="parag" name="st_comp">{{ compo.st_comp }} </h2> 
-        <p class="parag" name="citation_comp">{{ compo.citation_comp }}</p> 
-        <p class="parag" name="auteur_comp">{{ compo.auteur_comp }}</p>
-        <p class="parag" name="texte_comp">{{ compo.texte_comp }}</p>
-        <p class="type" name="id_art">{{ compo.id_art }}</p>
-        <span class="modifier" onclick="modifycomp(this)" >Modifier</span>
-        <button class="valider" name="id_comp_update" value="{{ compo.id_comp }}" >Valider</button>
-        </form>
-</fieldset>
+        <select name="comp" id="">
+            {% for row in tcomp %}         
+            <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
+</div>
+
+{% for compo in comp %}
+<div class="flex-centre">
+    <fieldset>
+        <form action="?page=mod" method="post"  class="form-flex">
+            <h2 class="parag" name="st_comp">{{ compo.st_comp }} </h2> 
+            <p class="parag" name="citation_comp">{{ compo.citation_comp }}</p> 
+            <p class="parag" name="auteur_comp">{{ compo.auteur_comp }}</p>
+            <p class="parag" name="texte_comp">{{ compo.texte_comp }}</p>
+            <p class="type" name="id_art">{{ compo.id_art }}</p>
+            <span class="modifier" onclick="modifycomp(this)" >Modifier</span>
+            <button class="valider" name="id_comp_update" value="{{ compo.id_comp }}" >Valider</button>
+            </form>
+    </fieldset>
+</div>
+
 {% endfor %}
 
 <script>
