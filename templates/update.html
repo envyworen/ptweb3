@@ -16,14 +16,17 @@
 <!-- <form action="?page=mod" method="post"> -->
 
 {% for type in list %}
-<form action="?page=mod" method="post" class="form-flex">
-<h1 class="parag" name="titre">{{ type.h1_art }} </h1> 
-<h2 class="parag" name="chap">{{ type.chap_art }}</h2> 
-<p class="parag" name="auteur">{{ type.auteur_art }}</p>
-<p class="parag" name="para">{{ type.para_art }}</p>
-<p class="type" name="type" >{{ type.titre_art }}</p>
-<span class="modifier" onclick="modify(this)" >Modifier</span>
-<button class="valider" name="id" value="{{ type.id_art }}" >Valider</button>
-</form>
+<div class="flex-centre">
+    <form action="?page=mod" method="post" class="form-flex">
+        <h1 class="parag" name="titre">{{ type.h1_art }} </h1> 
+        <h2 class="parag" name="chap">{{ type.chap_art }}</h2> 
+        <p class="parag" name="auteur">{{ type.auteur_art }}</p>
+        <p class="parag" name="para">{{ type.para_art }}</p>
+        <p class="type" name="type" >{{ type.titre_art }}</p>
+        <span class="modifier" onclick="modify(this)" >Modifier</span>
+        <button class="valider" name="id" value="{{ type.id_art }}" >Valider</button>
+        </form>
+</div>
+
 {% endfor %}
     
