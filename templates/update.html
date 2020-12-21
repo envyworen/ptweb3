@@ -1,12 +1,17 @@
 <!-- Formulaire update Article -->
-<form action="?page=mod" method="post" class="form-flex">
-    <select name="coole" id="">
-        {% for row in read %}         
-        <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
-        {% endfor %}
-    </select>
-    <input type="submit">
-</form>
+
+<div class="flex-centre">
+    <form action="?page=mod" method="post" class="form-flex">
+        <select name="coole" id="">
+            {% for row in read %}         
+            <option value="{{ row.titre_art }}">{{ row.titre_art }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit">
+    </form>
+
+</div>
+
 
 <!-- <form action="?page=mod" method="post"> -->
 
