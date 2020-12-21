@@ -4,9 +4,11 @@
 <script>
     let role = {{ role | raw }};
 </script>
+<div class="flex-centre">
+    
 
 {% for utili in utilisateur %}
-<div class="flex-centre">
+
     <p>{{ utili.pseudo_user }} rank {{ utili.role_user }}
         <form action="user" method="POST">
         <button type="submit" name="supprimer_user" value="{{ utili.id_user }}">supprimer</button>
