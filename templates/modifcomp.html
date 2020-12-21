@@ -1,5 +1,5 @@
 
-<form action="?page=mod" method="post">
+<form action="?page=mod" method="post"  class="form-flex">
     <select name="comp" id="">
         {% for row in tcomp %}         
         <option value="{{ row.id_comp }}">{{ row.st_comp }}</option>
@@ -9,7 +9,7 @@
 </form>
 {% for compo in comp %}
 <fieldset>
-    <form action="?page=mod" method="post">
+    <form action="?page=mod" method="post"  class="form-flex">
         <h2 class="parag" name="st_comp">{{ compo.st_comp }} </h2> 
         <p class="parag" name="citation_comp">{{ compo.citation_comp }}</p> 
         <p class="parag" name="auteur_comp">{{ compo.auteur_comp }}</p>
