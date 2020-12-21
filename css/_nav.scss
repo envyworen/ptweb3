@@ -165,6 +165,9 @@ body:before {
     height: 5vh;
   }
 
+  .deconnexion{
+    margin-right:0.5rem;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -175,8 +178,9 @@ body:before {
   nav{
     height: 10vh;
   }
+
+  .deconnexion{
+    margin-right:2rem;
+  }
 }
 
-.deconnexion{
-  margin-right: 1.5rem;
-}
