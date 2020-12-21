@@ -1232,6 +1232,10 @@ body:before {
   width: 100vw;
 }
 
+.red {
+  color: #8d0101;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
